@@ -58,6 +58,9 @@ INSTALLATION
 
    %> imr start
 
+6. Connect to the IMR using your web browser, connecting to port 3000 to the 
+   machine hosting the IMR installation.
+
 MANAGEMENT
 
 The application can be started on the command line using:
