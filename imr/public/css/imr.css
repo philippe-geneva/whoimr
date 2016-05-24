@@ -1,0 +1,40 @@
+/*
+ * 
+ *
+ *
+ */
+
+body {
+  background-color:	white;
+  font-family:		Helvetica,Arial,sans-serif;
+  font-size:		13px;
+}
+
+a {
+  text-decoration:	none;
+  color:		#196aaa;
+}
+
+a.selected {
+  color:		white;
+  background-color:	#196aaa;
+}
+
+th {
+  text-align:		left;
+  font-size:		15px;
+}
+
+#indicator_list {
+  width:		30%;
+  float:		left;
+}
+
+#indicator {
+  width:		60%;
+  float:		left;
+}
+
+#indicator_wrapper {
+  width:		100%;
+}

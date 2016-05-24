@@ -1,0 +1,89 @@
+#!/bin/bash  
+
+#
+# required binaries
+#
+
+
+mongod="mongod"
+node="node"
+which="which"
+dirname="dirname"
+
+#
+# Location of the application relative to the launch script
+#
+
+appName="imr"
+myScript=`${which} "${0}"`
+scriptPath=`${dirname} ${myScript}`
+projectPath=`${dirname} ${scriptPath}`
+imrApp="${projectPath}/${appName}"
+
+#
+# Load the local project configuration
+#
+
+source "${projectPath}/${appName}.conf"
+
+
+nodePidFile="${logDir}/node-imr.pid"
+mongodPidFile="${dataDir}/mongod.lock"
+
+#
+# Start mongo DB and run in in the background
+#
+
+error="";
+
+case "${1}" in
+  start) 
+    echo "Starting IMR."
+    if [ -e "${nodePidFile}" ]; then
+      echo "error:  PID file \"${nodePidFile}\" found."
+      error="true"
+    fi
+    if [ -e "${mongodPidFile}" ]; then
+      echo "error:  PID file \"${mongodPidFile}\" found."
+      error="true"
+    fi
+    if [ -z "${error}" ]; then
+      echo "Starting mongo database server."
+      ${mongod} --dbpath ${dataDir} > "${logDir}/mongo.log" &
+      echo "Starting node."
+      ${node} ${imrApp} --pidfile=${nodePidFile} > "${logDir}/node.log" &
+      echo "IMR started."
+    else 
+      echo "error:  IMR not started."
+    fi
+    ;;
+  stop)
+    echo "Stopping IMR."
+    if [ -e "${nodePidFile}" ]; then
+      echo "Stopping node."
+      kill `cat ${nodePidFile}`
+      rm -f "${nodePidFile}"
+    else 
+      echo "error:  PID file \"${nodePidFile}\" not found."
+      error="true"
+    fi
+    if [ -e "${mongodPidFile}" ]; then
+      echo "Stopping mongo database server."
+      kill `cat ${mongodPidFile}`
+      rm -f "${mongodPidFile}"
+    else 
+      echo "error:  PID file \"${mongodPidFile}\" not found."
+      error="true"
+    fi
+    if [ -z "${error}" ]; then
+      echo "IMR stopped."
+    else
+      echo "error:  IMR not stopped."
+    fi
+    ;;
+esac    
+
+
+
+
+

@@ -1,0 +1,84 @@
+#!/bin/bash  
+
+#
+# required binaries
+#
+
+
+mongod="mongod"
+mongoimport="mongoimport"
+npm="npm"
+which="which"
+dirname="dirname"
+
+#
+# Location of the application relative to the launch script
+#
+
+appName="imr"
+myScript=`${which} "${0}"`
+scriptPath=`${dirname} ${myScript}`
+projectPath=`${dirname} ${scriptPath}`
+dataPath="${projectPath}/data"
+appPath="${projectPath}/${appName}"
+
+#
+# Load the local project configuration
+#
+
+source "${projectPath}/${appName}.conf"
+
+mongodPidFile="${dataDir}/mongod.lock"
+
+#
+# If mongo is already running, we'll simply use the server.  If
+# it is not running, we';; start pme fpr the purpose of loading
+# the IMR data, then terminate it when we're done. If the server
+# was already running, we leave it as-is.
+#
+
+closeMongo="false"
+if [ -s "${mongodPidFile}" ]; then
+  echo "Using running mongo database server."
+else
+  echo "Staring mongo database server."
+  ${mongod} --dbpath ${dataDir} > "${logDir}/mongo.log" &
+  closeMongo="true"
+fi
+
+#
+# Load the data
+#
+
+echo "Loading indicator data."
+${mongoimport} --db ${appName} --collection indicators --drop --file ${dataPath}/indicators.json
+echo "Loading property labels."
+${mongoimport} --db ${appName} --collection properties --drop --file ${dataPath}/properties.json
+
+#
+# Close the mongo server if we're the ones who started it.
+#
+
+if [ ${closeMongo} = "true" ]; then
+  echo "Stopping mongo database server."
+  kill `cat ${mongodPidFile}`
+  rm -f "${mongodPidFile}"
+fi
+
+#
+# Load the required node modules for the application
+#
+
+echo "Installing requrired node modules."
+if [ ! -z "${httpProxy}" ]; then
+  echo "Setting ${npm} http proxy to ${httpProxy}."
+  ${npm} config set http-propxy "${httpProxy}"
+fi
+if [ ! -z "${httpsProxy}" ]; then
+  echo "Setting ${npm} https proxy to ${httpsProxy}."
+  ${npm} config set https-propxy "${httpsProxy}"
+fi
+cd "${appPath}"
+${npm} install
+
+

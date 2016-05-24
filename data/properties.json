@@ -1,0 +1,129 @@
+{
+  "property": "name",
+  "display": {
+    "en": "Name",
+    "fr": "Nom de l'indicateur"
+  }
+}
+
+{
+  "property": "type",
+  "display": {
+    "en": "Type",
+    "fr": "Type"
+  }
+}
+
+{
+  "property": "abbreviated_name",
+  "display": {
+    "en": "Abbreviated name",
+    "fr": "Nom abrégé"
+  }
+}
+
+{
+  "property": "domain",
+  "display": {
+    "en": "Domain",
+    "fr": "Domaine"
+  }
+}
+
+{
+  "property": "subdomain",
+  "display": {
+    "en": "Sub-domain",
+    "fr": "Sous-domaine"
+  }
+}
+
+{
+  "property": "terms",
+  "display": {
+    "en": "Associated terms",
+    "fr": "Termes associés"
+  }
+}
+
+{
+  "property": "definition",
+  "display": {
+    "en": "Definition",
+    "fr": "Définition"
+  }
+}
+
+{
+  "property": "numerator",
+  "display": {
+    "en": "Numerator",
+    "fr": "Numérateur"
+  }
+}
+
+{
+  "property": "denominator",
+  "display": {
+    "en": "Denominator",
+    "fr": "Dénominateur"
+  }
+}
+
+{
+  "property": "disaggregation",
+  "display": {
+    "en": "Disaggregation",
+    "fr": "Ventilation/dimension supplémentaire"
+  }
+}
+
+{
+  "property": "measurement_method",
+  "display": {
+    "en": "Measurement method",
+    "fr": "Méthode de mesure"
+  }
+}
+
+{
+  "property": "estimation_method",
+  "display": {
+    "en": "Estimation method",
+    "fr": "Méthode d'estimation"
+  }
+}
+
+{
+  "property": "measurement_frequency",
+  "display": {
+    "en": "Measurement frequency",
+    "fr": "Fréquence de mesure"
+  }
+}
+
+{
+  "property": "me_framework",
+  "display": {
+    "en": "M&E framework",
+    "fr": "Cadre de suivi et évaluation"
+  }
+}
+
+{
+  "property": "preferred_data_sources",
+  "display": {
+    "en": "Preferred data sources",
+    "fr": "Sources de données préférées"
+  }
+}
+
+{
+  "property": "other_data_sources",
+  "display": {
+    "en": "Other data sources",
+    "fr": "Autres sources de données possibles"
+  }
+}
+
+

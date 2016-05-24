@@ -1,0 +1,75 @@
+#!/bin/bash  
+
+#
+# required binaries
+#
+
+
+mongod="mongod"
+mongo="mongo"
+mongoimport="mongoimport"
+npm="npm"
+which="which"
+dirname="dirname"
+
+#
+# Location of the application relative to the launch script
+#
+
+appName="imr"
+myScript=`${which} "${0}"`
+scriptPath=`${dirname} ${myScript}`
+projectPath=`${dirname} ${scriptPath}`
+dataPath="${projectPath}/data"
+appPath="${projectPath}/${appName}"
+
+#
+# Load the local project configuration
+#
+
+source "${projectPath}/${appName}.conf"
+
+mongodPidFile="${dataDir}/mongod.lock"
+
+#
+# If mongo is already running, we'll simply use the server.  If
+# it is not running, we';; start pme fpr the purpose of loading
+# the IMR data, then terminate it when we're done. If the server
+# was already running, we leave it as-is.
+#
+
+closeMongo="false"
+if [ -s "${mongodPidFile}" ]; then
+  echo "Using running mongo database server."
+else
+  echo "Staring mongo database server."
+  ${mongod} --dbpath ${dataDir} > "${logDir}/mongo.log" &
+  sleep 5  
+  closeMongo="true"
+fi
+
+#
+# Drop the database
+#
+
+echo "Dropping ${appName} database."
+${mongo} ${appName} --eval "db.dropDatabase()"
+
+#
+# Close the mongo server if we're the ones who started it.
+#
+
+if [ ${closeMongo} = "true" ]; then
+  echo "Stopping mongo database server."
+  kill `cat ${mongodPidFile}`
+  rm -f "${mongodPidFile}"
+fi
+
+#
+# Delete the node_modules directory.
+#
+
+echo "Deleting requrired node modules."
+rm -rf "${appPath}/node_modules"
+
+
