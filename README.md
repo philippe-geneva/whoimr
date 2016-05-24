@@ -34,6 +34,8 @@ INSTALLATION
 
 1. Retrieve the WHO IMR project from github:
 
+   %> git clone https://github.com/philippe-geneva/whoimr.git
+
    For the remainder of these instructions, the full path that holds the project
    will be refered to as __WHOIMR_PATH__.
 
