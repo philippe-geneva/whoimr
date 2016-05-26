@@ -6,6 +6,7 @@
 
 
 mongod="mongod"
+mongo="mongo"
 mongoimport="mongoimport"
 npm="npm"
 which="which"
@@ -56,6 +57,8 @@ echo "Loading property labels."
 ${mongoimport} --db ${appName} --collection properties --drop --file ${dataPath}/properties.json
 echo "Loading user profiles."
 ${mongoimport} --db ${appName} --collection users --drop --file ${dataPath}/users.json
+echo "Applying patches to the loaded data."
+"${mongo}" imr "${dataPath}/patches.js"
 
 #
 # Close the mongo server if we're the ones who started it.
