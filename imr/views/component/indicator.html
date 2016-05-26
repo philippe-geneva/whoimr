@@ -1,0 +1,21 @@
+<!-- BEGIN (Common indicator component) -->
+<div id="indicator">
+  <h1>{{indicator.name}} ({{indicator.code}})</h1> 
+<!-- for demo purposes, the edit button is shown when the user is logged in but does nothing -->
+
+  {{#user.username}}
+  <input type="button" value="Edit"></input>
+  {{/user.username}}
+  <table>
+  {{#indicator.property}}
+    {{#value}}
+    <tr>
+      <th>{{label}}</th>
+      <td>{{value}}</td>
+    </tr>
+    {{/value}}
+  {{/indicator.property}}
+  </table>
+</div>
+<!-- END (Common indicator component) -->
+

@@ -40,8 +40,43 @@ app.use(passport.session());
 
 app.use('/public',express.static(__dirname + '/public'));
 
+/*
+ * Views
+ */
+
+app.get('/view/indicator/:indicator',function(req, res) {
+  logRequest(req);
+  MongoClient.connect(url,function(err,db) {
+    assert.equal(null,err);
+    var collection = db.collection('indicators');
+    collection.find({'code':req.params.indicator}).toArray(function(err,docs){
+      assert.equal(null,err);
+      var indicator = { 
+        name: docs[0].name,
+        code: docs[0].code,
+        property: [] 
+      };
+      for (var p in docs[0].property) {
+        if (docs[0].property.hasOwnProperty(p)) {
+          indicator.property.push({
+            label: p,
+            value: docs[0].property[p]
+          });
+        }
+      }
+      if (docs.length == 1) {
+        res.render('indicator',{
+          indicator: indicator,
+          user: req.user
+        });
+      }
+      db.close();
+    });
+  });
+});
+
+
 app.get('/view/:view',function(req,res) {
-console.log("requested view " + req.params.view);
   res.render(req.params.view,{
       "title": 'Page title',
       "user": req.user
