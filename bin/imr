@@ -81,8 +81,14 @@ case "${1}" in
       echo "error:  IMR not stopped."
     fi
     ;;
+  restart)
+    $0 stop
+    $0 start
+    ;;
+  *)
+    echo "Usage:  $0 < start | stop | restart >"
+    ;;
 esac    
-
 
 
 

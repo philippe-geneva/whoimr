@@ -54,6 +54,8 @@ echo "Loading indicator data."
 ${mongoimport} --db ${appName} --collection indicators --drop --file ${dataPath}/indicators.json
 echo "Loading property labels."
 ${mongoimport} --db ${appName} --collection properties --drop --file ${dataPath}/properties.json
+echo "Loading user profiles."
+${mongoimport} --db ${appName} --collection users --drop --file ${dataPath}/users.json
 
 #
 # Close the mongo server if we're the ones who started it.

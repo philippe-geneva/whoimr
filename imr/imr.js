@@ -1,12 +1,112 @@
 var express = require('express');
 var fs = require('fs');
-var i18n = require('i18n');
 var session = require('express-session');
 var MongoClient = require('mongodb').MongoClient;
+var Mustache = require('mustache-express');
+var bodyParser = require('body-parser');
 var assert = require('assert');
 var ObjectID = require('mongodb').ObjectId;
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 var url = 'mongodb://localhost:27017/imr';
 var app = express();
+
+
+/*
+ *  The body parser is nescessary for passport to function correctly
+ */
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
+/*
+ * Create a session for the IMR.
+ */
+
+app.use('/',session({
+  secret: 'Indicator Metadata Registry',
+  resave: false,
+  saveUninitialized: false
+}));
+
+
+app.engine('html',Mustache());
+app.set('view engine','html');
+app.set('views',__dirname + "/views");
+app.use(passport.initialize());
+app.use(passport.session());
+/*
+ * Publicly available files that store the IMR browser client
+ */
+
+app.use('/public',express.static(__dirname + '/public'));
+
+app.get('/view/:view',function(req,res) {
+console.log("requested view " + req.params.view);
+  res.render(req.params.view,{
+      "title": 'Page title',
+      "user": req.user
+  });
+});
+
+/*
+ *
+ */
+
+passport.use(new LocalStrategy({
+    usernameField: "username",
+    passwordField: "password"
+  },
+  function(username,password,done) {
+  console.log("Username:  " + username + " Password: " + password);
+  MongoClient.connect(url,function(err,db) {
+    assert.equal(null,err);
+    var users = db.collection('users');
+    users.findOne({username: username},function(err,user) {
+      db.close();
+      if (err) {
+        return done(err);
+      } 
+      if (!user) {
+        return done(null,false,{message:"Incorrect username."});
+      }
+      if (user.password != password) {
+        return done(null,false,{message:"Incorrect password."});
+      }
+      return done(null,user);
+    });
+  });
+}));
+
+passport.serializeUser(function(user,done) {
+  done(null,user);
+});
+
+passport.deserializeUser(function(user,done) {
+  done(null,user);
+});
+
+/*
+ *
+ */
+
+/*
+ *  
+ *
+ */
+
+app.post('/login',passport.authenticate(
+  'local',
+  { 
+    successRedirect:'/view/main',
+    failureRedirect:'/view/main'
+  })
+);
+
+app.get('/logout',function(req,res) {
+  req.logout();
+  res.redirect('/view/main');
+});
+
 
 /*
  *   Check command line options
@@ -24,39 +124,6 @@ process.argv.forEach(function(val,index,array) {
   }
 });
 
-/*
- *
- */
-
-i18n.configure({
-  locales: ['en','fr'],
-  directory: __dirname + '/locales'
-});
-
-/*
-app.configure(function(){
-  // Default: using 'accept-language' header to guess language settings 
-  app.use(i18n.init);  
-});
-*/
-
-/*
- * Publicly available files that store the IMR browser client
- */
-
-app.use('/imr',express.static(__dirname + '/public'));
-
-
-
-/*
- * Create a session for the IMR.
- */
-
-app.use('/',session({
-  secret: 'Indicator Metadata Registry',
-  resave: false,
-  saveUninitialized: false
-}));
 
 
 /*
@@ -88,6 +155,9 @@ app.listen(3000, function () {
 function logRequest(req) {
   console.log(req.hostname + "\t" + req.originalUrl);
 }
+
+
+
 
 /*
  * Set the language

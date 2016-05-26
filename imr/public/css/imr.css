@@ -38,3 +38,38 @@ th {
 #indicator_wrapper {
   width:		100%;
 }
+
+#header {
+  width:		100%;
+  height:		75px;
+  position:		relative;
+  background:		url("/public/img/who-logo-en.jpg") no-repeat center center;
+}
+
+#header span {
+  top:			0px;
+  right:		0px;
+  position:		absolute;
+}
+
+#title {
+  background-color:	#42acdc;
+  color:		white;
+  width:		100%;
+}
+  
+
+#search {
+  width:		100%;
+/*
+  color:		white;
+  background-color:	#42acdc;
+*/
+}
+
+#search input {
+  width:		60%;
+}
+
+
+

@@ -83,7 +83,7 @@ function populateIndicator ( obj , code ) {
       $(target).empty();
       $(target).append("<h2>" + data.name + " (" + data.code + ")</h2><br />");
       $(target).append("Download as: ");
-      $(target).append("<a href=\"indicator/" + data.code + "\">JSON</a>");
+      $(target).append("<a href=\"/indicator/" + data.code + "\">JSON</a>");
       $(target).append("<br /><br />");
       $(target).append("<table>");
       for (p in data.property) {
