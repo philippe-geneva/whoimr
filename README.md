@@ -88,9 +88,9 @@ __imr-setup__, and __imr-clean__ scripts have not yet been written.
 
 1. Get and install the open source MongoDB Community Server
 
-```
-https://www.mongodb.com/download-center#community
-```
+   ```
+   https://www.mongodb.com/download-center#community
+   ```
 
    Depending on the installer that you have used, you may have to 
    manually set the mongodb bin directory in your system path.
@@ -99,78 +99,77 @@ https://www.mongodb.com/download-center#community
    You may also have to create a mondodb data storage directory.  The
    default it expects is c:\data\db, so:
 
-```
-C:> mkdir c:\data\db
-```
+   ```
+   C:> mkdir c:\data\db
+   ```
 
 2. Get and install node.js
 
-```
-https://nodejs.org/en/download/
-```
+   ```
+   https://nodejs.org/en/download/
+   ```
 
 3. Get and install git:
 
-```
-https://git-scm.com/download/win   
-```
+   ```
+   https://git-scm.com/download/win   
+   ```
 
 ### INSTALLING THE INDICATOR METADATA REGISTRY
 
 1. In a new cmd.exe window, start MongoDB server - do not close this
    window as this will terminate the database server.
 
-```
-    C:> mongod
-```
+   ```
+   C:> mongod
+   ```
 
 2. In a new cmd.exe window, find a location/make a directory to clone
    the WHO IMR project from github, then clone the repository:
 
-```
-C:> mkdir some\installation\directory
-C:> cd some\installtion\directory
-C:> git clone https://github.com/philippe-geneva/whoimr.git
-```
+   ```
+   C:> mkdir some\installation\directory
+   C:> cd some\installtion\directory
+   C:> git clone https://github.com/philippe-geneva/whoimr.git
+   ```
 
 3. Load the raw data for the IMR into 
    MongoDB server.  First, cd to the whoimr directory that you have
    just retrieved from github:
 
-```
-    c:> cd whoimr
-```
+   ```
+   C:> cd whoimr
+   ```
 
    then issue the commands:   
 
-```
-    C:> mongoimport --db imr --collection indicators -file whoimr/data/indicators.json
-    C:> mongoimport --db imr --collection properties -file whoimr/data/properties.json
-    C:> mongoimport --db imr --collection users -file whoimr/data/users.json
-    c:> mongo imr whoimr\data\patches.js
-```
+   ```
+   C:> mongoimport --db imr --collection indicators -file whoimr/data/indicators.json
+   C:> mongoimport --db imr --collection properties -file whoimr/data/properties.json
+   C:> mongoimport --db imr --collection users -file whoimr/data/users.json
+   C:> mongo imr whoimr\data\patches.js
+   ```
 
 4. In the same window, cd to the directory that holds the IMR node.js 
    application and load the required node modules for it:
 
-```
-    c:> cd imr
-    c:> npm install 
-```
+   ```
+   c:> cd imr
+   c:> npm install 
+   ```
 
 5. In its own cmd.exe window, start the IMR node application:
 
-
-```
-    c:> node imr
-```
+   ```
+   c:> node imr
+   ```
 
 6. In your web browser, go to 
 
-```
-    http://localhost:3000/view/indicator/CHI_1
-```
-
+   ```
+   http://localhost:3000/view/indicator/CHI_1
+   ```
+   
   
    
  
