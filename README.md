@@ -117,9 +117,11 @@ __imr-setup__, and __imr-clean__ scripts have not yet been written.
 2. In a new cmd.exe window, find a location/make a directory to clone
    the WHO IMR project from github, then clone the repository:
 
-    C:> mkdir some\installation\directory
-    C:> cd some\installtion\directory
-    C:> git clone https://github.com/philippe-geneva/whoimr.git
+```
+C:> mkdir some\installation\directory
+C:> cd some\installtion\directory
+C:> git clone https://github.com/philippe-geneva/whoimr.git
+```
 
 3. Load the raw data for the IMR into 
    MongoDB server.  First, cd to the whoimr directory that you have
