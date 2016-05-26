@@ -1,0 +1,15 @@
+{
+  "username": "splinter",
+  "password": "abc123",
+  "name": "Philippe",
+  "surname": "Boucher",
+  "admin": true
+}
+
+{
+  "username": "guest",
+  "password": "abc123",
+  "name": "Guest",
+  "surname": "Guestr",
+  "admin": false
+}

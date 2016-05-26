@@ -1,0 +1,17 @@
+<!-- BEGIN (Common header component) -->
+<div id="header">
+   <span>
+     {{#user.username}}
+     Logged in as: <b>{{name}} {{surname}} ({{user.username}})</b>
+     [ <a href="/logout">Logout</a> ]
+     {{/user.username}}
+     {{^user.username}}
+     [ <a href="/view/login.html">Login</a> ]
+     {{/user.username}}
+   </span>
+</div>
+<div id="title">
+  <h1>Indicator Metadata Registry</h1>
+</div>
+
+<!-- END (Common header component) -->
