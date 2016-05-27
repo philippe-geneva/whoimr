@@ -14,7 +14,17 @@
       <td>{{value}}</td>
     </tr>
     {{/value}}
-  {{/indicator.property}}
+    {{/indicator.property}}
+    <tr>
+      <th>Footnotes</ht>
+      <td>
+        <ol>
+          {{#indicator.note}}
+          <li>{{.}}</li>
+          {{/indicator.note}}
+        </ol>
+      </td>
+    </tr>
   </table>
 </div>
 <!-- END (Common indicator component) -->

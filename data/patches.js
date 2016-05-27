@@ -11,7 +11,8 @@ db.indicators.update(
   {},
   {
     $set: {
-      "version": 1
+      "version": 1,
+      "status": "published"
     }
   },
   {

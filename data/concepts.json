@@ -1,0 +1,602 @@
+{
+  "id": 1,
+  "label": {
+    "en": "Health status",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 2,
+  "label": {
+    "en": "Health systems",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 3,
+  "label": {
+    "en": "Risk factors",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 4,
+  "label": {
+    "en": "Service coverage",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 5,
+  "label": {
+    "en": "Environment",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 6,
+  "label": {
+    "en": "General",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 7,
+  "label": {
+    "en": "Health system strengthening (HSS)",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 8,
+  "label": {
+    "en": "Infectious disease",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 9,
+  "label": {
+    "en": "Injury and violence",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 10,
+  "label": {
+    "en": "NCDs",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 11,
+  "label": {
+    "en": "NCDs and nutrition",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 12,
+  "label": {
+    "en": "Reproductive, maternal, newborn, child and adolescent health",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 13,
+  "label": {
+    "en": "A",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 14,
+  "label": {
+    "en": "C",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 15,
+  "label": {
+    "en": "Access",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 16,
+  "label": {
+    "en": "Environmental risk factors",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 17,
+  "label": {
+    "en": "Fertility",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 18,
+  "label": {
+    "en": "Health financing",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 19,
+  "label": {
+    "en": "Health information",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 20,
+  "label": {
+    "en": "Health policy",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 21,
+  "label": {
+    "en": "Health security",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 22,
+  "label": {
+    "en": "Health workforce",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 23,
+  "label": {
+    "en": "HIV",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 24,
+  "label": {
+    "en": "HIV services",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 25,
+  "label": {
+    "en": "HIV/TB",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 26,
+  "label": {
+    "en": "Immunization",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 27,
+  "label": {
+    "en": "Infections",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 28,
+  "label": {
+    "en": "Injuries",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 29,
+  "label": {
+    "en": "Lifestyle",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 30,
+  "label": {
+    "en": "Malaria",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 31,
+  "label": {
+    "en": "Mental health",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 32,
+  "label": {
+    "en": "Morbidity",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 33,
+  "label": {
+    "en": "Mortality by age and sex",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 34,
+  "label": {
+    "en": "Mortality by cause",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 35,
+  "label": {
+    "en": "Neglected tropical diseases",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 36,
+  "label": {
+    "en": "Noncommunicable diseases",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 37,
+  "label": {
+    "en": "Nutrition",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 38,
+  "label": {
+    "en": "Quality and safety of care",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 39,
+  "label": {
+    "en": "Reproductive, maternal, newborn, child and adolescent",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 40,
+  "label": {
+    "en": "Risk factors infections",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 41,
+  "label": {
+    "en": "Risk factors injuries",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 42,
+  "label": {
+    "en": "Screening and preventive care",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+
+{
+  "id": 43,
+  "label": {
+    "en": "Tuberculosis",
+    "fr": "",
+    "es": ""
+  },
+  "definition": {
+    "en": "",
+    "fr": "",
+    "es": ""
+  }
+}
+

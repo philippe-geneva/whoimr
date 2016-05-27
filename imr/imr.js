@@ -40,6 +40,8 @@ app.use(passport.session());
 
 app.use('/public',express.static(__dirname + '/public'));
 
+
+
 /*
  * Views
  */
@@ -54,11 +56,13 @@ app.get('/view/indicator/:indicator',function(req, res) {
       var indicator = { 
         name: docs[0].name,
         code: docs[0].code,
-        property: [] 
+        property: [],
+        note: docs[0].note
       };
       for (var p in docs[0].property) {
         if (docs[0].property.hasOwnProperty(p)) {
           indicator.property.push({
+            code: p,
             label: p,
             value: docs[0].property[p]
           });
@@ -66,8 +70,8 @@ app.get('/view/indicator/:indicator',function(req, res) {
       }
       if (docs.length == 1) {
         res.render('indicator',{
-          indicator: indicator,
-          user: req.user
+          "indicator": indicator,
+          "user": req.user
         });
       }
       db.close();
@@ -132,8 +136,8 @@ passport.deserializeUser(function(user,done) {
 app.post('/login',passport.authenticate(
   'local',
   { 
-    successRedirect:'/view/main',
-    failureRedirect:'/view/main'
+    successRedirect:'/view/indicator/CHI_1',
+    failureRedirect:'/view/indicator/CHI_1'
   })
 );
 
