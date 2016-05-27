@@ -33,7 +33,9 @@ installed and available on your command line path:
 
 1. Retrieve the WHO IMR project from github:
 
+   ```
    %> git clone https://github.com/philippe-geneva/whoimr.git
+   ```
 
    For the remainder of these instructions, the full path that holds the project
    will be refered to as __WHOIMR_PATH__.
@@ -42,20 +44,28 @@ installed and available on your command line path:
    You must set the logDir and dataDir parameters for the setup and management
    scripts to work correctly.
 
+   ```
    %> vim __WHOIMR_PATH__/imr.conf
+   ```
 
 3. Add the WHO IMR project bin directory to your path
 
+   ```
    %> export PATH="${PATH}:__WHOIMR_PATH__/bin"
+   ```
 
 4. Run the setup script - this will retrieve the required node modules for the
    application and will seed the database.
 
+   ```
    %> imr-setup
+   ```
 
 5. Start the WHO IMR application.
 
+   ```
    %> imr start
+   ```
 
 6. Connect to the IMR using your web browser, connecting to port 3000 to the 
    machine hosting the IMR installation.
