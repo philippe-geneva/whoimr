@@ -51,22 +51,23 @@ app.get('/view/indicator/:indicator',function(req, res) {
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
     var collection = db.collection('indicators');
-    collection.find({'code':req.params.indicator}).toArray(function(err,docs){
+    collection.find({'id':req.params.indicator}).toArray(function(err,docs){
       assert.equal(null,err);
       var indicator = { 
-        name: docs[0].name,
-        code: docs[0].code,
+        name: docs[0].display.en,
+        code: docs[0].id,
         property: [],
-        note: docs[0].note
+        note: []
       };
       for (var p in docs[0].property) {
-        if (docs[0].property.hasOwnProperty(p)) {
-          indicator.property.push({
-            code: p,
-            label: p,
-            value: docs[0].property[p]
-          });
-        }
+        indicator.property.push({
+          code: docs[0].property[p].property_id,
+          label: docs[0].property[p].property_id,
+          value: docs[0].property[p].display.en,
+        });
+      }
+      for (var n in docs[0].note) {
+        indicator.note.push(docs[0].note[n].display.en);
       }
       if (docs.length == 1) {
         res.render('indicator',{
@@ -79,6 +80,10 @@ app.get('/view/indicator/:indicator',function(req, res) {
   });
 });
 
+/*
+ *
+ *
+ */
 
 app.get('/view/:view',function(req,res) {
   res.render(req.params.view,{
@@ -143,7 +148,7 @@ app.post('/login',passport.authenticate(
 
 app.get('/logout',function(req,res) {
   req.logout();
-  res.redirect('/view/main');
+  res.redirect('/view/indicator/CHI_1');
 });
 
 
@@ -172,7 +177,7 @@ process.argv.forEach(function(val,index,array) {
  */
 
 app.use('/',function(req,res,next){
-console.log("Lookint at session");
+console.log("Looking at session");
   if (!req.session.language) {
     req.session.language = "en";
   }
@@ -217,7 +222,7 @@ app.get('/indicator/:indicator',function(req, res) {
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
     var collection = db.collection('indicators');
-    collection.find({'code':req.params.indicator}).toArray(function(err,docs){
+    collection.find({'id':req.params.indicator}).toArray(function(err,docs){
       assert.equal(null,err);
       if (docs.length == 1) {
         res.json(docs[0]);
@@ -236,7 +241,7 @@ app.get('/indicator', function(req, res) {
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
     var collection = db.collection('indicators');
-    collection.find({},{_id:0,code:1,name:1},{sort:'name'}).toArray(function(err,docs){
+    collection.find({},{_id:0,id:1,display:1},{sort:'id'}).toArray(function(err,docs){
       assert.equal(null,err);
       res.json(docs);
       db.close();
@@ -277,7 +282,7 @@ app.get('/search/:query',function(req,res) {
     assert.equal(null,err);
     var collection = db.collection('indicators');
     var re = new RegExp(".*" + req.params.query + ".*","gi");
-    collection.find({'name':re},{_id:0,code:1,name:1},{sort:'name'}).toArray(function(err,docs){
+    collection.find({'display.en':re},{_id:0,id:1,"display":1},{sort:'id'}).toArray(function(err,docs){
       assert.equal(null,err);
       res.json(docs);
       db.close();

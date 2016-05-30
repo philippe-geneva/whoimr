@@ -17,8 +17,8 @@ function populateIndicatorList ( id ) {
       $(target).append("<ul>");
       for (indicator in data) {
         $(target).append('<li><a href="/view/indicator/' + 
-                         data[indicator].code + '">' + 
-                         data[indicator].name + '</a></li>');
+                         data[indicator].id + '">' + 
+                         data[indicator].display.en + '</a></li>');
       }
       $(target).append("</ul>");
     },
@@ -50,13 +50,8 @@ function searchIndicatorList () {
       $(target).append('<ul>');
       for (indicator in data) {
         $(target).append('<li><a href="/view/indicator/' + 
-                         data[indicator].code + '">' + 
-                         data[indicator].name + '</a></li>');
-/*
-        $(target).append('<li><a href="#" onclick="populateIndicator(this,\'' + 
-                         data[indicator].code + '\')">' + 
-                         data[indicator].name + '</a></li>');
-*/
+                         data[indicator].id + '">' + 
+                         data[indicator].display.en + '</a></li>');
       }
       $(target).append("</ul>");
     },
