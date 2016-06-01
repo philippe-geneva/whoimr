@@ -1,134 +1,150 @@
 
 
 {
-  "property": "name",
+  "id": "name",
   "display": {
     "en": "Name",
-    "fr": "Nom de l'indicateur"
+    "fr": "Nom de l'indicateur",
+    "es": null
   }
 }
 
 {
-  "property": "type",
+  "id": "type",
   "codes": [13,14],
   "display": {
     "en": "Type",
-    "fr": "Type"
+    "fr": "Type",
+    "es": null
   }
 }
 
 {
-  "property": "abbreviated_name",
+  "id": "abbreviated_name",
   "display": {
     "en": "Abbreviated name",
-    "fr": "Nom abrégé"
+    "fr": "Nom abrégé",
+    "es": null
   }
 }
 
 {
-  "property": "domain",
+  "id": "domain",
   "codes": [1,2,3,4],
   "display": {
     "en": "Domain",
-    "fr": "Domaine"
+    "fr": "Domaine",
+    "es": null
   }
 }
 
 {
-  "property": "subdomain",
+  "id": "subdomain",
   "codes": [5,6,7,8,9,10,11,12],
   "display": {
     "en": "Sub-domain",
-    "fr": "Sous-domaine"
+    "fr": "Sous-domaine",
+    "es": null
   }
 }
 
 {
-  "property": "terms",
+  "id": "terms",
   "codes": [15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43],
   "display": {
     "en": "Associated terms",
-    "fr": "Termes associés"
+    "fr": "Termes associés",
+    "es": null
   }
 }
 
 {
-  "property": "definition",
+  "id": "definition",
   "display": {
     "en": "Definition",
-    "fr": "Définition"
+    "fr": "Définition",
+    "es": null
   }
 }
 
 {
-  "property": "numerator",
+  "id": "numerator",
   "display": {
     "en": "Numerator",
-    "fr": "Numérateur"
+    "fr": "Numérateur",
+    "es": null
   }
 }
 
 {
-  "property": "denominator",
+  "id": "denominator",
   "display": {
     "en": "Denominator",
-    "fr": "Dénominateur"
+    "fr": "Dénominateur",
+    "es": null
   }
 }
 
 {
-  "property": "disaggregation",
+  "id": "disaggregation",
   "display": {
     "en": "Disaggregation",
-    "fr": "Ventilation/dimension supplémentaire"
+    "fr": "Ventilation/dimension supplémentaire",
+    "es": null
   }
 }
 
 {
-  "property": "measurement_method",
+  "id": "measurement_method",
   "display": {
     "en": "Measurement method",
-    "fr": "Méthode de mesure"
+    "fr": "Méthode de mesure",
+    "es": null
   }
 }
 
 {
-  "property": "estimation_method",
+  "id": "estimation_method",
   "display": {
     "en": "Estimation method",
-    "fr": "Méthode d'estimation"
+    "fr": "Méthode d'estimation",
+    "es": null
   }
 }
 
 {
-  "property": "measurement_frequency",
+  "id": "measurement_frequency",
   "display": {
     "en": "Measurement frequency",
-    "fr": "Fréquence de mesure"
+    "fr": "Fréquence de mesure",
+    "es": null
   }
 }
 
 {
-  "property": "me_framework",
+  "id": "me_framework",
   "display": {
     "en": "M&E framework",
-    "fr": "Cadre de suivi et évaluation"
+    "fr": "Cadre de suivi et évaluation",
+    "es": null
   }
 }
 
 {
-  "property": "preferred_data_sources",
+  "id": "preferred_data_sources",
   "display": {
     "en": "Preferred data sources",
-    "fr": "Sources de données préférées"
+    "fr": "Sources de données préférées",
+    "es": null
   }
 }
 
 {
-  "property": "other_data_sources",
+  "id": "other_data_sources",
   "display": {
     "en": "Other data sources",
-    "fr": "Autres sources de données possibles"
+    "fr": "Autres sources de données possibles",
+    "es": null
   }
 }
 

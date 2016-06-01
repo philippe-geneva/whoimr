@@ -43,40 +43,108 @@ app.use('/public',express.static(__dirname + '/public'));
 
 
 /*
- * Views
+ * Retreive an indicator description for display
  */
 
-app.get('/view/indicator/:indicator',function(req, res) {
+app.get('/view/indicator/:indicator',function(req,res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
-    var collection = db.collection('indicators');
-    collection.find({'id':req.params.indicator}).toArray(function(err,docs){
+
+    // Find the requested indicator
+
+    db.collection('indicators').findOne({'id':req.params.indicator},function(err,doc) {
       assert.equal(null,err);
-      var indicator = { 
-        name: docs[0].display.en,
-        code: docs[0].id,
-        property: [],
-        note: []
-      };
-      for (var p in docs[0].property) {
-        indicator.property.push({
-          code: docs[0].property[p].property_id,
-          label: docs[0].property[p].property_id,
-          value: docs[0].property[p].display.en,
+
+      // make a list of the properties that it uses
+      
+      proplist = [];
+      for (var n in doc.property) {
+        proplist.push(doc.property[n].property_id);
+      }
+
+      // load the descriptions of the properties in the list so that we 
+      // can retreive correct display labels
+      
+      db.collection('properties').find({id:{$in:proplist}}).toArray(function(err,prop) {
+        assert.equal(null,err);
+
+        // Make a list of the concept codes that must be resolved for display.
+
+        conceptList = [];
+        for (var n in doc.property) {
+          if ('concept_id' in doc.property[n]) {
+            conceptList.push(doc.property[n].concept_id);
+          }
+        }
+
+        // Retrieve the concept descriptions and display labels
+       
+        db.collection('concepts').find({id:{$in:conceptList}}).toArray(function(err,concept) {
+
+          // Create an empty display version of the indicator
+          
+          var indicator = { 
+            name: doc.display.en,
+            code: doc.id,
+            property: [],
+            note: []
+          };
+
+          // Populate it with the correct display labels and values for 
+          // each property.
+  
+          for (var p in doc.property) {
+            var propLabel = doc.property[p].property_id;
+            for (var q = 0; q < prop.length; q++) {
+              if (prop[q].id == propLabel) {
+                propLabel = prop[q].display.fr;
+                break;
+              }
+            }
+
+            // Resolve the value for the for property.  If it is a coded
+            // value, extract the appropriate display string to pass to the 
+            // template.
+
+            var propValue = "";
+            var concept_id = null;
+            if ('concept_id' in doc.property[p]) {
+              propValue = doc.property[p].concept_id; 
+              for (var q = 0; q < concept.length; q++) {
+                if (concept[q].id == propValue) {
+                  propValue = concept[q].label.en;
+                  break;
+                }
+              }
+            } else {
+              propValue = doc.property[p].display.en;
+            }
+           
+            indicator.property.push({
+              code: doc.property[p].property_id,
+              concept_id: concept_id,
+              label: propLabel,
+              value: propValue
+            });
+          }
+  
+          // Add all the footnotes in the correct language.
+          
+          for (var n in doc.note) {
+            indicator.note.push(doc.note[n].display.en);
+          }
+  
+          // Render the indicator using the indicator template.
+  
+          res.render('indicator',{
+            "indicator": indicator,
+            "user": req.user
+          });
+          db.close();
         });
-      }
-      for (var n in docs[0].note) {
-        indicator.note.push(docs[0].note[n].display.en);
-      }
-      if (docs.length == 1) {
-        res.render('indicator',{
-          "indicator": indicator,
-          "user": req.user
-        });
-      }
-      db.close();
-    });
+      }); 
+    }); 
   });
 });
 
@@ -260,13 +328,9 @@ app.get("/properties",function(req,res) {
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
     var collection = db.collection('properties');
-    var props = {}
-    collection.find().toArray(function(err,docs) {
+    collection.find({},{_id:0,id:1,display:1}).toArray(function(err,docs) {
       assert.equal(null,err);
-      for (var d in docs) {
-        props[docs[d].property] = docs[d].display[req.session.language];
-      }
-      res.json(props);
+      res.json(docs);
       db.close();
     });
   });

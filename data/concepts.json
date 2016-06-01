@@ -1,5 +1,5 @@
 {
-  "id": 1,
+  "id": "1",
   "label": {
     "en": "Health status",
     "fr": "",
@@ -13,7 +13,7 @@
 }
 
 {
-  "id": 2,
+  "id": "2",
   "label": {
     "en": "Health systems",
     "fr": "",
@@ -27,7 +27,7 @@
 }
 
 {
-  "id": 3,
+  "id": "3",
   "label": {
     "en": "Risk factors",
     "fr": "",
@@ -41,7 +41,7 @@
 }
 
 {
-  "id": 4,
+  "id": "4",
   "label": {
     "en": "Service coverage",
     "fr": "",
@@ -55,7 +55,7 @@
 }
 
 {
-  "id": 5,
+  "id": "5",
   "label": {
     "en": "Environment",
     "fr": "",
@@ -69,7 +69,7 @@
 }
 
 {
-  "id": 6,
+  "id": "6",
   "label": {
     "en": "General",
     "fr": "",
@@ -83,7 +83,7 @@
 }
 
 {
-  "id": 7,
+  "id": "7",
   "label": {
     "en": "Health system strengthening (HSS)",
     "fr": "",
@@ -97,7 +97,7 @@
 }
 
 {
-  "id": 8,
+  "id": "8",
   "label": {
     "en": "Infectious disease",
     "fr": "",
@@ -111,7 +111,7 @@
 }
 
 {
-  "id": 9,
+  "id": "9",
   "label": {
     "en": "Injury and violence",
     "fr": "",
@@ -125,7 +125,7 @@
 }
 
 {
-  "id": 10,
+  "id": "10",
   "label": {
     "en": "NCDs",
     "fr": "",
@@ -139,7 +139,7 @@
 }
 
 {
-  "id": 11,
+  "id": "11",
   "label": {
     "en": "NCDs and nutrition",
     "fr": "",
@@ -153,7 +153,7 @@
 }
 
 {
-  "id": 12,
+  "id": "12",
   "label": {
     "en": "Reproductive, maternal, newborn, child and adolescent health",
     "fr": "",
@@ -167,7 +167,7 @@
 }
 
 {
-  "id": 13,
+  "id": "13",
   "label": {
     "en": "A",
     "fr": "",
@@ -181,7 +181,7 @@
 }
 
 {
-  "id": 14,
+  "id": "14",
   "label": {
     "en": "C",
     "fr": "",
@@ -195,7 +195,7 @@
 }
 
 {
-  "id": 15,
+  "id": "15",
   "label": {
     "en": "Access",
     "fr": "",
@@ -209,7 +209,7 @@
 }
 
 {
-  "id": 16,
+  "id": "16",
   "label": {
     "en": "Environmental risk factors",
     "fr": "",
@@ -223,7 +223,7 @@
 }
 
 {
-  "id": 17,
+  "id": "17",
   "label": {
     "en": "Fertility",
     "fr": "",
@@ -237,7 +237,7 @@
 }
 
 {
-  "id": 18,
+  "id": "18",
   "label": {
     "en": "Health financing",
     "fr": "",
@@ -251,7 +251,7 @@
 }
 
 {
-  "id": 19,
+  "id": "19",
   "label": {
     "en": "Health information",
     "fr": "",
@@ -265,7 +265,7 @@
 }
 
 {
-  "id": 20,
+  "id": "20",
   "label": {
     "en": "Health policy",
     "fr": "",
@@ -279,7 +279,7 @@
 }
 
 {
-  "id": 21,
+  "id": "21",
   "label": {
     "en": "Health security",
     "fr": "",
@@ -293,7 +293,7 @@
 }
 
 {
-  "id": 22,
+  "id": "22",
   "label": {
     "en": "Health workforce",
     "fr": "",
@@ -307,7 +307,7 @@
 }
 
 {
-  "id": 23,
+  "id": "23",
   "label": {
     "en": "HIV",
     "fr": "",
@@ -321,7 +321,7 @@
 }
 
 {
-  "id": 24,
+  "id": "24",
   "label": {
     "en": "HIV services",
     "fr": "",
@@ -335,7 +335,7 @@
 }
 
 {
-  "id": 25,
+  "id": "25",
   "label": {
     "en": "HIV/TB",
     "fr": "",
@@ -349,7 +349,7 @@
 }
 
 {
-  "id": 26,
+  "id": "26",
   "label": {
     "en": "Immunization",
     "fr": "",
@@ -363,7 +363,7 @@
 }
 
 {
-  "id": 27,
+  "id": "27",
   "label": {
     "en": "Infections",
     "fr": "",
@@ -377,7 +377,7 @@
 }
 
 {
-  "id": 28,
+  "id": "28",
   "label": {
     "en": "Injuries",
     "fr": "",
@@ -391,7 +391,7 @@
 }
 
 {
-  "id": 29,
+  "id": "29",
   "label": {
     "en": "Lifestyle",
     "fr": "",
@@ -405,7 +405,7 @@
 }
 
 {
-  "id": 30,
+  "id": "30",
   "label": {
     "en": "Malaria",
     "fr": "",
@@ -419,7 +419,7 @@
 }
 
 {
-  "id": 31,
+  "id": "31",
   "label": {
     "en": "Mental health",
     "fr": "",
@@ -433,7 +433,7 @@
 }
 
 {
-  "id": 32,
+  "id": "32",
   "label": {
     "en": "Morbidity",
     "fr": "",
@@ -447,7 +447,7 @@
 }
 
 {
-  "id": 33,
+  "id": "33",
   "label": {
     "en": "Mortality by age and sex",
     "fr": "",
@@ -461,7 +461,7 @@
 }
 
 {
-  "id": 34,
+  "id": "34",
   "label": {
     "en": "Mortality by cause",
     "fr": "",
@@ -475,7 +475,7 @@
 }
 
 {
-  "id": 35,
+  "id": "35",
   "label": {
     "en": "Neglected tropical diseases",
     "fr": "",
@@ -489,7 +489,7 @@
 }
 
 {
-  "id": 36,
+  "id": "36",
   "label": {
     "en": "Noncommunicable diseases",
     "fr": "",
@@ -503,7 +503,7 @@
 }
 
 {
-  "id": 37,
+  "id": "37",
   "label": {
     "en": "Nutrition",
     "fr": "",
@@ -517,7 +517,7 @@
 }
 
 {
-  "id": 38,
+  "id": "38",
   "label": {
     "en": "Quality and safety of care",
     "fr": "",
@@ -531,7 +531,7 @@
 }
 
 {
-  "id": 39,
+  "id": "39",
   "label": {
     "en": "Reproductive, maternal, newborn, child and adolescent",
     "fr": "",
@@ -545,7 +545,7 @@
 }
 
 {
-  "id": 40,
+  "id": "40",
   "label": {
     "en": "Risk factors infections",
     "fr": "",
@@ -559,7 +559,7 @@
 }
 
 {
-  "id": 41,
+  "id": "41",
   "label": {
     "en": "Risk factors injuries",
     "fr": "",
@@ -573,7 +573,7 @@
 }
 
 {
-  "id": 42,
+  "id": "42",
   "label": {
     "en": "Screening and preventive care",
     "fr": "",
@@ -587,7 +587,7 @@
 }
 
 {
-  "id": 43,
+  "id": "43",
   "label": {
     "en": "Tuberculosis",
     "fr": "",
