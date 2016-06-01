@@ -58,7 +58,9 @@ app.get('/view/concept/:concept',function(req,res) {
       // Find the indicators that use this concept.  We're only interested in the
       // name and id of the indicators so that we can make navigation links to them
       
-      db.collection('indicators').find({"property.concept_id":req.params.concept},{id:1,display:1}).toArray(function(err,indicator) {
+      db.collection('indicators').
+         find({"property.concept_id":req.params.concept},{id:1,display:1}).
+         toArray(function(err,indicator) {
  
         var displayConcept = {
                                name: concept.label.en,
@@ -155,6 +157,7 @@ app.get('/view/indicator/:indicator',function(req,res) {
             var concept_id = null;
             if ('concept_id' in doc.property[p]) {
               propValue = doc.property[p].concept_id; 
+              concept_id = propValue;
               for (var q = 0; q < concept.length; q++) {
                 if (concept[q].id == propValue) {
                   propValue = concept[q].label.en;

@@ -11,7 +11,10 @@
     {{#value}}
     <tr>
       <th>{{label}}</th>
-      <td>{{value}}</td>
+      <td>
+        {{#concept_id}}<a href="/view/concept/{{concept_id}}">{{value}}</a>{{/concept_id}}
+        {{^concept_id}}{{value}}{{/concept_id}}
+      </td>
     </tr>
     {{/value}}
     {{/indicator.property}}
