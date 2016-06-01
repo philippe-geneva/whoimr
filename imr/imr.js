@@ -40,7 +40,51 @@ app.use(passport.session());
 
 app.use('/public',express.static(__dirname + '/public'));
 
+/*
+ * Retreive a concept description for display
+ */
 
+
+app.get('/view/concept/:concept',function(req,res) {
+  logRequest(req);
+  MongoClient.connect(url,function(err,db) {
+    assert.equal(null,err);
+
+    // Retreive the concept description.
+
+    db.collection('concepts').findOne({'id':req.params.concept},function(err,concept) {
+      assert.equal(null,err);
+
+      // Find the indicators that use this concept.  We're only interested in the
+      // name and id of the indicators so that we can make navigation links to them
+      
+      db.collection('indicators').find({"property.concept_id":req.params.concept},{id:1,display:1}).toArray(function(err,indicator) {
+ 
+        var displayConcept = {
+                               name: concept.label.en,
+                               code: concept.id,
+                               definition: concept.definition.en,
+                               indicator: []
+                             };
+        for (var n in indicator) {
+          displayConcept.indicator.push({ 
+            code: indicator[n].id,
+            name: indicator[n].display.en
+          });
+        }
+ 
+        // Render the display concept in a template
+
+        res.render('concept',{
+          "concept": displayConcept,
+          "user": req.user
+        });
+
+        db.close();
+      });
+    });
+  });
+});
 
 /*
  * Retreive an indicator description for display

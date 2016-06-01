@@ -1,0 +1,32 @@
+<!-- BEGIN (Common indicator component) -->
+<div id="concept">
+  <h1>{{concept.name}} ({{concept.code}})</h1> 
+<!-- for demo purposes, the edit button is shown when the user is logged in but does nothing -->
+
+  {{#user.username}}
+  <input type="button" value="Edit"></input>
+  {{/user.username}}
+  
+  <table>
+    {{#concept.definition}}
+    <tr>
+      <th>Definition</th>
+      <td>{{concept.definition}}</td>
+    </tr>
+    {{/concept.definition}}
+    <tr>
+      <th>Indicators</th>
+      <td>
+        <ul>
+          {{#concept.indicator}}
+            <li>
+              <a href="/view/indicator/{{code}}">{{name}}</a>
+            </li>
+          {{/concept.indicator}}
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- END (Common indicator component) -->
+
