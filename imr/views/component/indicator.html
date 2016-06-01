@@ -7,10 +7,12 @@
   <input type="button" value="Edit"></input>
   {{/user.username}}
   <table>
-  {{#indicator.property}}
+    {{#indicator.property}}
     {{#value}}
     <tr>
-      <th>{{label}}</th>
+      <th>
+        <a href="/view/property/{{code}}">{{label}}</a>
+     </th>
       <td>
         {{#concept_id}}<a href="/view/concept/{{concept_id}}">{{value}}</a>{{/concept_id}}
         {{^concept_id}}{{value}}{{/concept_id}}

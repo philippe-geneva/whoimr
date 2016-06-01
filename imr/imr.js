@@ -40,10 +40,42 @@ app.use(passport.session());
 
 app.use('/public',express.static(__dirname + '/public'));
 
+
+app.get('/view/property/:property',function(req,res) {
+  logRequest(req);
+  MongoClient.connect(url,function(err,db) {
+    assert.equal(null,err);
+    db.collection('properties')
+      .findOne({id:req.params.property},function(err,property) {
+      assert.equal(null,err);
+      db.collection('concepts')
+        .find({id:{$in:property.codes}},{id:1,label:1}).toArray(function(err,concept) {
+        var displayProperty = {
+                                name: property.display.en,
+                                code: property.id,
+                                concept: []
+                              };
+        for (var n in concept) {
+console.log(concept[n].label.en);
+          displayProperty.concept.push({
+            code: concept[n].id,
+            name: concept[n].label.en 
+          });
+        }  
+        res.render('property',{
+          "property": displayProperty,
+          "user": req.user
+        });
+
+        db.close();
+      });
+    });
+  });
+});
+
 /*
  * Retreive a concept description for display
  */
-
 
 app.get('/view/concept/:concept',function(req,res) {
   logRequest(req);
@@ -52,15 +84,16 @@ app.get('/view/concept/:concept',function(req,res) {
 
     // Retreive the concept description.
 
-    db.collection('concepts').findOne({'id':req.params.concept},function(err,concept) {
+    db.collection('concepts')
+      .findOne({'id':req.params.concept},function(err,concept) {
       assert.equal(null,err);
 
       // Find the indicators that use this concept.  We're only interested in the
       // name and id of the indicators so that we can make navigation links to them
       
-      db.collection('indicators').
-         find({"property.concept_id":req.params.concept},{id:1,display:1}).
-         toArray(function(err,indicator) {
+      db.collection('indicators')
+        .find({"property.concept_id":req.params.concept},{id:1,display:1})
+        .toArray(function(err,indicator) {
  
         var displayConcept = {
                                name: concept.label.en,
