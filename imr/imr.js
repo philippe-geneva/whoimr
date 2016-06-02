@@ -12,6 +12,8 @@ var url = 'mongodb://localhost:27017/imr';
 var app = express();
 
 
+var __application_root = "/gho/imr";
+
 /*
  *  The body parser is nescessary for passport to function correctly
  */
@@ -38,37 +40,74 @@ app.use(passport.session());
  * Publicly available files that store the IMR browser client
  */
 
-app.use('/public',express.static(__dirname + '/public'));
+app.use(__application_root + '/public',express.static(__dirname + '/public'));
 
 
-app.get('/view/property/:property',function(req,res) {
+/*
+ * When nothing is provided on the path, show the first indicator
+ */
+
+app.get(__application_root + "/",function(req,res) {
+  res.redirect(__application_root + "/view/indicator/CHI_1");
+});
+
+
+/*
+ *
+ */
+
+app.get(__application_root + '/view/property/:property',function(req,res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
+
+    // Retreive the property description.
+
     db.collection('properties')
       .findOne({id:req.params.property},function(err,property) {
       assert.equal(null,err);
-      db.collection('concepts')
-        .find({id:{$in:property.codes}},{id:1,label:1}).toArray(function(err,concept) {
-        var displayProperty = {
-                                name: property.display.en,
-                                code: property.id,
-                                concept: []
-                              };
-        for (var n in concept) {
-console.log(concept[n].label.en);
-          displayProperty.concept.push({
-            code: concept[n].id,
-            name: concept[n].label.en 
-          });
-        }  
-        res.render('property',{
-          "property": displayProperty,
-          "user": req.user
-        });
 
-        db.close();
-      });
+      // If we didnt find the property we send back an HTTP 404 error and
+      // abort.
+
+      if (property == null) {
+        res.status(404).send(req.params.property + " not found.").end();
+        db.close();  
+      } else {
+
+        // If the property takes a coded value, find the conccepts for these codes
+        // (This part can return null if the concepts have not been defined/identified
+        // yet or if the property is a text field)
+        //
+        db.collection('concepts')
+          .find({id:{$in:property.codes}},{id:1,label:1}).toArray(function(err,concept) {
+
+          // Build a display version of the property along with the
+          // concepts that it can hold if it is a coded property.
+
+          var displayProperty = {
+                                  name: property.display.en,
+                                  code: property.id,
+                                  concept: []
+                                };
+          for (var n in concept) {
+            displayProperty.concept.push({
+              code: concept[n].id,
+              name: concept[n].label.en 
+            });
+          }  
+
+          // Render it via a template.
+
+          res.render('property',{
+            "property": displayProperty,
+            "approot": __application_root,
+            "user": req.user
+          });
+  
+          db.close();
+        });
+      }
     });
   });
 });
@@ -77,7 +116,7 @@ console.log(concept[n].label.en);
  * Retreive a concept description for display
  */
 
-app.get('/view/concept/:concept',function(req,res) {
+app.get(__application_root + '/view/concept/:concept',function(req,res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
@@ -88,35 +127,44 @@ app.get('/view/concept/:concept',function(req,res) {
       .findOne({'id':req.params.concept},function(err,concept) {
       assert.equal(null,err);
 
-      // Find the indicators that use this concept.  We're only interested in the
-      // name and id of the indicators so that we can make navigation links to them
-      
-      db.collection('indicators')
-        .find({"property.concept_id":req.params.concept},{id:1,display:1})
-        .toArray(function(err,indicator) {
- 
-        var displayConcept = {
-                               name: concept.label.en,
-                               code: concept.id,
-                               definition: concept.definition.en,
-                               indicator: []
-                             };
-        for (var n in indicator) {
-          displayConcept.indicator.push({ 
-            code: indicator[n].id,
-            name: indicator[n].display.en
+      // If we didnt find the concept, send back an HTTP 404 error and abort
+
+      if (concept == null) {
+        res.status(404).send(req.params.property + " not found.").end();
+        db.close();  
+      } else {
+
+        // Find the indicators that use this concept.  We're only interested in the
+        // name and id of the indicators so that we can make navigation links to them
+        
+        db.collection('indicators')
+          .find({"property.concept_id":req.params.concept},{id:1,display:1})
+          .toArray(function(err,indicator) {
+   
+          var displayConcept = {
+                                 name: concept.label.en,
+                                 code: concept.id,
+                                 definition: concept.definition.en,
+                                 indicator: []
+                               };
+          for (var n in indicator) {
+            displayConcept.indicator.push({ 
+              code: indicator[n].id,
+              name: indicator[n].display.en
+            });
+          }
+   
+          // Render the display concept in a template
+  
+          res.render('concept',{
+            "concept": displayConcept,
+            "approot": __application_root,
+            "user": req.user
           });
-        }
- 
-        // Render the display concept in a template
 
-        res.render('concept',{
-          "concept": displayConcept,
-          "user": req.user
+          db.close();
         });
-
-        db.close();
-      });
+      }
     });
   });
 });
@@ -125,105 +173,116 @@ app.get('/view/concept/:concept',function(req,res) {
  * Retreive an indicator description for display
  */
 
-app.get('/view/indicator/:indicator',function(req,res) {
+app.get(__application_root + '/view/indicator/:indicator',function(req,res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
 
     // Find the requested indicator
 
-    db.collection('indicators').findOne({'id':req.params.indicator},function(err,doc) {
+    db.collection('indicators')
+      .findOne({'id':req.params.indicator},function(err,doc) {
       assert.equal(null,err);
-
-      // make a list of the properties that it uses
+      if (doc == null) {
+        res.status(404).send(req.params.indicator + " not found.").end();
+        db.close();  
+      } else {
+      //
+        // make a list of the properties that it uses
       
-      proplist = [];
-      for (var n in doc.property) {
-        proplist.push(doc.property[n].property_id);
-      }
-
-      // load the descriptions of the properties in the list so that we 
-      // can retreive correct display labels
-      
-      db.collection('properties').find({id:{$in:proplist}}).toArray(function(err,prop) {
-        assert.equal(null,err);
-
-        // Make a list of the concept codes that must be resolved for display.
-
-        conceptList = [];
+        proplist = [];
         for (var n in doc.property) {
-          if ('concept_id' in doc.property[n]) {
-            conceptList.push(doc.property[n].concept_id);
-          }
+          proplist.push(doc.property[n].property_id);
         }
-
-        // Retrieve the concept descriptions and display labels
-       
-        db.collection('concepts').find({id:{$in:conceptList}}).toArray(function(err,concept) {
-
-          // Create an empty display version of the indicator
-          
-          var indicator = { 
-            name: doc.display.en,
-            code: doc.id,
-            property: [],
-            note: []
-          };
-
-          // Populate it with the correct display labels and values for 
-          // each property.
   
-          for (var p in doc.property) {
-            var propLabel = doc.property[p].property_id;
-            for (var q = 0; q < prop.length; q++) {
-              if (prop[q].id == propLabel) {
-                propLabel = prop[q].display.fr;
-                break;
-              }
+        // load the descriptions of the properties in the list so that we 
+        // can retreive correct display labels
+        
+        db.collection('properties')
+          .find({id:{$in:proplist}})
+          .toArray(function(err,prop) {
+          assert.equal(null,err);
+  
+          // Make a list of the concept codes that must be resolved for display.
+  
+          conceptList = [];
+          for (var n in doc.property) {
+            if ('concept_id' in doc.property[n]) {
+              conceptList.push(doc.property[n].concept_id);
             }
-
-            // Resolve the value for the for property.  If it is a coded
-            // value, extract the appropriate display string to pass to the 
-            // template.
-
-            var propValue = "";
-            var concept_id = null;
-            if ('concept_id' in doc.property[p]) {
-              propValue = doc.property[p].concept_id; 
-              concept_id = propValue;
-              for (var q = 0; q < concept.length; q++) {
-                if (concept[q].id == propValue) {
-                  propValue = concept[q].label.en;
+          }
+  
+          // Retrieve the concept descriptions and display labels
+         
+          db.collection('concepts')
+            .find({id:{$in:conceptList}})
+            .toArray(function(err,concept) {
+  
+            // Create an empty display version of the indicator
+            
+            var indicator = { 
+              name: doc.display.en,
+              code: doc.id,
+              property: [],
+              note: []
+            };
+  
+            // Populate it with the correct display labels and values for 
+            // each property.
+  
+            for (var p in doc.property) {
+              var propLabel = doc.property[p].property_id;
+              for (var q = 0; q < prop.length; q++) {
+                if (prop[q].id == propLabel) {
+                  propLabel = prop[q].display.fr;
                   break;
                 }
               }
-            } else {
-              propValue = doc.property[p].display.en;
+  
+              // Resolve the value for the for property.  If it is a coded
+              // value, extract the appropriate display string to pass to the 
+              // template.
+  
+              var propValue = "";
+              var concept_id = null;
+              if ('concept_id' in doc.property[p]) {
+                propValue = doc.property[p].concept_id; 
+                concept_id = propValue;
+                for (var q = 0; q < concept.length; q++) {
+                  if (concept[q].id == propValue) {
+                    propValue = concept[q].label.en;
+                    break;
+                  }
+                }
+              } else {
+                propValue = doc.property[p].display.en;
+              }
+             
+              indicator.property.push({
+                code: doc.property[p].property_id,
+                concept_id: concept_id,
+                label: propLabel,
+                value: propValue
+              });
             }
-           
-            indicator.property.push({
-              code: doc.property[p].property_id,
-              concept_id: concept_id,
-              label: propLabel,
-              value: propValue
+    
+            // Add all the footnotes in the correct language.
+            
+            for (var n in doc.note) {
+              indicator.note.push(doc.note[n].display.en);
+            }
+    
+            // Render the indicator using the indicator template.
+    
+            res.render('indicator',{
+              "indicator": indicator,
+              "approot": __application_root,
+              "user": req.user
             });
-          }
-  
-          // Add all the footnotes in the correct language.
-          
-          for (var n in doc.note) {
-            indicator.note.push(doc.note[n].display.en);
-          }
-  
-          // Render the indicator using the indicator template.
-  
-          res.render('indicator',{
-            "indicator": indicator,
-            "user": req.user
+            db.close();
           });
-          db.close();
-        });
-      }); 
+        }); 
+      }
     }); 
   });
 });
@@ -233,9 +292,10 @@ app.get('/view/indicator/:indicator',function(req,res) {
  *
  */
 
-app.get('/view/:view',function(req,res) {
+app.get(__application_root + '/view/:view',function(req,res) {
   res.render(req.params.view,{
       "title": 'Page title',
+      "approot": __application_root,
       "user": req.user
   });
 });
@@ -286,17 +346,17 @@ passport.deserializeUser(function(user,done) {
  *
  */
 
-app.post('/login',passport.authenticate(
+app.post(__application_root + '/login',passport.authenticate(
   'local',
   { 
-    successRedirect:'/view/indicator/CHI_1',
-    failureRedirect:'/view/indicator/CHI_1'
+    successRedirect:__application_root + '/view/indicator/CHI_1',
+    failureRedirect:__application_root + '/view/indicator/CHI_1'
   })
 );
 
-app.get('/logout',function(req,res) {
+app.get(__application_root + '/logout',function(req,res) {
   req.logout();
-  res.redirect('/view/indicator/CHI_1');
+  res.redirect(__application_root + '/view/indicator/CHI_1');
 });
 
 
@@ -355,7 +415,7 @@ function logRequest(req) {
  * Set the language
  */
 
-app.get('/language/:language',function(req, res) {
+app.get(__application_root + '/language/:language',function(req, res) {
   logRequest(req);
   req.session.language = req.params.language
   res.end('Language set to ' + req.session.language);
@@ -365,7 +425,7 @@ app.get('/language/:language',function(req, res) {
  *  Get a complete indicator description
  */
 
-app.get('/indicator/:indicator',function(req, res) {
+app.get(__application_root + '/indicator/:indicator',function(req, res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
@@ -384,7 +444,7 @@ app.get('/indicator/:indicator',function(req, res) {
  *  Get the list of indicators
  */
 
-app.get('/indicator', function(req, res) {
+app.get(__application_root + '/indicator', function(req, res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
@@ -403,7 +463,7 @@ app.get('/indicator', function(req, res) {
  * object.
  */
 
-app.get("/properties",function(req,res) {
+app.get(__application_root + "/properties",function(req,res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
@@ -420,7 +480,7 @@ app.get("/properties",function(req,res) {
  * Search the indicator database
  */
 
-app.get('/search/:query',function(req,res) {
+app.get(__application_root + '/search/:query',function(req,res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);

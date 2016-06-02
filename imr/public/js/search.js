@@ -10,13 +10,13 @@
 function populateIndicatorList ( id ) {
   var target = '#' + id;
   var xhr = $.ajax({
-    url: "/indicator",
+    url: approot + "/indicator",
     dataType: "json",
     success: function(data) {
       var indicator_list = $(target).empty();
       $(target).append("<ul>");
       for (indicator in data) {
-        $(target).append('<li><a href="/view/indicator/' + 
+        $(target).append('<li><a href="' + approot + '/view/indicator/' + 
                          data[indicator].id + '">' + 
                          data[indicator].display.en + '</a></li>');
       }
@@ -38,9 +38,9 @@ function searchIndicatorList () {
   var query = $('#search_query').val();
   var URL = null;
   if ((query != null) && (query != "")) {
-    URL = "/search/" + $('#search_query').val();
+    URL = approot + "/search/" + $('#search_query').val();
   } else { 
-    URL = "/indicator";
+    URL = approot + "/indicator";
   }
   var xhr = $.ajax({
     url: URL,
@@ -49,7 +49,7 @@ function searchIndicatorList () {
       $(target).empty();
       $(target).append('<ul>');
       for (indicator in data) {
-        $(target).append('<li><a href="/view/indicator/' + 
+        $(target).append('<li><a href="' + approot + '/view/indicator/' + 
                          data[indicator].id + '">' + 
                          data[indicator].display.en + '</a></li>');
       }

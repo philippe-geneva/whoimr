@@ -1,6 +1,7 @@
 <!-- BEGIN (Common indicator component) -->
 <div id="indicator">
-  <h1>{{indicator.name}} ({{indicator.code}})</h1> 
+  <h1>{{indicator.name}}</h1> 
+  <i>Indicator ID: "{{indicator.code}}"</i>
 <!-- for demo purposes, the edit button is shown when the user is logged in but does nothing -->
 
   {{#user.username}}
@@ -11,10 +12,10 @@
     {{#value}}
     <tr>
       <th>
-        <a href="/view/property/{{code}}">{{label}}</a>
+        <a href="{{approot}}/view/property/{{code}}">{{label}}</a>
      </th>
       <td>
-        {{#concept_id}}<a href="/view/concept/{{concept_id}}">{{value}}</a>{{/concept_id}}
+        {{#concept_id}}<a href="{{approot}}/view/concept/{{concept_id}}">{{value}}</a>{{/concept_id}}
         {{^concept_id}}{{value}}{{/concept_id}}
       </td>
     </tr>

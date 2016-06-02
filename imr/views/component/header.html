@@ -1,12 +1,13 @@
 <!-- BEGIN (Common header component) -->
 <div id="header">
+   <img src="{{approot}}/public/img/who-logo-en.jpg"></img>
    <span>
      {{#user.username}}
      Logged in as: <b>{{user.username}}</b>
-     [ <a href="/logout">Logout</a> ]
+     [ <a href="{{approot}}/logout">Logout</a> ]
      {{/user.username}}
      {{^user.username}}
-     [ <a href="/view/login.html">Login</a> ]
+     [ <a href="{{approot}}/view/login.html">Login</a> ]
      {{/user.username}}
    </span>
 </div>
