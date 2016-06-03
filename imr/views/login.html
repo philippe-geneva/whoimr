@@ -5,13 +5,13 @@
   <body>
     {{> component/header}}
     <div id="login">
-      <form action="{{approot}}/login" method="post">
+      <form action="{{approot}}/auth/login" method="post">
         <div>
-          <label>Username:</label>
+          <label>{{#__}}strUsername{{/__}}:</label>
           <input type="text" name="username"/>
         </div>
         <div>
-          <label>Password:</label>
+          <label>{{#__}}strPassword{{/__}}:</label>
           <input type="password" name="password"/>
         </div>
         <div>

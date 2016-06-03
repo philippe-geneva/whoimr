@@ -4,15 +4,24 @@ var session = require('express-session');
 var MongoClient = require('mongodb').MongoClient;
 var Mustache = require('mustache-express');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 var assert = require('assert');
 var ObjectID = require('mongodb').ObjectId;
 var passport = require('passport');
+var i18n = require('i18n');
 var LocalStrategy = require('passport-local').Strategy;
 var url = 'mongodb://localhost:27017/imr';
 var app = express();
 
 
 var __application_root = "/gho/imr";
+
+i18n.configure({
+//  locales: ['en','fr','es'],
+//  defaultLocale: 'fr',
+  cookie: "whoimr",
+  directory: __dirname + '/locales'
+});
 
 /*
  *  The body parser is nescessary for passport to function correctly
@@ -34,8 +43,25 @@ app.use('/',session({
 app.engine('html',Mustache());
 app.set('view engine','html');
 app.set('views',__dirname + "/views");
+app.use(cookieParser());
+app.use(i18n.init);
 app.use(passport.initialize());
 app.use(passport.session());
+
+
+/*
+ * Helper function for mustache
+ */
+
+app.use(function(req,res,next) {
+  res.locals.__ = function(){
+    return function(text,render) {
+      return i18n.__.apply(req,arguments);
+    };
+  };
+  next();
+});
+
 /*
  * Publicly available files that store the IMR browser client
  */
@@ -48,16 +74,23 @@ app.use(__application_root + '/public',express.static(__dirname + '/public'));
  */
 
 app.get(__application_root + "/",function(req,res) {
-  res.redirect(__application_root + "/view/indicator/CHI_1");
+  res.redirect(__application_root + "/en");
 });
+
+app.get(__application_root + "/:lang",function(req,res) {
+  req.setLocale(req.params.lang);
+  res.redirect(__application_root + "/view/indicator/" + req.getLocale() + "/CHI_1");
+});
+
 
 
 /*
  *
  */
 
-app.get(__application_root + '/view/property/:property',function(req,res) {
+app.get(__application_root + '/view/property/:lang/:property',function(req,res) {
   logRequest(req);
+  req.setLocale(req.params.lang);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
 
@@ -86,14 +119,16 @@ app.get(__application_root + '/view/property/:property',function(req,res) {
           // concepts that it can hold if it is a coded property.
 
           var displayProperty = {
-                                  name: property.display.en,
+                                  name: (property.display[req.getLocale()] == null) ?
+                                        property.display.en : property.display[req.getLocale()],
                                   code: property.id,
                                   concept: []
                                 };
           for (var n in concept) {
             displayProperty.concept.push({
               code: concept[n].id,
-              name: concept[n].label.en 
+              name: (concept[n].label[req.getLocale()] == null) ?
+                    concept[n].label.en : concept[n].label[req.getLocale()]
             });
           }  
 
@@ -102,6 +137,7 @@ app.get(__application_root + '/view/property/:property',function(req,res) {
           res.render('property',{
             "property": displayProperty,
             "approot": __application_root,
+            "locale": req.getLocale(),
             "user": req.user
           });
   
@@ -116,8 +152,9 @@ app.get(__application_root + '/view/property/:property',function(req,res) {
  * Retreive a concept description for display
  */
 
-app.get(__application_root + '/view/concept/:concept',function(req,res) {
+app.get(__application_root + '/view/concept/:lang/:concept',function(req,res) {
   logRequest(req);
+  req.setLocale(req.params.lang);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
 
@@ -142,15 +179,18 @@ app.get(__application_root + '/view/concept/:concept',function(req,res) {
           .toArray(function(err,indicator) {
    
           var displayConcept = {
-                                 name: concept.label.en,
+                                 name: (concept.label[req.getLocale()] == null) ?
+                                       concept.label.en : concept.label[req.getLocale()],
                                  code: concept.id,
-                                 definition: concept.definition.en,
+                                 definition: (concept.definition[req.getLocale()] == null) ?
+                                             concept.definition.en : concept.definition[req.getLocale()],
                                  indicator: []
                                };
           for (var n in indicator) {
             displayConcept.indicator.push({ 
               code: indicator[n].id,
-              name: indicator[n].display.en
+              name: (indicator[n].display[req.getLocale()] == null) ?
+                    indicator[n].display.en : indicator[n].display[req.getLocale()]
             });
           }
    
@@ -159,6 +199,7 @@ app.get(__application_root + '/view/concept/:concept',function(req,res) {
           res.render('concept',{
             "concept": displayConcept,
             "approot": __application_root,
+            "locale": req.getLocale(),
             "user": req.user
           });
 
@@ -173,8 +214,9 @@ app.get(__application_root + '/view/concept/:concept',function(req,res) {
  * Retreive an indicator description for display
  */
 
-app.get(__application_root + '/view/indicator/:indicator',function(req,res) {
+app.get(__application_root + '/view/indicator/:lang/:indicator',function(req,res) {
   logRequest(req);
+  req.setLocale(req.params.lang);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
 
@@ -219,9 +261,10 @@ app.get(__application_root + '/view/indicator/:indicator',function(req,res) {
             .toArray(function(err,concept) {
   
             // Create an empty display version of the indicator
-            
+
             var indicator = { 
-              name: doc.display.en,
+              name: (doc.display[req.getLocale()] == null) ? 
+                    doc.display.en : doc.display[req.getLocale()], 
               code: doc.id,
               property: [],
               note: []
@@ -234,7 +277,8 @@ app.get(__application_root + '/view/indicator/:indicator',function(req,res) {
               var propLabel = doc.property[p].property_id;
               for (var q = 0; q < prop.length; q++) {
                 if (prop[q].id == propLabel) {
-                  propLabel = prop[q].display.fr;
+                  propLabel = (prop[q].display[req.getLocale()] == null) ?
+                              prop[q].display.en : prop[q].display[req.getLocale()];
                   break;
                 }
               }
@@ -250,12 +294,14 @@ app.get(__application_root + '/view/indicator/:indicator',function(req,res) {
                 concept_id = propValue;
                 for (var q = 0; q < concept.length; q++) {
                   if (concept[q].id == propValue) {
-                    propValue = concept[q].label.en;
+                    propValue = (concept[q].label[req.getLocale()] == null) ?
+                                concept[q].label.en : concept[q].label[req.getLocale()];
                     break;
                   }
                 }
               } else {
-                propValue = doc.property[p].display.en;
+                propValue = (doc.property[p].display[req.getLocale()] == null) ?
+                            doc.property[p].display.en : doc.property[p].display[req.getLocale()];
               }
              
               indicator.property.push({
@@ -269,14 +315,16 @@ app.get(__application_root + '/view/indicator/:indicator',function(req,res) {
             // Add all the footnotes in the correct language.
             
             for (var n in doc.note) {
-              indicator.note.push(doc.note[n].display.en);
+              var noteValue = (doc.note[n].display[req.getLocale()] == null) ?
+                              doc.note[n].display.en : doc.note[n].display[req.getLocale()];
+              indicator.note.push(noteValue);
             }
     
             // Render the indicator using the indicator template.
-    
             res.render('indicator',{
               "indicator": indicator,
               "approot": __application_root,
+              "locale": req.getLocale(),
               "user": req.user
             });
             db.close();
@@ -292,10 +340,12 @@ app.get(__application_root + '/view/indicator/:indicator',function(req,res) {
  *
  */
 
-app.get(__application_root + '/view/:view',function(req,res) {
+app.get(__application_root + '/view/:view/:lang',function(req,res) {
+  req.setLocale(req.params.lang);
   res.render(req.params.view,{
       "title": 'Page title',
       "approot": __application_root,
+      "locale": req.getLocale(),
       "user": req.user
   });
 });
@@ -346,17 +396,17 @@ passport.deserializeUser(function(user,done) {
  *
  */
 
-app.post(__application_root + '/login',passport.authenticate(
+app.post(__application_root + '/auth/login',passport.authenticate(
   'local',
   { 
-    successRedirect:__application_root + '/view/indicator/CHI_1',
-    failureRedirect:__application_root + '/view/indicator/CHI_1'
+    successRedirect:__application_root,
+    failureRedirect:__application_root
   })
 );
 
-app.get(__application_root + '/logout',function(req,res) {
+app.get(__application_root + '/auth/logout',function(req,res) {
   req.logout();
-  res.redirect(__application_root + '/view/indicator/CHI_1');
+  res.redirect(__application_root);
 });
 
 
@@ -383,7 +433,7 @@ process.argv.forEach(function(val,index,array) {
  * default values:
  * -Set language to English (en)
  */
-
+/*
 app.use('/',function(req,res,next){
 console.log("Looking at session");
   if (!req.session.language) {
@@ -391,6 +441,7 @@ console.log("Looking at session");
   }
   next(); 
 });
+*/
 
 /*
  *
@@ -415,17 +466,18 @@ function logRequest(req) {
  * Set the language
  */
 
+/*
 app.get(__application_root + '/language/:language',function(req, res) {
   logRequest(req);
   req.session.language = req.params.language
   res.end('Language set to ' + req.session.language);
 });
-
+*/
 /*
  *  Get a complete indicator description
  */
 
-app.get(__application_root + '/indicator/:indicator',function(req, res) {
+app.get(__application_root + '/get/indicator/:indicator',function(req, res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
@@ -444,7 +496,7 @@ app.get(__application_root + '/indicator/:indicator',function(req, res) {
  *  Get the list of indicators
  */
 
-app.get(__application_root + '/indicator', function(req, res) {
+app.get(__application_root + '/get/indicators', function(req, res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
@@ -463,7 +515,7 @@ app.get(__application_root + '/indicator', function(req, res) {
  * object.
  */
 
-app.get(__application_root + "/properties",function(req,res) {
+app.get(__application_root + "/get/properties",function(req,res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);

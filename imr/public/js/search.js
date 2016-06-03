@@ -10,13 +10,13 @@
 function populateIndicatorList ( id ) {
   var target = '#' + id;
   var xhr = $.ajax({
-    url: approot + "/indicator",
+    url: approot + "/get/indicators",
     dataType: "json",
     success: function(data) {
       var indicator_list = $(target).empty();
       $(target).append("<ul>");
       for (indicator in data) {
-        $(target).append('<li><a href="' + approot + '/view/indicator/' + 
+        $(target).append('<li><a href="' + approot + '/view/indicator/' + locale + '/' + 
                          data[indicator].id + '">' + 
                          data[indicator].display.en + '</a></li>');
       }
@@ -49,7 +49,7 @@ function searchIndicatorList () {
       $(target).empty();
       $(target).append('<ul>');
       for (indicator in data) {
-        $(target).append('<li><a href="' + approot + '/view/indicator/' + 
+        $(target).append('<li><a href="' + approot + '/view/indicator/' + locale + '/' + 
                          data[indicator].id + '">' + 
                          data[indicator].display.en + '</a></li>');
       }

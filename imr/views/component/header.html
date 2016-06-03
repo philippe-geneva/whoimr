@@ -1,18 +1,24 @@
 <!-- BEGIN (Common header component) -->
 <div id="header">
    <img src="{{approot}}/public/img/who-logo-en.jpg"></img>
-   <span>
+   <span class="locale">
+     [ 
+       <a href="{{approot}}/en">EN</a> |
+       <a href="{{approot}}/fr">FR</a> |
+       <a href="{{approot}}/es">ES</a> 
+     ]
+   </span>
+   <span class="authenticate">
      {{#user.username}}
-     Logged in as: <b>{{user.username}}</b>
-     [ <a href="{{approot}}/logout">Logout</a> ]
+     {{#__}}strLoggedInAs{{/__}}: <b>{{user.username}}</b>
+     [ <a href="{{approot}}/auth/logout">{{#__}}strLogout{{/__}}</a> ]
      {{/user.username}}
      {{^user.username}}
-     [ <a href="{{approot}}/view/login.html">Login</a> ]
+     [ <a href="{{approot}}/view/login/{{locale}}">{{#__}}strLogin{{/__}}</a> ]
      {{/user.username}}
    </span>
 </div>
 <div id="title">
-  <h1>Indicator Metadata Registry</h1>
+  <h1>{{#__}}strAppName{{/__}}</h1>
 </div>
-
 <!-- END (Common header component) -->

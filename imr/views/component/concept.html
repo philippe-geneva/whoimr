@@ -1,7 +1,7 @@
 <!-- BEGIN (Common indicator component) -->
 <div id="concept">
   <h1>{{concept.name}}</h1> 
-  <i>Concept ID: "{{concept.code}}"</i>
+  <i>{{#__}}strConceptId{{/__}}: "{{concept.code}}"</i>
 <!-- for demo purposes, the edit button is shown when the user is logged in but does nothing -->
 
   {{#user.username}}
@@ -11,17 +11,17 @@
   <table>
     {{#concept.definition}}
     <tr>
-      <th>Definition</th>
+      <th>{{#__}}strDef{{/__}}</th>
       <td>{{concept.definition}}</td>
     </tr>
     {{/concept.definition}}
     <tr>
-      <th>Indicators</th>
+      <th>{{#__}}strRelInd{{/__}}</th>
       <td>
         <ul>
           {{#concept.indicator}}
             <li>
-              <a href="{{approot}}/view/indicator/{{code}}">{{name}}</a>
+              <a href="{{approot}}/view/indicator/{{locale}}/{{code}}">{{name}}</a>
             </li>
           {{/concept.indicator}}
         </ul>

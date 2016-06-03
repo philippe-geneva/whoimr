@@ -2,13 +2,13 @@
   "id": "1",
   "label": {
     "en": "Health status",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -16,13 +16,13 @@
   "id": "2",
   "label": {
     "en": "Health systems",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -30,13 +30,13 @@
   "id": "3",
   "label": {
     "en": "Risk factors",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -44,13 +44,13 @@
   "id": "4",
   "label": {
     "en": "Service coverage",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -58,13 +58,13 @@
   "id": "5",
   "label": {
     "en": "Environment",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -72,13 +72,13 @@
   "id": "6",
   "label": {
     "en": "General",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -86,13 +86,13 @@
   "id": "7",
   "label": {
     "en": "Health system strengthening (HSS)",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -100,13 +100,13 @@
   "id": "8",
   "label": {
     "en": "Infectious disease",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -114,13 +114,13 @@
   "id": "9",
   "label": {
     "en": "Injury and violence",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -128,13 +128,13 @@
   "id": "10",
   "label": {
     "en": "NCDs",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -142,13 +142,13 @@
   "id": "11",
   "label": {
     "en": "NCDs and nutrition",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -156,13 +156,13 @@
   "id": "12",
   "label": {
     "en": "Reproductive, maternal, newborn, child and adolescent health",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -170,13 +170,13 @@
   "id": "13",
   "label": {
     "en": "A",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -184,13 +184,13 @@
   "id": "14",
   "label": {
     "en": "C",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -198,13 +198,13 @@
   "id": "15",
   "label": {
     "en": "Access",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -212,13 +212,13 @@
   "id": "16",
   "label": {
     "en": "Environmental risk factors",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -226,13 +226,13 @@
   "id": "17",
   "label": {
     "en": "Fertility",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -240,13 +240,13 @@
   "id": "18",
   "label": {
     "en": "Health financing",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -254,13 +254,13 @@
   "id": "19",
   "label": {
     "en": "Health information",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -268,13 +268,13 @@
   "id": "20",
   "label": {
     "en": "Health policy",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -282,13 +282,13 @@
   "id": "21",
   "label": {
     "en": "Health security",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -296,13 +296,13 @@
   "id": "22",
   "label": {
     "en": "Health workforce",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -310,13 +310,13 @@
   "id": "23",
   "label": {
     "en": "HIV",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -324,13 +324,13 @@
   "id": "24",
   "label": {
     "en": "HIV services",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -338,13 +338,13 @@
   "id": "25",
   "label": {
     "en": "HIV/TB",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -352,13 +352,13 @@
   "id": "26",
   "label": {
     "en": "Immunization",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -366,13 +366,13 @@
   "id": "27",
   "label": {
     "en": "Infections",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -380,13 +380,13 @@
   "id": "28",
   "label": {
     "en": "Injuries",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -394,13 +394,13 @@
   "id": "29",
   "label": {
     "en": "Lifestyle",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -408,13 +408,13 @@
   "id": "30",
   "label": {
     "en": "Malaria",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -422,13 +422,13 @@
   "id": "31",
   "label": {
     "en": "Mental health",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -436,13 +436,13 @@
   "id": "32",
   "label": {
     "en": "Morbidity",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -450,13 +450,13 @@
   "id": "33",
   "label": {
     "en": "Mortality by age and sex",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -464,13 +464,13 @@
   "id": "34",
   "label": {
     "en": "Mortality by cause",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -478,13 +478,13 @@
   "id": "35",
   "label": {
     "en": "Neglected tropical diseases",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -492,13 +492,13 @@
   "id": "36",
   "label": {
     "en": "Noncommunicable diseases",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -506,13 +506,13 @@
   "id": "37",
   "label": {
     "en": "Nutrition",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -520,13 +520,13 @@
   "id": "38",
   "label": {
     "en": "Quality and safety of care",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -534,13 +534,13 @@
   "id": "39",
   "label": {
     "en": "Reproductive, maternal, newborn, child and adolescent",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -548,13 +548,13 @@
   "id": "40",
   "label": {
     "en": "Risk factors infections",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -562,13 +562,13 @@
   "id": "41",
   "label": {
     "en": "Risk factors injuries",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -576,13 +576,13 @@
   "id": "42",
   "label": {
     "en": "Screening and preventive care",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 
@@ -590,13 +590,13 @@
   "id": "43",
   "label": {
     "en": "Tuberculosis",
-    "fr": "",
-    "es": ""
+    "fr": null,
+    "es": null
   },
   "definition": {
-    "en": "",
-    "fr": "",
-    "es": ""
+    "en": null,
+    "fr": null,
+    "es": null
   }
 }
 

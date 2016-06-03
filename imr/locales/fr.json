@@ -1,0 +1,21 @@
+{
+  "strAppName": 	"Registre de métadonnées d'indicateurs",
+  "strLoggedInAs": 	"Connecté en tant que",
+  "strLogin": 		"Identifier",
+  "strLogout": 		"Déconnecter",
+  "strConceptId":	"Identificateur de concept",
+  "strDef":		"Définition",
+  "strRelInd":		"Indicateur",
+  "strIndId":		"Identificateur d'indicateur",
+  "strPropId":		"Identificateur de propriété",
+  "strConcepts":	"Concepts",
+  "strFootnotes":	"Notes",
+  "strSearch":		"Recherche",
+  "strUsername":	"Nom d'utilisateur",
+  "strPassword":	"Mot de passe",
+
+
+  "buttonSearch":	"Recherche",
+  "buttonClear":	"Clear",
+  "buttonEdit":		"Modifier"
+}

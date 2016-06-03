@@ -63,9 +63,15 @@ td {
   position:		relative;
 }
 
-#header span {
+#header span.authenticate {
   top:			0px;
   right:		0px;
+  position:		absolute;
+}
+
+#header span.locale {
+  top:			0px;
+  left:			0px;
   position:		absolute;
 }
 

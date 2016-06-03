@@ -1,0 +1,21 @@
+{
+  "strAppName": 	"Indicator Metadata Registry",
+  "strLoggedInAs": 	"Logged in as",
+  "strLogin": 		"Login",
+  "strLogout": 		"Logout",
+  "strConceptId":	"Concept ID",
+  "strDef":		"Definition",
+  "strRelInd":		"Related indicators",
+  "strIndId":		"Indicator ID",
+  "strPropId":		"Property ID",
+  "strConcepts":	"Concepts",
+  "strFootnotes":	"Footnotes",
+  "strSearch":		"Search",
+  "strUsername":	"Username",
+  "strPassword":	"Password",
+
+
+  "buttonSearch":	"Search",
+  "buttonClear":	"Clear",
+  "buttonEdit":		"Edit"
+}
