@@ -502,14 +502,19 @@ app.get(__application_root + '/get/indicators/:lang', function(req, res) {
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
     var collection = db.collection('indicators');
-    var filter = {
-      _id: 0,
-      id: 1
-    }
-    filter["display." + req.getLocale()] = 1;
-    collection.find({},filter,{sort:'id'}).toArray(function(err,docs){
+    collection.find({},{_id:0,id:1,display:1},{sort:'id'}).toArray(function(err,docs){
       assert.equal(null,err);
-      res.json(docs);
+      indicators = [];
+      for (var i in docs) {
+        var indicator = {};
+        indicator["id"] = docs[i].id;
+        indicator["display"] = {};
+        indicator["display"][req.getLocale()] = (docs[i].display[req.getLocale()] == null) ? 
+                                                 docs[i].display.en : 
+                                                 docs[i].display[req.getLocale()];
+        indicators.push(indicator);
+      }
+      res.json(indicators);
       db.close();
     });
   });
