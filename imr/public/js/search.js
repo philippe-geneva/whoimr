@@ -10,7 +10,7 @@
 function populateIndicatorList ( id ) {
   var target = '#' + id;
   var xhr = $.ajax({
-    url: approot + "/get/indicators",
+    url: approot + "/get/indicators/" + locale,
     dataType: "json",
     success: function(data) {
       var indicator_list = $(target).empty();
@@ -18,7 +18,7 @@ function populateIndicatorList ( id ) {
       for (indicator in data) {
         $(target).append('<li><a href="' + approot + '/view/indicator/' + locale + '/' + 
                          data[indicator].id + '">' + 
-                         data[indicator].display.en + '</a></li>');
+                         data[indicator].display[locale] + '</a></li>');
       }
       $(target).append("</ul>");
     },
@@ -38,7 +38,7 @@ function searchIndicatorList () {
   var query = $('#search_query').val();
   var URL = null;
   if ((query != null) && (query != "")) {
-    URL = approot + "/search/" + $('#search_query').val();
+    URL = approot + "/search/" + locale + "/" + $('#search_query').val();
   } else { 
     URL = approot + "/indicator";
   }
@@ -51,7 +51,7 @@ function searchIndicatorList () {
       for (indicator in data) {
         $(target).append('<li><a href="' + approot + '/view/indicator/' + locale + '/' + 
                          data[indicator].id + '">' + 
-                         data[indicator].display.en + '</a></li>');
+                         data[indicator].display[locale] + '</a></li>');
       }
       $(target).append("</ul>");
     },
