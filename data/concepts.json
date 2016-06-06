@@ -2,8 +2,8 @@
   "id": "1",
   "label": {
     "en": "Health status",
-    "fr": null,
-    "es": null
+    "fr": "État de santé",
+    "es": "Estado de salud"
   },
   "definition": {
     "en": null,
@@ -16,8 +16,8 @@
   "id": "2",
   "label": {
     "en": "Health systems",
-    "fr": null,
-    "es": null
+    "fr": "Systèmes de santé",
+    "es": "Systemas de salud"
   },
   "definition": {
     "en": null,
@@ -30,8 +30,8 @@
   "id": "3",
   "label": {
     "en": "Risk factors",
-    "fr": null,
-    "es": null
+    "fr": "Facteurs de risque",
+    "es": "Factores de riesgo"
   },
   "definition": {
     "en": null,
@@ -44,8 +44,8 @@
   "id": "4",
   "label": {
     "en": "Service coverage",
-    "fr": null,
-    "es": null
+    "fr": "Couverture de service",
+    "es": "Cobertura del servicio"
   },
   "definition": {
     "en": null,
