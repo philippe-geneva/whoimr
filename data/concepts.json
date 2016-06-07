@@ -58,7 +58,7 @@
   "id": "5",
   "label": {
     "en": "Environment",
-    "fr": null,
+    "fr": "Environnement",
     "es": null
   },
   "definition": {
@@ -72,7 +72,7 @@
   "id": "6",
   "label": {
     "en": "General",
-    "fr": null,
+    "fr": "Général",
     "es": null
   },
   "definition": {
@@ -86,7 +86,7 @@
   "id": "7",
   "label": {
     "en": "Health system strengthening (HSS)",
-    "fr": null,
+    "fr": "Renforcement des systèmes de santé",
     "es": null
   },
   "definition": {
@@ -100,7 +100,7 @@
   "id": "8",
   "label": {
     "en": "Infectious disease",
-    "fr": null,
+    "fr": "Maladie infectieuse",
     "es": null
   },
   "definition": {
@@ -114,7 +114,7 @@
   "id": "9",
   "label": {
     "en": "Injury and violence",
-    "fr": null,
+    "fr": "Traumatismes et violence",
     "es": null
   },
   "definition": {
@@ -128,7 +128,7 @@
   "id": "10",
   "label": {
     "en": "NCDs",
-    "fr": null,
+    "fr": "Maladies non transmissibles",
     "es": null
   },
   "definition": {
@@ -142,7 +142,7 @@
   "id": "11",
   "label": {
     "en": "NCDs and nutrition",
-    "fr": null,
+    "fr": "Maladies non transmissibles et nutrition",
     "es": null
   },
   "definition": {
@@ -156,7 +156,7 @@
   "id": "12",
   "label": {
     "en": "Reproductive, maternal, newborn, child and adolescent health",
-    "fr": null,
+    "fr": "Santé reproductive et santé de la mère, du nouveau-né, de l'enfant et de l'adolescent",
     "es": null
   },
   "definition": {
@@ -169,8 +169,8 @@
 {
   "id": "13",
   "label": {
-    "en": "A",
-    "fr": null,
+    "en": "Additional",
+    "fr": "Additionnel",
     "es": null
   },
   "definition": {
@@ -183,8 +183,8 @@
 {
   "id": "14",
   "label": {
-    "en": "C",
-    "fr": null,
+    "en": "Core",
+    "fr": "Clé",
     "es": null
   },
   "definition": {
@@ -198,7 +198,7 @@
   "id": "15",
   "label": {
     "en": "Access",
-    "fr": null,
+    "fr": "Accès",
     "es": null
   },
   "definition": {
@@ -212,7 +212,7 @@
   "id": "16",
   "label": {
     "en": "Environmental risk factors",
-    "fr": null,
+    "fr": "Facteurs de risque environnementaux",
     "es": null
   },
   "definition": {
@@ -226,7 +226,7 @@
   "id": "17",
   "label": {
     "en": "Fertility",
-    "fr": null,
+    "fr": "Fécondité",
     "es": null
   },
   "definition": {
@@ -240,7 +240,7 @@
   "id": "18",
   "label": {
     "en": "Health financing",
-    "fr": null,
+    "fr": "Financement de la santé",
     "es": null
   },
   "definition": {
@@ -254,7 +254,7 @@
   "id": "19",
   "label": {
     "en": "Health information",
-    "fr": null,
+    "fr": "Informations sanitaires",
     "es": null
   },
   "definition": {
@@ -268,7 +268,7 @@
   "id": "20",
   "label": {
     "en": "Health policy",
-    "fr": null,
+    "fr": "Politique de santé",
     "es": null
   },
   "definition": {
@@ -282,7 +282,7 @@
   "id": "21",
   "label": {
     "en": "Health security",
-    "fr": null,
+    "fr": "Sécurité sanitaire",
     "es": null
   },
   "definition": {
@@ -296,7 +296,7 @@
   "id": "22",
   "label": {
     "en": "Health workforce",
-    "fr": null,
+    "fr": "Personnel de santé", 
     "es": null
   },
   "definition": {
@@ -310,7 +310,7 @@
   "id": "23",
   "label": {
     "en": "HIV",
-    "fr": null,
+    "fr": "VIH",
     "es": null
   },
   "definition": {
@@ -324,7 +324,7 @@
   "id": "24",
   "label": {
     "en": "HIV services",
-    "fr": null,
+    "fr": "Services VIH",
     "es": null
   },
   "definition": {
@@ -338,7 +338,7 @@
   "id": "25",
   "label": {
     "en": "HIV/TB",
-    "fr": null,
+    "fr": "VIH/Tuberculose", 
     "es": null
   },
   "definition": {
@@ -352,7 +352,7 @@
   "id": "26",
   "label": {
     "en": "Immunization",
-    "fr": null,
+    "fr": "Vaccination",
     "es": null
   },
   "definition": {
@@ -366,7 +366,7 @@
   "id": "27",
   "label": {
     "en": "Infections",
-    "fr": null,
+    "fr": "Infections",
     "es": null
   },
   "definition": {
@@ -380,7 +380,7 @@
   "id": "28",
   "label": {
     "en": "Injuries",
-    "fr": null,
+    "fr": "Traumatismes",
     "es": null
   },
   "definition": {
@@ -394,7 +394,7 @@
   "id": "29",
   "label": {
     "en": "Lifestyle",
-    "fr": null,
+    "fr": "Mode de vie",
     "es": null
   },
   "definition": {
@@ -408,7 +408,7 @@
   "id": "30",
   "label": {
     "en": "Malaria",
-    "fr": null,
+    "fr": "Paludisme",
     "es": null
   },
   "definition": {
@@ -422,7 +422,7 @@
   "id": "31",
   "label": {
     "en": "Mental health",
-    "fr": null,
+    "fr": "Santé mentale",
     "es": null
   },
   "definition": {
@@ -436,7 +436,7 @@
   "id": "32",
   "label": {
     "en": "Morbidity",
-    "fr": null,
+    "fr": "Morbidité",
     "es": null
   },
   "definition": {
@@ -450,7 +450,7 @@
   "id": "33",
   "label": {
     "en": "Mortality by age and sex",
-    "fr": null,
+    "fr": "Mortalité selon l'âge et le sexe",
     "es": null
   },
   "definition": {
@@ -464,7 +464,7 @@
   "id": "34",
   "label": {
     "en": "Mortality by cause",
-    "fr": null,
+    "fr": "Mortalité par cause de décès",
     "es": null
   },
   "definition": {
@@ -478,7 +478,7 @@
   "id": "35",
   "label": {
     "en": "Neglected tropical diseases",
-    "fr": null,
+    "fr": "Maladies tropicales négligées",
     "es": null
   },
   "definition": {
@@ -492,7 +492,7 @@
   "id": "36",
   "label": {
     "en": "Noncommunicable diseases",
-    "fr": null,
+    "fr": "Maladies non transmissibles",
     "es": null
   },
   "definition": {
@@ -506,7 +506,7 @@
   "id": "37",
   "label": {
     "en": "Nutrition",
-    "fr": null,
+    "fr": "Nutrition",
     "es": null
   },
   "definition": {
@@ -520,7 +520,7 @@
   "id": "38",
   "label": {
     "en": "Quality and safety of care",
-    "fr": null,
+    "fr": "Qualité et sécurité des soins",
     "es": null
   },
   "definition": {
@@ -534,7 +534,7 @@
   "id": "39",
   "label": {
     "en": "Reproductive, maternal, newborn, child and adolescent",
-    "fr": null,
+    "fr": "Santé reproductive et santé de la mère, du nouveau-né, de l'enfant et de l'adolescent",
     "es": null
   },
   "definition": {
@@ -548,7 +548,7 @@
   "id": "40",
   "label": {
     "en": "Risk factors infections",
-    "fr": null,
+    "fr": "Facteurs de risque : infections",
     "es": null
   },
   "definition": {
@@ -562,7 +562,7 @@
   "id": "41",
   "label": {
     "en": "Risk factors injuries",
-    "fr": null,
+    "fr": "Facteurs de risque : traumatismes",
     "es": null
   },
   "definition": {
@@ -576,7 +576,7 @@
   "id": "42",
   "label": {
     "en": "Screening and preventive care",
-    "fr": null,
+    "fr": "Dépistage et soins préventifs",
     "es": null
   },
   "definition": {
@@ -590,7 +590,7 @@
   "id": "43",
   "label": {
     "en": "Tuberculosis",
-    "fr": null,
+    "fr": "Tuberculose",
     "es": null
   },
   "definition": {
