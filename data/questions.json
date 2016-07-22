@@ -1,0 +1,23 @@
+{
+  "id": "QB_1",
+  "display": {
+               "en": "Sample question text 0000",
+               "fr": "échantillon texte de la question 0000",
+               "es": "texto de la pregunta de la muestra 0000"
+  },
+  "display_sequence": 5,
+  "indicator_id": [ "CHI_1", "CHI_2" ],
+  "mandatory": true,
+}
+
+{
+  "id": "QB_2",
+  "display": {
+               "en": "Sample question text 1111",
+               "fr": "échantillon texte de la question 1111",
+               "es": "texto de la pregunta de la muestra 1111"
+  },
+  "display_sequence": 1,
+  "indicator_id": [ "CHI_2", "CHI_3" ],
+  "mandatory": true,
+}
