@@ -57,6 +57,8 @@ echo "Loading properties."
 ${mongoimport} --db ${appName} --collection properties --drop --file ${dataPath}/properties.json
 echo "Loading concepts."
 ${mongoimport} --db ${appName} --collection concepts --drop --file ${dataPath}/concepts.json
+echo "Loading questions."
+${mongoimport} --db ${appName} --collection questions --drop --file ${dataPath}/questions.json
 echo "Loading user profiles."
 ${mongoimport} --db ${appName} --collection users --drop --file ${dataPath}/users.json
 echo "Applying patches to the loaded data."
