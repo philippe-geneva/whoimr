@@ -171,7 +171,7 @@ app.get(__application_root + '/view/concept/:lang/:concept',function(req,res) {
         // Find the indicators that use this concept.  We're only interested in the
         // name and id of the indicators so that we can make navigation links to them
         
-        db.collection('indicators')
+        db.collection('objects')
           .find({"property.concept_id":req.params.concept},{id:1,display:1})
           .toArray(function(err,indicator) {
    
@@ -211,7 +211,7 @@ app.get(__application_root + '/view/concept/:lang/:concept',function(req,res) {
  * Retreive an indicator description for display
  */
 
-app.get(__application_root + '/view/indicator/:lang/:indicator',function(req,res) {
+function getObject(req,res,type) {
   logRequest(req);
   req.setLocale(req.params.lang);
   MongoClient.connect(url,function(err,db) {
@@ -219,8 +219,8 @@ app.get(__application_root + '/view/indicator/:lang/:indicator',function(req,res
 
     // Find the requested indicator
 
-    db.collection('indicators')
-      .findOne({'id':req.params.indicator},function(err,doc) {
+    db.collection('objects')
+      .findOne({'id':req.params.indicator, "type":type},function(err,doc) {
       assert.equal(null,err);
       if (doc == null) {
         res.status(404).send(req.params.indicator + " not found.").end();
@@ -330,7 +330,16 @@ app.get(__application_root + '/view/indicator/:lang/:indicator',function(req,res
       }
     }); 
   }); 
+}
+
+/*
+ *
+ */
+
+app.get(__application_root + '/view/indicator/:lang/:indicator',function(req,res) {
+  getObject(req,res,"indicator");
 });
+
 
 /*
  *
@@ -442,7 +451,7 @@ app.get(__application_root + '/get/indicator/:indicator',function(req, res) {
   logRequest(req);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
-    var collection = db.collection('indicators');
+    var collection = db.collection('objects');
     collection.find({'id':req.params.indicator}).toArray(function(err,docs){
       assert.equal(null,err);
       if (docs.length == 1) {
@@ -462,7 +471,7 @@ app.get(__application_root + '/get/indicators/:lang', function(req, res) {
   req.setLocale(req.params.lang);
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
-    var collection = db.collection('indicators');
+    var collection = db.collection('objects');
     collection.find({},{_id:0,id:1,display:1},{sort:'id'}).toArray(function(err,docs){
       assert.equal(null,err);
       indicators = [];
@@ -516,7 +525,7 @@ app.get(__application_root + '/search/:lang/:query',function(req,res) {
     }
     query["display." + req.getLocale()] = new RegExp(".*" + req.params.query + ".*","gi");
     filter["display." + req.getLocale()] = 1;
-    var collection = db.collection('indicators');
+    var collection = db.collection('objects');
     collection.find(query,filter,{sort:'id'}).toArray(function(err,docs){
       assert.equal(null,err);
       res.json(docs);

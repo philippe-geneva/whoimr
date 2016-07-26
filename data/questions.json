@@ -1,5 +1,6 @@
 {
   "id": "QB_1",
+  "type": "question",
   "display": {
                "en": "Sample question text 0000",
                "fr": "échantillon texte de la question 0000",
@@ -12,6 +13,7 @@
 
 {
   "id": "QB_2",
+  "type": "question",
   "display": {
                "en": "Sample question text 1111",
                "fr": "échantillon texte de la question 1111",
