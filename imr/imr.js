@@ -17,8 +17,6 @@ var app = express();
 var __application_root = "/gho/imr";
 
 i18n.configure({
-//  locales: ['en','fr','es'],
-//  defaultLocale: 'fr',
   cookie: "whoimr",
   directory: __dirname + '/locales'
 });
@@ -47,7 +45,6 @@ app.use(cookieParser());
 app.use(i18n.init);
 app.use(passport.initialize());
 app.use(passport.session());
-
 
 /*
  * Helper function for mustache
@@ -229,17 +226,17 @@ app.get(__application_root + '/view/indicator/:lang/:indicator',function(req,res
         res.status(404).send(req.params.indicator + " not found.").end();
         db.close();  
       } else {
-      //
+          
         // make a list of the properties that it uses
-      
+    
         proplist = [];
         for (var n in doc.property) {
           proplist.push(doc.property[n].property_id);
         }
-  
+ 
         // load the descriptions of the properties in the list so that we 
         // can retreive correct display labels
-        
+      
         db.collection('properties')
           .find({id:{$in:proplist}})
           .toArray(function(err,prop) {
@@ -332,7 +329,7 @@ app.get(__application_root + '/view/indicator/:lang/:indicator',function(req,res
         }); 
       }
     }); 
-  });
+  }); 
 });
 
 /*
@@ -391,11 +388,6 @@ passport.deserializeUser(function(user,done) {
  *
  */
 
-/*
- *  
- *
- */
-
 app.post(__application_root + '/auth/login',passport.authenticate(
   'local',
   { 
@@ -426,23 +418,6 @@ process.argv.forEach(function(val,index,array) {
   }
 });
 
-
-
-/*
- * For any request coming in, make sure that the session object is preset with some
- * default values:
- * -Set language to English (en)
- */
-/*
-app.use('/',function(req,res,next){
-console.log("Looking at session");
-  if (!req.session.language) {
-    req.session.language = "en";
-  }
-  next(); 
-});
-*/
-
 /*
  *
  */
@@ -459,20 +434,6 @@ function logRequest(req) {
   console.log(req.hostname + "\t" + req.originalUrl);
 }
 
-
-
-
-/*
- * Set the language
- */
-
-/*
-app.get(__application_root + '/language/:language',function(req, res) {
-  logRequest(req);
-  req.session.language = req.params.language
-  res.end('Language set to ' + req.session.language);
-});
-*/
 /*
  *  Get a complete indicator description
  */
