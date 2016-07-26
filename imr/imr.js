@@ -211,7 +211,7 @@ app.get(__application_root + '/view/concept/:lang/:concept',function(req,res) {
  * Retreive an indicator description for display
  */
 
-function getObject(req,res,type) {
+function showObject(req,res,type) {
   logRequest(req);
   req.setLocale(req.params.lang);
   MongoClient.connect(url,function(err,db) {
@@ -259,7 +259,8 @@ function getObject(req,res,type) {
   
             // Create an empty display version of the indicator
 
-            var indicator = { 
+            var myObject = { 
+              type: doc.type,
               name: (doc.display[req.getLocale()] == null) ? 
                     doc.display.en : doc.display[req.getLocale()], 
               code: doc.id,
@@ -301,7 +302,7 @@ function getObject(req,res,type) {
                             doc.property[p].display.en : doc.property[p].display[req.getLocale()];
               }
              
-              indicator.property.push({
+              myObject.property.push({
                 code: doc.property[p].property_id,
                 concept_id: concept_id,
                 label: propLabel,
@@ -314,12 +315,12 @@ function getObject(req,res,type) {
             for (var n in doc.note) {
               var noteValue = (doc.note[n].display[req.getLocale()] == null) ?
                               doc.note[n].display.en : doc.note[n].display[req.getLocale()];
-              indicator.note.push(noteValue);
+              myObject.note.push(noteValue);
             }
     
             // Render the indicator using the indicator template.
-            res.render('indicator',{
-              "indicator": indicator,
+            res.render('object',{
+              "object": myObject,
               "approot": __application_root,
               "locale": req.getLocale(),
               "user": req.user
@@ -336,8 +337,8 @@ function getObject(req,res,type) {
  *
  */
 
-app.get(__application_root + '/view/indicator/:lang/:indicator',function(req,res) {
-  getObject(req,res,"indicator");
+app.get(__application_root + '/view/:type/:lang/:indicator',function(req,res) {
+  showObject(req,res,req.params.type);
 });
 
 
@@ -472,12 +473,13 @@ app.get(__application_root + '/get/indicators/:lang', function(req, res) {
   MongoClient.connect(url,function(err,db) {
     assert.equal(null,err);
     var collection = db.collection('objects');
-    collection.find({},{_id:0,id:1,display:1},{sort:'id'}).toArray(function(err,docs){
+    collection.find({},{_id:0,id:1,type:1,display:1},{sort:'id'}).toArray(function(err,docs){
       assert.equal(null,err);
       indicators = [];
       for (var i in docs) {
         var indicator = {};
         indicator["id"] = docs[i].id;
+        indicator["type"] = docs[i].type;
         indicator["display"] = {};
         indicator["display"][req.getLocale()] = (docs[i].display[req.getLocale()] == null) ? 
                                                  docs[i].display.en : 
@@ -521,7 +523,8 @@ app.get(__application_root + '/search/:lang/:query',function(req,res) {
     var query = {};
     var filter = {
       _id: 0,
-      id: 1
+      id: 1,
+      type: 1,
     }
     query["display." + req.getLocale()] = new RegExp(".*" + req.params.query + ".*","gi");
     filter["display." + req.getLocale()] = 1;

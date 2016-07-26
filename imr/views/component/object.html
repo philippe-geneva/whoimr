@@ -1,0 +1,40 @@
+<!-- BEGIN (Common indicator component) -->
+<div id="indicator">
+  <h1>{{object.name}}</h1> 
+  <i>[ {{object.type}} ID "{{object.code}}" ]</i>
+<!--
+  <i>{{#__}}strIndId{{/__}}: "{{object.code}}"</i>
+-->
+<!-- for demo purposes, the edit button is shown when the user is logged in but does nothing -->
+
+  {{#user.username}}
+  <input type="button" value="Edit"></input>
+  {{/user.username}}
+  <table>
+    {{#object.property}}
+    {{#value}}
+    <tr>
+      <th>
+        <a href="{{approot}}/view/property/{{locale}}/{{code}}">{{label}}</a>
+     </th>
+      <td>
+        {{#concept_id}}<a href="{{approot}}/view/concept/{{locale}}/{{concept_id}}">{{value}}</a>{{/concept_id}}
+        {{^concept_id}}{{value}}{{/concept_id}}
+      </td>
+    </tr>
+    {{/value}}
+    {{/object.property}}
+    <tr>
+      <th>{{#__}}strFootnotes{{/__}}</ht>
+      <td>
+        <ol>
+          {{#object.note}}
+          <li>{{.}}</li>
+          {{/object.note}}
+        </ol>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- END (Common indicator component) -->
+
