@@ -1,0 +1,3328 @@
+{
+  "id": "RI_ANC_1",
+  "display": {
+               "en": "Health Infrastructure Index",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "44"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Health infrastructure index is the average score of 3 indicators according to level of service, managing authority, and region:<br>1. Facility density (indicator of outpatient service access);<br>2. Inpatient beds density (indicator of inpatient service access); <br>3. Maternity bed density (indicator of access to delivery services)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. Facility density per 10 000 population<br>2. Inpatient bed density per 10 000 population<br>3. Maternity bed density per 1000 pregnant women<br>4. Average score of the three indicators: facility density, inpatient bed density, maternity bed density",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities per 10 000 population<br>2. Total # of inpatient beds per 10 000 population<br>3. Total # of maternity bed per 1000<br>4. Sum of scores for the three indicators: facility density, inpatient bed density, maternity density",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Target score of 2<br>2. Target score of 25<br>3. Target score of 10<br>4. 3 indicators",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_2",
+  "display": {
+               "en": "Health Workforce Index",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "44"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Health workforce index, composed of the health workforce density (number of core medical professionals per 10 000 population), according to level of service, managing authority, and region<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. Health workforce density per 10 000 population",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities per 10 000 population",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Target score of 23",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_3",
+  "display": {
+               "en": "Service Utilization index",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "44"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Outpatient service utilization score (indicator of ambulant care), inpatient service utilization score (indicator of availability and access to inpatient services), and overall utilization index, according to level of service, managing authority, and region",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. Outpatient service utilization per year <br>2. Inpatient service utilization per 100 per year<br>3. Average score of the two indicators: outpatient visits and hospital discharges",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities per year<br>2. Total # of facilities per 100 per year<br>3. Sum of scores of the two indicators: outpatient visits and hospital discharges<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Target score of 5<br>2. Target score of 10<br>3. 2 indicators ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_4",
+  "display": {
+               "en": "Service Availability Index",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "44"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Mean of health infrastructure index, health workforce index, and service utilization index, according to level of service, managing authority, and region",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. Average of the three areas: infrastructure, workforce, and utilization",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Sum of three domain scores: health infrastructure, health workforce, service utilization ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. 3 domains",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_5",
+  "display": {
+               "en": "Basic Amenities index",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "45"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of health facilities with power source, improved water source, consultation room, sanitation facilities, communication equipment, computer with internet, and emergency transportation ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 7 basic amenities tracer items<br>2. % of facilities with all 7 basic amenities tracer items<br>3. Average availability of the 7 basic amenities tracer items ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 7 tracer items<br>2. Total # of facilities with all 7 tracer items<br>3. Sum of the % availability of the 7 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>2. Total facilities in the sample<br>3. Total facilities in the sample<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_6",
+  "display": {
+               "en": "Basic Equipment Index",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "45"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of health facilities with adult scale, child scale, thermometer, stethoscope, blood pressure apparatus, and light source",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 6 basic equipment tracer items<br>2. % of facilities with all 6 basic equipment tracer items<br>3. Average availability of the 6 basic equipment tracer items",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 6 tracer items<br>2. Total # of facilities with all 6 tracer items<br>3. Sum of the % availability of the 6 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>2. Total facilities in the sample<br>3. Total facilities in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_7",
+  "display": {
+               "en": "Standard Precautions for Infection Prevention",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "45"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of health facilities with basic standard precautions for infection prevention, including: safe disposal of sharps, safe disposal of infectious waste, appropriate storage of sharps waste, appropriate storage of infectious waste, disinfectant, single use/standard disposable or auto-disable syringes, soap and running water or alcohol based hand rub, latex gloves, and guidelines for standard precautions",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 9 standard precautions for infection prevention tracer items<br>2. % of facilities with all 9 standard precautions for infection prevention tracer items<br>3. Average availability of the 9 standard precautions for infection prevention tracer items<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 9 tracer items<br>2. Total # of facilities with all  9 tracer items<br>3. Sum of the % availability of the 9 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>2. Total facilities in the sample<br>3. Total facilities in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_8",
+  "display": {
+               "en": "Diagnostic Capacity",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "45"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of health facilities with ability to conduct the following tests on site: haemoglobin, blood glucose, malaria diagnostic capacity, urine dipstick-protein, urine dipstick-glucose, HIV diagnostic capacity, syphilis RDT test, and urine pregnancy test",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 8 diagnostic capacity tracer items<br>2. % of facilities with all 8 diagnostic capacity tracer items<br>3. Average availability of the 8 diagnostic capacity tracer items",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 8 tracer items<br>2. Total # of facilities with all 8 tracer items<br>3. Sum of the % availability of the 8 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>2. Total facilities in the sample<br>3. Total facilities in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_9",
+  "display": {
+               "en": "Essential Medicines",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "45"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of health facilities with core essential medicines, including: amlodipine tablet or alternative calcium channel blocker, Amoxicillin syrup/suspension or dispersible tablet, Amoxicillin tablet, Ampicillin powder for injection, Aspirin cap/tab, Beclometasone inhaler, Beta blocker (e.g.bisoprolol, metoprolol, carvedilol, atenolol), Carbamazepine tablet, Ceftriaxone injection, Diazepam injection, Enalapril tablet or alternative ACE inhibitor e.g. lisinopril, ramipril, perindopril, Fluoxetine tablet, Gentamicin injection, Glibenclamide tablet, Haloperidol tablet , Insulin regular injection, Magnesium sulphate injectable, Metformin tablet, Omeprazole tablet or alternative such as pantoprazole, rabeprazole, Oral rehydration solution, Oxytocin injection , Salbutamol inhaler, Simvastatin tablet or other statin e.g. atorvastatin, pravastatin, fluvastatin, Thiazide (e.g. hydrochlorothiazide), Zinc sulphate tablets, dispersible tablets or syrup.",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 25 tracer items<br>2. % of facilities with all 25 tracer items<br>3. Average availability of the 25 tracer items ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 25 tracer items<br>2. Total # of facilities with all 25 tracer items<br>3. Sum of the % availability of the 25 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>2. Total facilities in the sample<br>3. Total facilities in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_10",
+  "display": {
+               "en": "General service readiness index",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "45"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Average of the 5 main domain scores: basic amenities, basic equipment, standard precautions for infection prevention, diagnostic capacity, and essential medicines",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. Average of the 5 domain scores",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Sum of the 5 domain scores",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. The 5 domains",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_11",
+  "display": {
+               "en": "Family planning service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering family planning services<br>(typically includes the following: family planning services, provision of combined oral contraceptive pills, provision of progestin-only contraceptive pills, provision of combined injectable contraceptives, provision of progestin-only injectable contraceptives, provision of male condoms, provision of female condoms, provision of intrauterine contraceptive device, provision of implant, provision of cycle beads for standard days method, provision of emergency contraceptive pills, male sterilization, female sterilization)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering family planning services<br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering family planning services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_12",
+  "display": {
+               "en": "Family planning service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering family planning services, the percentage with staff and guidelines, equipment, and medicines and commodities<br>(8 tracer items including: 1. Guidelines on FP, 2. Family planning check-lists and/or job-aids, 3. Staff trained in in FP, 4. Blood pressure apparatus, 5. Combined estrogen progesterone oral contraceptive pills, 6. Progestin-only contraceptive pills, 7. Injectable contraceptives, 8. Condoms)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 8 tracer items<br>2. % of facilities with all 8 tracer items<br>3.  Average availability of the 8 tracer items in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 8 tracer items<br>2. Total # of facilities with all 8 tracer items<br>3. Sum of the % availability of the 8 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering family planning services<br>2. Total facilities offering family planning services<br>3. Total facilities offering family planning services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_13",
+  "display": {
+               "en": "Antenatal care service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering antenatal care services <br>(typically includes the following: antenatal care, iron supplementation, folic acid supplementation, intermittent preventive treatment for malaria, tetanus toxoid vaccination, monitoring for hypertensive disorder of pregnancy).",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering antenatal care services<br>2. % of facilities that have each of the listed supplements and vaccinations",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering antenatal care services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_14",
+  "display": {
+               "en": "Antenatal care service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering antenatal care services, the percentage with trained staff, equipment, diagnostics, and medicines and commodities<br>(11 tracer items including: 1. Guidelines on ANC, 2. ANC check-lists and/or job-aids, 3. Staff trained in ANC, 4. Blood pressure apparatus, 5. Haemoglobin, 6. Urine dipstick-protein, 7. Iron tablets, 8. Folic acid tablets, 9. Tetanus toxoid vaccine, 10. *IPT drug, 11. *ITNs)<br>*Only in high-prevalence areas",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 11 tracer items<br>2. % of facilities with all 11 tracer items<br>3. Average availability of the 11 tracer items in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 11 tracer items<br>2. Total # of facilities with all 11 tracer items<br>3. Sum of the % availability of the 11 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering antenatal care services<br>2. Total facilities offering antenatal care services<br>3. Total facilities offering antenatal care services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_15",
+  "display": {
+               "en": "Basic obstetric care service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of health facilities offering basic obstetric care services <br>(typically includes the following: 1. Delivery services, 2. Obsteric signal functions (parenteral administration of antibiotics for mothers, parental administration of oxytocic drugs, parenteral administration of anticonvulsants, assisted vaginal delivery, manual removal of placenta, manual removal of retained products and mean availability of obstetric signal functions offered), 3. Newborn signal functions (antibiotics for preterm or prolonged PROM to prevent infection, neonatal resuscitation with bag and mask, corticosteroids in preterm labour, KMC (Kangaroo mother care) for premature/very small babies, injectable antibiotics for neonatal sepsis and mean availability of newborn signal functions offered), 4. Routine practices (administration of oxytocin for the prevention of post-partum haemorrhage, monitoring and management of labour using partograph, immediate and exclusive breastfeeding, hygienic cord care and thermal protection (drying baby immediately after birth and wrapping)).",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering basic obstetric care services<br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering basic obstetric care care services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_16",
+  "display": {
+               "en": "Basic obstetric care service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering basic obstetric care services, the percentage with staff and guidelines, equipment, and medicines and commodities<br>(21 tracer items including: 1. Guidelines for essential childbirth care, 2. Check-lists and/or job-aids for essential childbirth care, 3. Staff trained in essential childbirth care, 4. Staff trained in newborn resuscitation, 5. Emergency transport, 6. Sterilization equipment, 7. Examination light, 8. Delivery pack, 9. Suction apparatus, 10. Manual vacuum extractor, 11. Vacuum aspirator or D&C kit (with speculum), 12. Neonatal bag and mask, 13. Delivery bed, 14. Partograph, 15. Gloves, 16. Antibiotic eye ointment for newborn, 17. Injectable uterotonic, 18. Injectable antibiotic, 19. Magnesium sulphate (injectable), 20. Skin disinfectant, 21. Intravenous solution with infusion set)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 21 tracer items<br>2. % of facilities with all 21 tracer items<br>3. Average availability of the 21 tracer items in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 21 tracer items<br>2. Total # of facilities with all 21 tracer items<br>3. Sum of the % availability of the 21 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering basic obstetric care services<br>2. Total facilities offering basic obstetric care services<br>3. Total facilities offering basic obstetric care services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_17",
+  "display": {
+               "en": "Comprehensive obstetric care service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of hospitals and lower-level facilities offering comprehensive obstetric care services<br>(typically includes the following: caesarean section, blood transfusion, comprehensive emergency obstetric care)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities/hospitals that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities/hospitals offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities/hospitals ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_18",
+  "display": {
+               "en": "Comprehensive obstetric care service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among hospitals and lower-level facilities offering basic obstetric care services, the percentage with staff and guidelines, equipment, diagnostics, and medicines and commodities<br>(20 tracer items including: 1. Guidelines for CEmOC, 2. Staff trained in CEmOC, 3. Staff trained in surgery, 4. Staff trained in anaesthesia, 5. Anaesthesia equipment, 6. Resuscitation table, 7. Incubator, 8. Oxygen, 9. Spinal needle, 10. Blood typing, 11. Cross match testing, 12. Blood supply sufficiency, 13. Blood supply safety, 14. Lidocaine 5%, 15. Epinephrine, 16. Halothane, 17. Atropine, 18. Thiopental, 19. Suxamethonium bromide, 20. Ketamine)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 20 tracer items<br>2. Average availability of the 20 tracer items in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 20 tracer items<br>2.  Sum of the % availability of the 20 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering comprehensive obstetric care services<br>2. Total facilities offering comprehensive obstetric care services<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_19",
+  "display": {
+               "en": "Immunization service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of health facilities offering immunization services either in the facility or as outreach <br>(typically includes the following vaccinations: routine immunization services, birth doses, infant vaccines, adolescent/adult vaccines, frequency all child immunization services offered in the facility and frequency all child immunization services offered as outreach)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering immunization services<br>2. % of facilities that have each type of vaccinations",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering immunization services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_20",
+  "display": {
+               "en": "Immunization service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering child immunization services, the percentage with staff guidelines, equipment, and medicines and commodities<br>(18 tracer items including: 1. Guidelines for child immunization, 2. Staff trained in child immunization, 3. Cold box/vaccine carrier with ice packs, 4. Refrigerator, 5. Sharps container/safety box, 6. Auto disable syringes, 7. Temperature monitoring device in refrigerator, 8. Adequate refrigerator temperature, 9. Immunization cards, 10. Immunization tally sheets, 11. Measles vaccine, 12. DPT-HIB-HepB vaccine, 13. Oral polio vaccine, 14. BCG vaccine, 15. Pneumococcal  vaccine, 16. Rotavirus vaccine, 17. IPV (Inactivated Poliovirus Vaccine), 18. HPV (Human Papillomavirus))",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 18 tracer items<br>2. % of facilities with all 18 tracer items<br>3. Average availability of the 18 tracer items in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 14 tracer items<br>2. Total # of facilities with all 14 tracer items<br>3. Sum of the % availability of the 14 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering child immunization services<br>2. Total facilities offering child immunization services<br>3. Total facilities offering child immunization services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_21",
+  "display": {
+               "en": "Child immunization <br>Vaccines stock-out",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities providing child immunization, that have a refrigerator for adequate storage of vaccine OR are offering immunization services on the day of the assessment, that had vaccine stock-out in the past 3 months (unable to give any of the vaccines because of unavailable stock as per the register)<br>Vaccines typically include: 1.Measles vaccine, 2.DPT-HIB-HepB vaccine, 3.Polio vaccine, 4.BCG vaccine",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering immunization that had vaccines stock-out in the last 3 months",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering immunization that had stock-out of each listed vaccines",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering immunization services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_22",
+  "display": {
+               "en": "Child preventive and curative care service availability ",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering preventive and curative child health services<br>(typically includes the following: preventive and curative care for children under 5, malnutrition diagnosis and treatment, vitamin A supplementation, iron supplementation, ORS and zinc supplementation, growth monitoring, treatment of pneumonia, administration of amoxicillin for the treatment of pneumonia in children, treatment of malaria in children)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering preventive and curative child health services <br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering preventive and curative child health services <br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_23",
+  "display": {
+               "en": "Child preventive and curative care service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering basic obstetric care services, the percentage with trained staff and guidelines, equipment, diagnostics, and medicines and commodities<br>(19 tracer items including: 1. Guidelines for IMCI, 2. Guidelines for growth monitoring, 3. Staff trained in IMCI, 4. Staff trained in growth monitoring, 5. Child and infant scale, 6. Length/height measuring equipment, 7. Thermometer, 8. Stethoscope, 9. Growth chart, 10. Haemoglobin, 11. Test parasite in stool, 12. Malaria diagnostic capacity, 13. Oral rehydration solution packet, 14. Amoxicillin, 15. Co-trimoxazole syrup/suspension, 16. Paracetamol syrup/suspension, 17. Vitamin A capsules, 18. Me-/albendazole cap/tab, 19. Zinc sulphate tablets, dispersible tablets or syrup)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 19 tracer items<br>2. % of facilities with all 19 tracer items<br>3. Average availability of the 19 tracer items in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 19 tracer items<br>2. Total # of facilities with all 19 tracer items<br>3. Sum of the % availability of the 19 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering preventive and curative care services<br>2. Total facilities offering preventive and curative care services<br>3. Total facilities offering preventive and curative care services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_24",
+  "display": {
+               "en": "Adolescent health service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering adolescent health services <br>(typically includes the following: adolescent health services, HIV testing and counselling, family planning services, provision of combined oral contraceptive pills, provision of male condoms, provision of emergency contraceptive pills, provision of intrauterine contraceptive device, provision of ART to adolescents, HIV testing on counseling services to adolescents)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1.% of facilities offering adolescent health services <br>2.% of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering adolescent health services <br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_25",
+  "display": {
+               "en": "Adolescent health service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering basic obstetric care services, the percentage with trained staff and guidelines, diagnostics, and medicines and commodities<br>(6 tracer items including: 1. Guidelines, 2. Staff trained in provision of adolescent health services, 3. Staff providing family planning services trained in adolescent sexual and reproductive health, 4. Staff providing HIV testing and counselling services trained in HIV/AIDS prevention, care, and management for adolescents, 5. HIV diagnostic capacity, 6. Condoms)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 6 tracer items<br>2. % of facilities with all 6 tracer items<br>3. Average availability of the 6 tracer items in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 6 tracer items<br>2. Total # of facilities with all 6 tracer items<br>3. Sum of the % availability of the 6 tracer items in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering adolescent health services <br>2. Total facilities offering adolescent health services <br>3. Total facilities offering adolescent health services <br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_26",
+  "display": {
+               "en": "Priority medicines for mothers",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering delivery services that have: oxytocin injectable, sodium chloride injectable solution, calcium gluconate injectable, magnesium sulphate injectable, ampicillin powder for injection, gentamicin injectable, metronidazole injectable, misoprostol cap/tab, azithromycin cap/tab, cefixime cap/tab, benzathine benzylpenicillin powder for injection, betamethasone or dexamethasone injectable, nifedipine cap/tab, hydralazine injection, methyldopa tablet",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 15 tracer priority medicines for mothers<br>2. Average availability of the 15 tracer priority medicines for mothers in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 15 tracer priority medicines for mothers<br>3. Sum of the % availability of the 15 tracer priority medicines for mothers in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>2. Total facilities in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_27",
+  "display": {
+               "en": "Priority medicines for children ",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities providing child health curative care services that have: amoxicillin, ampicillin powder for injection, ceftriaxone powder for injection, gentamicin injectable, procaine benzylpenicillin powder for injection, oral rehydration salts sachets, zinc sulphate tablets or syrup, artemisinin combination therapy, artesunate rectal or injectable forms, vitamin A capsules, morphine granule injectable or cap/tab, paracetamol syrup/suspension",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 12 tracer priority medicines for children<br>2. Average availability of the 12 tracer priority medicines for children in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 12 tracer priority medicines for children<br>3. Sum of the % availability of the 12 tracer priority medicines for children in each facility",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>2. Total facilities in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_28",
+  "display": {
+               "en": "Life-saving commodities for women and children ",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities that have life-saving commodities for women and children in stock, including: female condoms, implants, emergency contraceptives, oxytocin, misoprostol, magnesium sulphate, injectable antibiotics, antenatal corticosteroids, skin disinfectant, resuscitation equipment, amoxicillin, oral rehydration salts, zinc sulphate",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 13 tracer life-saving commodities for women and children",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 13 tracer commodities for women and children",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_29",
+  "display": {
+               "en": "Life-saving commodities for women and children - Stock-outs",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities that had a stock out in the previous three months, including:  Female condoms, Implants, Emergency contraceptive, Oxytocin injection, Misoprostol tablets, Magnesium sulphate injection, Gentamicin injection, Procaine benzylpenicillin injection, Ceftriaxone injection, Betamethasone injection, Dexamethasone injection, Amoxicillin (dispersible tablet 250 or 500 mg OR syrup/suspension), Oral rehydration salts (ORS), Zinc sulphate tablets, Zinc sulphate syrup or dispersible tablets",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering life-saving commodities for women and children that had stock out in one of the 15 tracer items in the last 3 months",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities that had a stock-out of each listed supply",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_30",
+  "display": {
+               "en": "Malaria service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering malaria services <br>(typically includes the following: malaria services, malaria diagnosis, malaria diagnostic testing, malaria diagnosis by clinical symptoms, malaria diagnosis by RDT, malaria diagnosis by microscopy, malaria treatment, IPT)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering malaria services <br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering malaria health services <br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_31",
+  "display": {
+               "en": "Malaria service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering malaria services, the percentage with trained staff and guidelines, diagnostics, and medicines and commodities<br>(9 tracer items including: 1. Guidelines for diagnosis and treament, 2. *Guidelines for IPT, 3. Staff trained in malaria diagnosis and treatment, 4. *Staff trained in IPT, 5. Malaria diagnostic capacity, 6. First-line antimalarial in stock, 7. Paracetamol cap/tab, 8. *IPT drug, 9. *ITN)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 9 tracer items for malaria service readiness <br>2. % of facilities with all 9 tracer items for malaria service readiness <br>3. Average availability of the 9 malaria service tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with all the 9 tracer items<br>2. Total # of facilities with all 9 tracer items<br>3. Sum of the % availability of the 9 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering malaria services <br>2. Total facilities offering malaria services<br>3. Total facilities offering malaria services <br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_32",
+  "display": {
+               "en": "Malaria services <br>Stock outs",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities providing malaria services with stock out in the past four weeks of: rapid diagnostic tests (RDT) and artemisinin-based combination therapy (ACT)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering malaria services with RDT stock-out<br><br>2. % of facilities offering malaria services with ACT stock-out",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering malaria services that had RDT stock-out in the past 4 weeks<br>2. Total # of facilities offering malaria services that had ACT stock-out in the past 4 weeks",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering malaria services <br>2. Total facilities offering malaria services <br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_33",
+  "display": {
+               "en": "Tuberculosis service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering tuberculosis services <br>(typically includes the following: TB services, TB diagnosis, TB diagnostic testing, TB diagnosis by clinical symptoms, TB diagnosis by sputum smear microscopy examination, TB diagnosis by culture, TB diagnosis by rapid test, TB diagnosis by chest x-ray, prescription of drugs to TB patients, provision of drugs to TB patients, management and treatment follow-up for TB patients)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering tuberculosis health services <br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering tuberculosis health services <br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_34",
+  "display": {
+               "en": "Tuberculosis service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering tuberculosis services, the percentage with trained staff and guidelines, diagnostics, and medicines and commodities<br>(12 tracer items including: 1. Guidelines for diagnosis and treatment, 2. Guidelines for management of HIV & TB co-infection, 3. Guidelines related to MDR-TB treatment, 4. Guidelines for TB infection, 5. Staff trained in TB diagnosis and treatment, 6. Staff trained in management of HIV & TB co-infection, 7. Staff trained in client MDR-TB treatment or identification of need for referral, 8. Staff trained in TB infection control, 9. TB microscopy, 10. HIV diagnostic capacity, 11. System for diagnosis of HIV among TB clients, 12. First-line TB medications)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 12 tracer items for tuberculosis health services <br>2. % of facilities with all 12 tracer items for tuberculosis health services <br>3. Average availability of the 12 tuberculosis health service tracer items in this sample ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 12 tracer items<br>2. Total # of facilities withall 12 tracer items<br>3. Sum of the % availability of the 12 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering tuberculosis health services <br>2. Total facilities offering tuberculosis health services <br>3. Total facilities offering tuberculosis health services ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_35",
+  "display": {
+               "en": "HIV: counselling and testing service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering HIV counselling and testing services ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering HIV counselling and testing services ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering HIV counselling and testing services ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_36",
+  "display": {
+               "en": "HIV: counselling and testing service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering HIV counselling and testing services, the percentage with trained staff and guidelines, equipment, diagnostics, and medicines and commodities<br>(5 tracer items including: 1. Guidelines on HIV counselling and testing, 2. Staff trained in HIV counselling and testing, 3. Visual and auditory privacy, 4. HIV diagnostic capacity, 5. Condoms)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 5 tracer items for HIV counselling and testing services <br>2. % of facilities with all 5 tracer items for HIV counselling and testing services <br>3. Average availability of the 5 HIV counselling and testing service tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 5 tracer items<br>2. Total # of facilities with all 5 tracer items<br>3. Sum of the % availability of the 5 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering HIV counselling and testing services <br>2. Total facilities offering HIV counselling and testing services<br>3. Total facilities offering HIV counselling and testing services<br><br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_37",
+  "display": {
+               "en": "HIV/AIDS care and support services availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering HIV care and support services <br>(typically includes the following: HIV/AIDS care and support services, treatment of opportunistic infections, provision of palliative care, intravenous treatment of fungal infections, treatment for Kaposi's sarcoma, nutritional rehabilitation services, prescribe/provide fortified protein supplementation, care for paediatric HIV/AIDS patients, provide/prescribe preventive treatment for TB, primary preventive treatment for opportunistic infections, provide/prescribe micronutrient supplementation, family planning counselling, provide condoms)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering HIV care and support services <br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering HIV care and support services <br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_38",
+  "display": {
+               "en": "HIV/AIDS care and support services readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering HIV care and support services, the percentage with trained staff and guidelines, diagnostics and medicines and commodities<br>(10 tracer items including: 1. Guidelines for clinical management of HIV/AIDS, 2. Guidelines for palliative care, 3. Staff trained in clinical management of HIV/AIDS, 4. System for diagnosis of TB among HIV+ clients, 5. Intravenous solution with infusion set, 6. IV treatment fungal infections, 7. Co-trimoxazole cap/tab, 8. First-line TB treatment medications, 9. Palliative care pain management, 10. Condoms)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 10 tracer items for HIV care and support services<br>2. % of facilities with all 10 tracer items for HIV care and support services<br>3. Average availability of the 10 HIV care and support service tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 10 tracer items<br>2. Total # of facilities with all 10 tracer items<br>3. Sum of the % availability of the 10 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering HIV care and support services<br>2. Total facilities offering HIV care and support services <br>3. Total facilities offering HIV care and support services <br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_39",
+  "display": {
+               "en": "HIV/AIDS: Antiretroviral prescription and client management service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering HIV/AIDS antiretroviral prescription and client management services <br>(typically includes the following: ARV prescription or ARV treatment follow-up services, antiretroviral prescription, treatment follow-up services for persons on ART)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering HIV/AIDS antiretroviral prescription and client management services<br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering HIV/AIDS antiretroviral prescription and client management services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_40",
+  "display": {
+               "en": "HIV/AIDS: Antiretroviral perscription and client management service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering HIV/AIDS antiretroviral prescription and client management services, the percentage with trained staff and guidelines, diagnostics, and medicines and commodities<br>(7 tracer items including: 1. Guidelines for ART, 2. Staff trained in ART prescription and management, 3. Full blood count, 4. CD4 or Viral load, 5. Renal function test, 6. Liver function test, 7. Three first-line antiretrovirals)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 7 tracer items <br>2. % of facilities with all 7 tracer items<br>3. Average availability of the 7 tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 7 tracer items<br>2. Total # of facilities with all 7 tracer items<br>3. Sum of the % availability of the 7 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering HIV/AIDS antiretroviral perscription and client management services<br>2. Total facilities offering HIV/AIDS antiretroviral perscription and client management services<br>3. Total facilities offering HIV/AIDS antiretroviral perscription and client management services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_41",
+  "display": {
+               "en": "HIV/AIDS: Preventing mother-to-child transmission (PMTCT) service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering preventing mother-to-child transmission of HIV/AIDS services <br>(typically includes the following: preventing mother-to-child transmission services, counselling and testing for HIV+ pregnant women, counselling and testing for infants born to HIV+ women, ARV prophylaxis to HIV+ women, ARV prophylaxis to infants born to HIV+ women, infant and young child feeding counselling, nutritional counselling for HIV+ women and their infants, family planning counselling to HIV+ women)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering preventing mother-to-child transmission of HIV/AIDS services<br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering preventing mother-to-child transmission of HIV/AIDS services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_42",
+  "display": {
+               "en": "HIV/AIDS: Preventing mother-to-child transmission (PMTCT) service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering preventing mother-to-child transmission of HIV/AIDS services, the percentage with trained staff and guidelines, equipment, diagnostics and medicines and commodities<br>(10 tracer items including: 1. Guidelines for PMTCT, 2. Guidelines for infant and young child feeding counselling, 3. Staff trained in PMTCT, 4. Staff trained in infant and young child feeding, 5. Visual and auditory privacy, 6. HIV diagnostic capacity for adults, 7. Dried blood spot filter paper for diagnosing HIV in newborns, 8. Zidovudine syrup, 9. Nevirapine syrup, 10. Maternal ARV prophylaxis)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 10 tracer items <br>2. % of facilities with all 10 tracer items<br>3. Average availability of the 10 tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 10 tracer items<br>2. Total # of facilities with all 10 tracer items<br>3. Sum of the % availability of the 10 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering preventing mother-to-child transmission of HIV/AIDS services<br>2. Total facilities offering preventing mother-to-child transmission of HIV/AIDS services<br>2. Total facilities offering preventing mother-to-child transmission of HIV/AIDS services<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_43",
+  "display": {
+               "en": "Sexually transmitted infections (STI) service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering sexually transmitted infection (STI) services <br>(typically includes the following: STI services, STI diagnosis, STI treatment)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering STI services<br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering STI services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_44",
+  "display": {
+               "en": "Sexually transmitted infections (STI) service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering STI services, the percentage with trained staff and guidelines, diagnostics, and medicines and commodities<br>(7 tracer items including: 1. Guidelines for diagnosis and treatment of STI, 2. Staff trained in STI diagnosis and treatment, 3. Syphilis rapid test, 4. Condoms, 5. Metronidazole cap/tab, 6. Ciprofloxacin cap/tab, 7. Ceftriaxone injection)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 7 tracer items<br>2. % of facilities with all 7 tracer items<br>3. Average availability of the 7 tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 7 tracer items<br>2. Total # of facilities with all 7 tracer items<br>3. Sum of the % availability of the 7 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering STI services<br>2. Total facilities offering STI services<br>3. Total facilities offering STI services<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_45",
+  "display": {
+               "en": "Diabetes service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering diabetes services <br>(typically includes the following: diabetes diagnosis and/or management)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering diabetes services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering diabetes services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_46",
+  "display": {
+               "en": "Diabetes service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering diabetes services, the percentage with trained staff and guidelines, equipment, diagnostics and medicines and commodities<br>(13 tracer items including: 1. Guidelines for diabetes diagnosis and treatment, 2. Staff trained diabetes diagnosis and treatment, 3. Blood pressure apparatus, 4. Adult scale, 5. Measuring tape, 6. Blood glucose, 7. Urine dipstick-protein, 8. Urine dipstick-ketones, 9. Metformin cap/tab, 10. Glibenclamide cap/tab, 11. Insulin regular injectable, 12. Glucose 50% injectable, 13. Gliclazide tablet or glipizide tablet)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 13 tracer items<br>2. % of facilities with all 13 tracer items<br>3. Average availability of the 13 tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 13 tracer items<br>2. Total # of facilities with all 13 tracer items<br>3. Sum of the % availability of the 13 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering diabetes services<br>2. Total facilities offering diabetes services<br>2. Total facilities offering diabetes services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_47",
+  "display": {
+               "en": "Cardiovascular disease service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering cardiovascular disease services<br>(typically includes the following: cardiovascular disease and/or diagnosis)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering cardiovascular disease services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering cardiovascular disease services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_48",
+  "display": {
+               "en": "Cardiovascular disease service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering cardiovascular disease services, the percentage with trained staff and guidelines, equipment, and medicines and commodities<br>(12 tracer items including: 1. Guidelines for diagnosis and treatment, 2. Staff trained in diagnosis and management of chronic carsiovascular conditions, 3. Stethoscope, 4. Blood pressure apparatus, 5. Adult scale, 6. Oxygen, 7. ACE inhibitor, 8. Hydrochlorothiazide tablet or other thiazide diuretic tablet, 9. Beta blocker, 10. Calcium channel blockers, 11. Aspirin cap/tab, 12. Metformin cap/tabs)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 12 tracer items<br>2. % of facilities with all 12 tracer items<br>3. Average availability of the 12 tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 12 tracer items<br>2. Total # of facilities with all 12 tracer items<br>3. Sum of the % availability of the 12 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering cardiovascular disease services<br>2. Total facilities offering cardiovascular disease services<br>3. Total facilities offering cardiovascular disease services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_49",
+  "display": {
+               "en": "Chronic respiratory disease (CRD) service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering chronic respiratory disease services<br>(typically includes the following: chronic respiratory disease and/or management)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering chronic respiratory disease services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering chronic respiratory disease services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_50",
+  "display": {
+               "en": "Chronic respiratory disease (CRD) service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering chronic respiratory disease services, the percentage with trained staff and guidelines, equipment, and medicines and commodities<br>(11 tracer items including: 1. Guidelines for diagnosis and management of CRD, 2. Staff trained in diagnosis and management of CRD, 3. Stethoscope, 4. Peak flow meter, 5. Spacers for inhalers, 6. Oxygen, 7. Salbutamol inhaler, 8. Beclomethasone inhaler, 9. Prednisolone cap/tabs, 10. Hydrocortisone injection, 11. Epinephrine injectable)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 11 tracer items<br>2. % of facilities with all 11 tracer items<br>3. Average availability of the 11 tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 11 tracer items<br>2. Total # of facilities with all 11 tracer items<br>3. Sum of the % availability of the 11 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering chronic respiratory disease services<br>2. Total facilities offering chronic respiratory disease services<br>3. Total facilities offering chronic respiratory disease services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_51",
+  "display": {
+               "en": "Cervical cancer screening service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering cervical cancer screening services <br>(typically includes the following: cervical cancer diagnosis)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1.% of facilities offering cervical cancer screening services<br>2.% of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1.Total # of facilities offering cervical cancer screening services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_52",
+  "display": {
+               "en": "Cervical cancer screening service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering cervical cancer screening services, the percentage with trained staff and guidelines, equipment, and diagnostics <br>(4 tracer items including: 1. Guidelines for cervical cancer prevention and control, 2. Staff trained in cervical cancer prevention and control, 3. Speculum, 4. Acetic acid)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 4 tracer items for cervical cancer screening service readiness<br>2. Average availability of the 4 cervical cancer screening service tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 4 tracer items<br>2. Sum of the % availability of the 4 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering cervical cancer screening services<br>2. Total facilities offering cervical cancer screening services<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_53",
+  "display": {
+               "en": "Basic surgery service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering basic surgery services <br>(typically includes the following: basic surgical services, incision and drainage of abscesses, wound debridement, acute burn management, suturing, closed repair of fracture, cricothyroidotomy, male circumcision, hydrocele reduction, chest tube insertion, closed repair of dislocated joint, biopsy of lymph node or mass or other, removal of foreign body (throat, eye, ear of nose)).",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering basic surgery services<br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering basic surgery services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_54",
+  "display": {
+               "en": "Basic surgery service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering basic surgery services, the percentage with staff and guidelines, equipment, and medicines and commodities<br>(17 tracer items including: 1. Guidelines for IMEESC, 2. Staff trained in IMEESC, 3. Needle holder, 4. Scalpel handle with blades, 5. Retractor, 6. Surgical  scissors, 7. Nasogastric tubes, 8. Tourniquet, 9. Adult and paediatric resuscitators, 10. Suction apparatus, 11. Oxygen, 12. Skin disinfectant, 13. Sutures, 14. Ketamine, 15. Lidocaine, 16. Splints for extremities and 17. Material for cast)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 17 tracer items<br>2. % of facilities with all 17 tracer items<br>3. Average availability of the 17 tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 17 tracer items<br>2. Total # of facilities with all 17 tracer items<br>3. Sum of the % availability of the 17 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering basic surgery services<br>2. Total facilities offering basic surgery services<br>3. Total facilities offering basic surgery services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_55",
+  "display": {
+               "en": "Blood transfusion service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering blood transfusion services<br>(typically includes the following: blood transfusions)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering blood transfusion service",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering blood transfusion services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_56",
+  "display": {
+               "en": "Blood transfusion service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering blood transfusion services, the percentage with trained staff and guidelines, equipment, diagnostics, and medicines and commodities<br>(7 tracer items including: 1. Guidelines on the appropriate use of blood and safe blood transfusion, 2. Trained staff, 3. Blood storage refrigerator, 4. Blood typing, 5. Cross match testing, 6. Blood supply sufficiency, 7, Blood supply safety)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 7 tracer items<br>2. % of facilities with all 7 tracer items<br>3. Average availability of the 7 tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 7 tracer items<br>2. Total # of facilities with all 7 tracer items<br>3. Sum of the % availability of the 7 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering blood transfusion services<br>2. Total facilities offering blood transfusion services<br>3. Total facilities offering blood transfusion services<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_57",
+  "display": {
+               "en": "Infectious disease medicines",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities that have the following medicines in stock (observed valid) on the day of assessment: me-/albendazole cap/tab, amoxicillin cap/tab, ceftriaxone injection, co-trimoxazole cap/tab, ciprofloxacin cap/tab, fluconazole cap/tab, metronidazole cap/tab",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 7 infectious disease medicines tracer items<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 7 tracer items<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_58",
+  "display": {
+               "en": "Non-communicable disease medicines",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities that have the following medicines in stock (observed valid) on the day of assessment: Amlodipine tablet or alternative calcium channel blocker, Aspirin cap/tab, Beclometasone inhaler, Beta blocker, Enalapril tablet or other ACE inhibitor, Epinephrine injectable, Furosemide cap/tab, Glibenclamide cap/tab, Gliclazide tablet or glipizide tablet, Glucose 50% injection, Glyceryl trinitrate sublingual tablet, Hydrochlorothiazide tablet or other thiazide diuretic tablet, Hydrocortisone injection, Ibuprofen tablet, Insulin regular injection, Isosorbide dinitrate tablet, Metformin tablet, Omeprazole tablet or alternative such as pantoprazole or rabeprazole, Paracetamol cap/tab, Prednisolone cap/tab, Salbutamol inhaler, Simvastatin tablet or other statin and Spironolactone tablet.",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 23 non-communicable disease medicines tracer items<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 23 tracer items<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_59",
+  "display": {
+               "en": "Mental health and neurological medicines",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities that have the following medicines in stock (observed valid) on the day of the assessment: Amitriptyline tablet, Carbamazepine tablet, Chlorpromazine injection, Diazepam tablet, Diazepam injection or diazepam rectal tubes, Fluoxetine tablet, Fluphenazine injection, Haloperidol tablet, Lorazepam injection, Levodopa + carbidopa tablet, Lithium tablet, Phenobarbital tablet, Phenytoin tablet, Valproate sodium tablet. ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 14 mental health and neurological medicines tracer items<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 14 tracer items<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_60",
+  "display": {
+               "en": "Palliative care medicines",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities that have the following medicines in stock (observed valid) on the day of the assessment: Dexamethasone injection, Haloperidol injection, Hyoscine butylbromide injection, Ibuprofen, Loperamide tab/cap, Lorazepam tablet, Metoclopramide injection, Morphine granule, injectable or cap/tab, Paracetamol, Senna preparation ",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 10 palliative care medicines tracer items<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 10 tracer items<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities in the sample<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_61",
+  "display": {
+               "en": "Comprehensive surgery service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering comprehensive services <br>(typically includes the following: comprehensive surgical services, tracheostomy, tubal ligation, vasectomy, dilatation & curettage, obstetric fistula repair, episiotomy, appendectomy, hernia repair (strangulated), hernia repair (elective), cystotomy, urethral stricture dilatation, laparotomy, congenital hernia repair, neonatal surgery, cleft palate, skin grafting and contracture release, open reduction and fixation for fracture, amputation, cataract surgery, club foot repair and drainage of osteomyelitis-septic arthritis)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities offering comprehensive surgery services<br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities offering comprehensive surgery services<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_62",
+  "display": {
+               "en": "Comprehensive surgery service readiness",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Among health facilities offering comprehensive surgery services, the percentage with staff and guidelines, equipment, and medicines and commodities<br>(18 tracer items including: 1. Materials for IMEESC, 2. Staff trained in IMEESC, 3. Staff trained in surgery, 4. Staff trained in anaesthesia, 5. Oxygen, 6. Anaesthesia equipment, 7. Spinal needle, 8. Suction apparatus, 9. Thiopental, 10. Suxamethonium bromide, 11. Atropine, 12. Atropine, 13. Diazepam, 14. Halothane, 15. Bupivacaine, 16. Lidocaine 5%, 17. Epinephrine, 18. Ephedrine)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. % of facilities with each of the 18 tracer items<br>2. % of facilities with all 18 tracer items<br>3. Average availability of the 18 tracer items in this sample",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Total # of facilities with each of the 18 tracer items<br>2. Total # of facilities with all 18 tracer items<br>3. Sum of the % availability of the 18 tracer items in each facility<br>",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities offering comprehensive surgery services<br>2. Total facilities offering comprehensive surgery services<br>3. Total facilities offering comprehensive surgery services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_63",
+  "display": {
+               "en": "Laboratory capacity service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering laboratory services <br>(typically includes the following: serum electrolytes, full blood count with differential, blood typing and cross match, liver function test, renal function test, CD4 count and percentage, HIV antibody testing, syphilis serology, cryptcooccal antigen, gram stain, urine microscopy testing, CSF/body fluid counts)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. Average availability of tracer items<br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Sum of the % availability of the tracer items in each facility<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
+{
+  "id": "RI_ANC_64",
+  "display": {
+               "en": "High level diagnostic equipment service availability",
+               "fr": null,
+               "es": null
+             },
+  "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "RI_ANC"
+                  },
+                  {
+                    "property_id": "domain",
+                    "concept_id": "46"
+                  },
+                  {
+                    "property_id": "definition",
+                    "display": {
+                                 "en": "Percentage of facilities offering high level diagnostic equipment services <br>(typically includes the following: x-ray, ECG, ultrasound, CT scan)",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "calculation_method",
+                    "display": {
+                                 "en": "1. Average availability of tracer items<br>2. % of facilities that have each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "numerator",
+                    "display": {
+                                 "en": "1. Sum of the % availability of the tracer items in each facility<br>2. Total # of facilities offering each of the listed services",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  },
+                  {
+                    "property_id": "denominator",
+                    "display": {
+                                 "en": "1. Total facilities<br>2. Total facilities",
+                                 "fr": null,
+                                 "es": null
+                               }
+                  }
+                ],
+  "note": [
+            ]
+}
