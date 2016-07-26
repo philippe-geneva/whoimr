@@ -1,4 +1,5 @@
 {
+  "type": "indicator",
   "id": "RI_ANC_1",
   "display": {
                "en": "Health Infrastructure Index",
@@ -51,6 +52,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_2",
   "display": {
                "en": "Health Workforce Index",
@@ -103,6 +105,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_3",
   "display": {
                "en": "Service Utilization index",
@@ -155,6 +158,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_4",
   "display": {
                "en": "Service Availability Index",
@@ -207,6 +211,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_5",
   "display": {
                "en": "Basic Amenities index",
@@ -259,6 +264,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_6",
   "display": {
                "en": "Basic Equipment Index",
@@ -311,6 +317,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_7",
   "display": {
                "en": "Standard Precautions for Infection Prevention",
@@ -363,6 +370,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_8",
   "display": {
                "en": "Diagnostic Capacity",
@@ -415,6 +423,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_9",
   "display": {
                "en": "Essential Medicines",
@@ -467,6 +476,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_10",
   "display": {
                "en": "General service readiness index",
@@ -519,6 +529,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_11",
   "display": {
                "en": "Family planning service availability",
@@ -571,6 +582,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_12",
   "display": {
                "en": "Family planning service readiness",
@@ -623,6 +635,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_13",
   "display": {
                "en": "Antenatal care service availability",
@@ -675,6 +688,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_14",
   "display": {
                "en": "Antenatal care service readiness",
@@ -727,6 +741,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_15",
   "display": {
                "en": "Basic obstetric care service availability",
@@ -779,6 +794,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_16",
   "display": {
                "en": "Basic obstetric care service readiness",
@@ -831,6 +847,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_17",
   "display": {
                "en": "Comprehensive obstetric care service availability",
@@ -883,6 +900,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_18",
   "display": {
                "en": "Comprehensive obstetric care service readiness",
@@ -935,6 +953,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_19",
   "display": {
                "en": "Immunization service availability",
@@ -987,6 +1006,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_20",
   "display": {
                "en": "Immunization service readiness",
@@ -1039,6 +1059,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_21",
   "display": {
                "en": "Child immunization <br>Vaccines stock-out",
@@ -1091,6 +1112,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_22",
   "display": {
                "en": "Child preventive and curative care service availability ",
@@ -1143,6 +1165,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_23",
   "display": {
                "en": "Child preventive and curative care service readiness",
@@ -1195,6 +1218,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_24",
   "display": {
                "en": "Adolescent health service availability",
@@ -1247,6 +1271,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_25",
   "display": {
                "en": "Adolescent health service readiness",
@@ -1299,6 +1324,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_26",
   "display": {
                "en": "Priority medicines for mothers",
@@ -1351,6 +1377,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_27",
   "display": {
                "en": "Priority medicines for children ",
@@ -1403,6 +1430,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_28",
   "display": {
                "en": "Life-saving commodities for women and children ",
@@ -1455,6 +1483,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_29",
   "display": {
                "en": "Life-saving commodities for women and children - Stock-outs",
@@ -1507,6 +1536,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_30",
   "display": {
                "en": "Malaria service availability",
@@ -1559,6 +1589,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_31",
   "display": {
                "en": "Malaria service readiness",
@@ -1611,6 +1642,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_32",
   "display": {
                "en": "Malaria services <br>Stock outs",
@@ -1663,6 +1695,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_33",
   "display": {
                "en": "Tuberculosis service availability",
@@ -1715,6 +1748,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_34",
   "display": {
                "en": "Tuberculosis service readiness",
@@ -1767,6 +1801,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_35",
   "display": {
                "en": "HIV: counselling and testing service availability",
@@ -1819,6 +1854,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_36",
   "display": {
                "en": "HIV: counselling and testing service readiness",
@@ -1871,6 +1907,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_37",
   "display": {
                "en": "HIV/AIDS care and support services availability",
@@ -1923,6 +1960,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_38",
   "display": {
                "en": "HIV/AIDS care and support services readiness",
@@ -1975,6 +2013,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_39",
   "display": {
                "en": "HIV/AIDS: Antiretroviral prescription and client management service availability",
@@ -2027,6 +2066,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_40",
   "display": {
                "en": "HIV/AIDS: Antiretroviral perscription and client management service readiness",
@@ -2079,6 +2119,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_41",
   "display": {
                "en": "HIV/AIDS: Preventing mother-to-child transmission (PMTCT) service availability",
@@ -2131,6 +2172,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_42",
   "display": {
                "en": "HIV/AIDS: Preventing mother-to-child transmission (PMTCT) service readiness",
@@ -2183,6 +2225,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_43",
   "display": {
                "en": "Sexually transmitted infections (STI) service availability",
@@ -2235,6 +2278,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_44",
   "display": {
                "en": "Sexually transmitted infections (STI) service readiness",
@@ -2287,6 +2331,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_45",
   "display": {
                "en": "Diabetes service availability",
@@ -2339,6 +2384,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_46",
   "display": {
                "en": "Diabetes service readiness",
@@ -2391,6 +2437,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_47",
   "display": {
                "en": "Cardiovascular disease service availability",
@@ -2443,6 +2490,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_48",
   "display": {
                "en": "Cardiovascular disease service readiness",
@@ -2495,6 +2543,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_49",
   "display": {
                "en": "Chronic respiratory disease (CRD) service availability",
@@ -2547,6 +2596,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_50",
   "display": {
                "en": "Chronic respiratory disease (CRD) service readiness",
@@ -2599,6 +2649,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_51",
   "display": {
                "en": "Cervical cancer screening service availability",
@@ -2651,6 +2702,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_52",
   "display": {
                "en": "Cervical cancer screening service readiness",
@@ -2703,6 +2755,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_53",
   "display": {
                "en": "Basic surgery service availability",
@@ -2755,6 +2808,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_54",
   "display": {
                "en": "Basic surgery service readiness",
@@ -2807,6 +2861,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_55",
   "display": {
                "en": "Blood transfusion service availability",
@@ -2859,6 +2914,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_56",
   "display": {
                "en": "Blood transfusion service readiness",
@@ -2911,6 +2967,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_57",
   "display": {
                "en": "Infectious disease medicines",
@@ -2963,6 +3020,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_58",
   "display": {
                "en": "Non-communicable disease medicines",
@@ -3015,6 +3073,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_59",
   "display": {
                "en": "Mental health and neurological medicines",
@@ -3067,6 +3126,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_60",
   "display": {
                "en": "Palliative care medicines",
@@ -3119,6 +3179,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_61",
   "display": {
                "en": "Comprehensive surgery service availability",
@@ -3171,6 +3232,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_62",
   "display": {
                "en": "Comprehensive surgery service readiness",
@@ -3223,6 +3285,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_63",
   "display": {
                "en": "Laboratory capacity service availability",
@@ -3275,6 +3338,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "RI_ANC_64",
   "display": {
                "en": "High level diagnostic equipment service availability",

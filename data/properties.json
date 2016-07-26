@@ -1,4 +1,13 @@
 
+{
+  "id": "collection",
+  "codes": ["CHI", "RI_ANC"],
+  "display": {
+    "en": "Collection",
+    "fr": "Collection",
+    "es": "Colección"
+  }
+}
 
 {
   "id": "name",
@@ -30,7 +39,7 @@
 
 {
   "id": "domain",
-  "codes": ["1","2","3","4"],
+  "codes": ["1","2","3","4","44","45","46"],
   "display": {
     "en": "Domain",
     "fr": "Domaine",
@@ -63,7 +72,7 @@
   "display": {
     "en": "Definition",
     "fr": "Définition",
-    "es": null
+    "es": "Definición"
   }
 }
 
@@ -72,7 +81,7 @@
   "display": {
     "en": "Numerator",
     "fr": "Numérateur",
-    "es": null
+    "es": "Numerador"
   }
 }
 
@@ -81,7 +90,7 @@
   "display": {
     "en": "Denominator",
     "fr": "Dénominateur",
-    "es": null
+    "es": "Denominador"
   }
 }
 
@@ -148,4 +157,11 @@
   }
 }
 
-
+{
+  "id": "calculation_method",
+  "display": {
+    "en": "Method of calculation",
+    "fr": "Méthode de calcul",
+    "es": "Método de cálculo"
+  }
+}

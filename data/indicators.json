@@ -1,4 +1,5 @@
 {
+  "type": "indicator",
   "id": "CHI_1",
   "display": {
                "en": "Life expectancy at birth",
@@ -6,6 +7,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -131,6 +136,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_2",
   "display": {
                "en": "Adult mortality rate (probably of dying between 15 and 60 years of age per 1000 population)",
@@ -138,6 +144,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -255,6 +265,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_3",
   "display": {
                "en": "Under-five mortality rate (probability of dying by age 5 per 1000 live births)",
@@ -262,6 +273,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -407,6 +422,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_4",
   "display": {
                "en": "Infant mortality rate (probability of dying between birth and age of 1 year per 1000 live births)",
@@ -414,6 +430,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -543,6 +563,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_5",
   "display": {
                "en": "Neonatal mortality rate (per 1000 live births)",
@@ -550,6 +571,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -687,6 +712,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_6",
   "display": {
                "en": "Stillbirth rate (per 1000 total births)",
@@ -694,6 +720,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -823,6 +853,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_7",
   "display": {
                "en": "Maternal mortality ratio (per 100 000 live births)",
@@ -830,6 +861,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -967,6 +1002,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_8",
   "display": {
                "en": "Tuberculosis (TB) mortality rate (per 100 000 population)",
@@ -974,6 +1010,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -1115,6 +1155,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_9",
   "display": {
                "en": "AIDS-related mortality rate (per 100 000 population)",
@@ -1122,6 +1163,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -1255,6 +1300,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_10",
   "display": {
                "en": "Malaria mortality rate (per 100 000 population)",
@@ -1262,6 +1308,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -1403,6 +1453,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_11",
   "display": {
                "en": "Mortality between ages 30 and 70 years from cardiovascular diseases, cancer, diabetes or chronic respiratory diseases",
@@ -1410,6 +1461,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -1547,6 +1602,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_12",
   "display": {
                "en": "Suicide rate (per 100 000 population)",
@@ -1554,6 +1610,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -1671,6 +1731,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_13",
   "display": {
                "en": "Mortality rate from road traffic injuries (per 100 000 population)",
@@ -1678,6 +1739,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -1811,6 +1876,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_14",
   "display": {
                "en": "Adolescent fertility rate (per 1000 girls aged 15-19 years)",
@@ -1818,6 +1884,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -1955,6 +2025,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_15",
   "display": {
                "en": "Total fertility rate",
@@ -1962,6 +2033,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -2083,6 +2158,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_16",
   "display": {
                "en": "New cases of vaccine-preventable diseases ",
@@ -2090,6 +2166,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -2223,6 +2303,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_17",
   "display": {
                "en": "New cases of IHR-notifiable diseases and other notifiable diseases per year",
@@ -2230,6 +2311,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -2355,6 +2440,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_18",
   "display": {
                "en": "HIV incidence (per 1000 population)",
@@ -2362,6 +2448,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -2535,6 +2625,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_19",
   "display": {
                "en": "HIV prevalence (per 1000 population)",
@@ -2542,6 +2633,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -2699,6 +2794,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_20",
   "display": {
                "en": "Prevalence of hepatitis B surface antigen",
@@ -2706,6 +2802,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -2839,6 +2939,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_21",
   "display": {
                "en": "Sexually transmitted infections (STIs) incidence rate",
@@ -2846,6 +2947,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -2971,6 +3076,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_22",
   "display": {
                "en": "Tuberculosis (TB) incidence (per 100 000 population)",
@@ -2978,6 +3084,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -3119,6 +3229,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_23",
   "display": {
                "en": "Tuberculosis (TB) notification rate (per 100 000 population)",
@@ -3126,6 +3237,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -3259,6 +3374,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_24",
   "display": {
                "en": "Tuberculosis (TB) prevalence rate (per 100 000 population)",
@@ -3266,6 +3382,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -3407,6 +3527,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_25",
   "display": {
                "en": "Malaria parasite prevalence among children aged 6-59 months",
@@ -3414,6 +3535,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -3547,6 +3672,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_26",
   "display": {
                "en": "Malaria incidence rate (per 1000 population)",
@@ -3554,6 +3680,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -3703,6 +3833,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_27",
   "display": {
                "en": "Cancer incidence rate, by type of cancer (per 100 000 population)",
@@ -3710,6 +3841,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -3847,6 +3982,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_28",
   "display": {
                "en": "Exclusive breastfeeding rate in infants 0-5 months of age ",
@@ -3854,6 +3990,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -4031,6 +4171,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_29",
   "display": {
                "en": "Early initiation of breastfeeding",
@@ -4038,6 +4179,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -4155,6 +4300,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_30",
   "display": {
                "en": "Incidence of low birth weight among newborns",
@@ -4162,6 +4308,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -4299,6 +4449,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_31",
   "display": {
                "en": "Children under 5 years who are stunted (moderate and severe)",
@@ -4306,6 +4457,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -4487,6 +4642,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_32",
   "display": {
                "en": "Children under 5 years who are wasted (moderate and severe)",
@@ -4494,6 +4650,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -4667,6 +4827,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_33",
   "display": {
                "en": "Prevalence of anaemia in children aged 6-59 months ",
@@ -4674,6 +4835,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -4815,6 +4980,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_34",
   "display": {
                "en": "Anaemia prevalence in women of reproductive age",
@@ -4822,6 +4988,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -4955,6 +5125,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_35",
   "display": {
                "en": "Condom use at last sex with high-risk partner",
@@ -4962,6 +5133,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -5079,6 +5254,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_36",
   "display": {
                "en": "Percentage of population using safely managed drinking-water services",
@@ -5086,6 +5262,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -5243,6 +5423,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_37",
   "display": {
                "en": "Percentage of population using safely managed sanitation services",
@@ -5250,6 +5431,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -5399,6 +5584,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_38",
   "display": {
                "en": "Population using modern fuels and technologies for cooking/heating/lighting (indoor air)",
@@ -5406,6 +5592,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -5547,6 +5737,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_39",
   "display": {
                "en": "Air pollution level in cities (particulate matter [PM])",
@@ -5554,6 +5745,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -5671,6 +5866,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_40",
   "display": {
                "en": "Total alcohol per capita (age 15+ years) consumption ",
@@ -5678,6 +5874,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -5819,6 +6019,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_41",
   "display": {
                "en": "Age-standardized prevalence of current tobacco use among persons aged 18+ years",
@@ -5826,6 +6027,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -5951,6 +6156,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_42",
   "display": {
                "en": "Children aged under 5 years who are overweight",
@@ -5958,6 +6164,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -6131,6 +6341,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_43",
   "display": {
                "en": "Age-standardized prevalence of overweight and obesity in persons aged 18+ years",
@@ -6138,6 +6349,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -6263,6 +6478,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_44",
   "display": {
                "en": "Age-standardized prevalence of raised blood pressure among persons aged 18+ years ",
@@ -6270,6 +6486,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -6395,6 +6615,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_45",
   "display": {
                "en": "Age-standardized prevalence of raised blood glucose/diabetes among persons aged 18+ years or on medication for raised blood glucose",
@@ -6402,6 +6623,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -6527,6 +6752,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_46",
   "display": {
                "en": "Age-standardized mean population intake of salt (sodium chloride) per day in grams in persons aged 18+ years",
@@ -6534,6 +6760,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -6683,6 +6913,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_47",
   "display": {
                "en": "Age-standardized prevalence of insufficiently physically active persons aged 18+ years",
@@ -6690,6 +6921,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -6823,6 +7058,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_48",
   "display": {
                "en": "Intimate partner violence prevalence",
@@ -6830,6 +7066,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -6963,6 +7203,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_49",
   "display": {
                "en": "Demand for family planning satisfied with modern methods",
@@ -6970,6 +7211,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -7127,6 +7372,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_50",
   "display": {
                "en": "Contraceptive prevalence rate",
@@ -7134,6 +7380,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -7307,6 +7557,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_51",
   "display": {
                "en": "Antenatal care coverage ? at least four visits (%)",
@@ -7314,6 +7565,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -7463,6 +7718,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_52",
   "display": {
                "en": "Births attended by skilled health personnel (%)",
@@ -7470,6 +7726,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -7635,6 +7895,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_53",
   "display": {
                "en": "Postpartum care coverage",
@@ -7642,6 +7903,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -7799,6 +8064,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_54",
   "display": {
                "en": "Percentage of children under 5 years of age with suspected pneumonia taken to a health facility",
@@ -7806,6 +8072,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -7947,6 +8217,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_55",
   "display": {
                "en": "Children with diarrhoea receiving oral rehydration solution (ORS)",
@@ -7954,6 +8225,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -8095,6 +8370,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_56",
   "display": {
                "en": "Children aged 6?59 months who received vitamin A supplementation (% of doses)",
@@ -8102,6 +8378,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -8259,6 +8539,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_57",
   "display": {
                "en": "Immunization coverage rate by vaccine for each vaccine in the national schedule",
@@ -8266,6 +8547,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -8387,6 +8672,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_58",
   "display": {
                "en": "People living with HIV who have been diagnosed (%)",
@@ -8394,6 +8680,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -8519,6 +8809,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_59",
   "display": {
                "en": "Prevention of mother-to-child transmission",
@@ -8526,6 +8817,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -8683,6 +8978,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_60",
   "display": {
                "en": "HIV care coverage",
@@ -8690,6 +8986,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -8815,6 +9115,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_61",
   "display": {
                "en": "Antiretroviral therapy (ART) coverage (%)",
@@ -8822,6 +9123,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -8979,6 +9284,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_62",
   "display": {
                "en": "HIV viral load suppression",
@@ -8986,6 +9292,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -9111,6 +9421,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_63",
   "display": {
                "en": "TB preventive therapy for HIV-positive people newly enrolled in HIV care",
@@ -9118,6 +9429,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -9243,6 +9558,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_64",
   "display": {
                "en": "HIV test results for registered new and relapse TB patients",
@@ -9250,6 +9566,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -9399,6 +9719,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_65",
   "display": {
                "en": "HIV-positive new and relapse TB patients on antiretroviral therapy (ART) during TB treatment",
@@ -9406,6 +9727,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -9539,6 +9864,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_66",
   "display": {
                "en": "Percentage of TB patients with test results for isoniazid and rifampicin drug susceptibility",
@@ -9546,6 +9872,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -9679,6 +10009,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_67",
   "display": {
                "en": "Case detection rate for all forms of tuberculosis",
@@ -9686,6 +10017,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -9819,6 +10154,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_68",
   "display": {
                "en": "Second-line treatment coverage among multidrug-resistant tuberculosis (MDR-TB) cases ",
@@ -9826,6 +10162,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -9967,6 +10307,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_69",
   "display": {
                "en": "Intermittent preventive therapy for malaria during pregnancy (IPTp)",
@@ -9974,6 +10315,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -10115,6 +10460,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_70",
   "display": {
                "en": "Percentage of population sleeping under insecticide-treated nets (%)",
@@ -10122,6 +10468,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -10255,6 +10605,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_71",
   "display": {
                "en": "Treatment of confirmed malaria cases (%)",
@@ -10262,6 +10613,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -10395,6 +10750,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_72",
   "display": {
                "en": "Indoor residual spraying (IRS) coverage (%)",
@@ -10402,6 +10758,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -10551,6 +10911,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_73",
   "display": {
                "en": "Coverage of preventive chemotherapy for selected neglected tropical diseases",
@@ -10558,6 +10919,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -10719,6 +11084,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_74",
   "display": {
                "en": "Cervical cancer screening",
@@ -10726,6 +11092,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -10863,6 +11233,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_75",
   "display": {
                "en": "Coverage of services for severe mental health disorders",
@@ -10870,6 +11241,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -10987,6 +11362,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_76",
   "display": {
                "en": "Perioperative mortality rate",
@@ -10994,6 +11370,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -11115,6 +11495,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_77",
   "display": {
                "en": "Obstetric and gynaecological admissions owing to abortion",
@@ -11122,6 +11503,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -11243,6 +11628,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_78",
   "display": {
                "en": "Institutional maternal mortality ratio (per 100 000 deliveries)",
@@ -11250,6 +11636,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -11423,6 +11813,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_79",
   "display": {
                "en": "Maternal death review coverage (%)",
@@ -11430,6 +11821,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -11563,6 +11958,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_80",
   "display": {
                "en": "ART retention rate",
@@ -11570,6 +11966,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -11715,6 +12115,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_81",
   "display": {
                "en": "TB treatment success rate",
@@ -11722,6 +12123,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -11867,6 +12272,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_82",
   "display": {
                "en": "Service-specific availability and readiness",
@@ -11874,6 +12280,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -12011,6 +12421,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_83",
   "display": {
                "en": "Service utilization",
@@ -12018,6 +12429,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -12139,6 +12554,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_84",
   "display": {
                "en": "Health service access",
@@ -12146,6 +12562,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -12275,6 +12695,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_85",
   "display": {
                "en": "Hospital bed density (per 10 000 population)",
@@ -12282,6 +12703,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -12407,6 +12832,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_86",
   "display": {
                "en": "Availability of essential medicines and commodities",
@@ -12414,6 +12840,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -12559,6 +12989,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_87",
   "display": {
                "en": "Health worker density and distribution (per 1000 population)",
@@ -12566,6 +12997,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -12711,6 +13146,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_88",
   "display": {
                "en": "Output training institutions",
@@ -12718,6 +13154,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -12855,6 +13295,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_89",
   "display": {
                "en": "Birth registration coverage",
@@ -12862,6 +13303,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -12983,6 +13428,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_90",
   "display": {
                "en": "Death registration coverage",
@@ -12990,6 +13436,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -13111,6 +13561,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_91",
   "display": {
                "en": "Completeness of reporting by facilities",
@@ -13118,6 +13569,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -13243,6 +13698,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_92",
   "display": {
                "en": "Total current expenditure on health as percentage of gross domestic product ",
@@ -13250,6 +13706,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -13367,6 +13827,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_93",
   "display": {
                "en": "Current expenditure on health by general government and compulsory schemes as a percentage of current expenditure on health",
@@ -13374,6 +13835,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -13499,6 +13964,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_94",
   "display": {
                "en": "Out-of-pocket payment on health as a percentage of current expenditure on health",
@@ -13506,6 +13972,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -13623,6 +14093,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_95",
   "display": {
                "en": "Externally sourced funding as a percentage of current expenditure on health",
@@ -13630,6 +14101,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -13747,6 +14222,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_96",
   "display": {
                "en": "Total capital expenditure on health as a share of current + capital expenditure on health",
@@ -13754,6 +14230,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -13871,6 +14351,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_97",
   "display": {
                "en": "Headcount ratio of catastrophic health expenditure",
@@ -13878,6 +14359,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -14011,6 +14496,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_98",
   "display": {
                "en": "Headcount ratio of impoverishing health expenditure",
@@ -14018,6 +14504,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -14151,6 +14641,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_99",
   "display": {
                "en": "International Health Regulations (IHR) core capacity index",
@@ -14158,6 +14649,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "14"
@@ -14287,6 +14782,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_100",
   "display": {
                "en": "Life expectancy at age 60 years",
@@ -14294,6 +14790,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -14404,6 +14904,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_101",
   "display": {
                "en": "Healthy life expectancy at birth",
@@ -14411,6 +14912,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -14521,6 +15026,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_102",
   "display": {
                "en": "Distribution of causes of death in health facilities",
@@ -14528,6 +15034,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -14638,6 +15148,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_103",
   "display": {
                "en": "Leading outpatient diagnosis ",
@@ -14645,6 +15156,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -14755,6 +15270,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_104",
   "display": {
                "en": "Leading inpatient admissions by diagnosis",
@@ -14762,6 +15278,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -14872,6 +15392,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_105",
   "display": {
                "en": "Prevalence rate of neglected tropical diseases",
@@ -14879,6 +15400,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -14993,6 +15518,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_106",
   "display": {
                "en": "Prevalence of severe mental disorders",
@@ -15000,6 +15526,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -15110,6 +15640,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_107",
   "display": {
                "en": "Prevalence of visual impairment",
@@ -15117,6 +15648,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -15227,6 +15762,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_108",
   "display": {
                "en": "Children aged under 5 years who are underweight",
@@ -15234,6 +15770,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -15344,6 +15884,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_109",
   "display": {
                "en": "Percentage of women of reproductive age who are underweight",
@@ -15351,6 +15892,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -15461,6 +16006,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_110",
   "display": {
                "en": "Minimum acceptable diet",
@@ -15468,6 +16014,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -15578,6 +16128,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_111",
   "display": {
                "en": "Urinary iodine concentration in children aged 6-12 years",
@@ -15585,6 +16136,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -15695,6 +16250,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_112",
   "display": {
                "en": "Households that have iodized salt",
@@ -15702,6 +16258,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -15812,6 +16372,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_113",
   "display": {
                "en": "Prevalence of heavy episodic drinking ",
@@ -15819,6 +16380,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -15929,6 +16494,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_114",
   "display": {
                "en": "Abstainers",
@@ -15936,6 +16502,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -16046,6 +16616,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_115",
   "display": {
                "en": "Low consumption of fruit and vegetables among adults",
@@ -16053,6 +16624,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -16163,6 +16738,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_116",
   "display": {
                "en": "Total energy intake from saturated fatty acids ",
@@ -16170,6 +16746,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -16280,6 +16860,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_117",
   "display": {
                "en": "Raised cholesterol among adults",
@@ -16287,6 +16868,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -16397,6 +16982,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_118",
   "display": {
                "en": "Safe injecting practices among injecting drug users",
@@ -16404,6 +16990,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -16514,6 +17104,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_119",
   "display": {
                "en": "Multiple sexual partnerships ",
@@ -16521,6 +17112,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -16631,6 +17226,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_120",
   "display": {
                "en": "Discriminatory attitudes towards people living with HIV",
@@ -16638,6 +17234,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -16748,6 +17348,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_121",
   "display": {
                "en": "Prevalence of female genital mutilation",
@@ -16755,6 +17356,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -16869,6 +17474,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_122",
   "display": {
                "en": "Non-partner sexual violence prevalence ",
@@ -16876,6 +17482,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -16986,6 +17596,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_123",
   "display": {
                "en": "Seat-belt wearing rate",
@@ -16993,6 +17604,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -17103,6 +17718,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_124",
   "display": {
                "en": "Helmet wearing rate",
@@ -17110,6 +17726,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -17220,6 +17840,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_125",
   "display": {
                "en": "Population with basic hand-washing facilities with soap and water at home",
@@ -17227,6 +17848,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -17337,6 +17962,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_126",
   "display": {
                "en": "Timing of first antenatal visit",
@@ -17344,6 +17970,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -17462,6 +18092,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_127",
   "display": {
                "en": "Zinc for treatment of diarrhoea ",
@@ -17469,6 +18100,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -17587,6 +18222,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_128",
   "display": {
                "en": "HIV-testing in key populations",
@@ -17594,6 +18230,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -17704,6 +18344,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_129",
   "display": {
                "en": "Pregnant women counselled and tested for HIV",
@@ -17711,6 +18352,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -17821,6 +18466,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_130",
   "display": {
                "en": "Prevention of mother-to-child transmission during breastfeeding",
@@ -17828,6 +18474,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -17938,6 +18588,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_131",
   "display": {
                "en": "Early infant testing coverage ",
@@ -17945,6 +18596,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -18055,6 +18710,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_132",
   "display": {
                "en": "Cotrimoxazole prophylaxis among HIV-positives who are eligible",
@@ -18062,6 +18718,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -18172,6 +18832,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_133",
   "display": {
                "en": "Needles/syringes distribution",
@@ -18179,6 +18840,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -18289,6 +18954,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_134",
   "display": {
                "en": "Coverage of prevention programmes among key populations",
@@ -18296,6 +18962,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -18406,6 +19076,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_135",
   "display": {
                "en": "Male circumcision ",
@@ -18413,6 +19084,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -18523,6 +19198,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_136",
   "display": {
                "en": "TB status assessment among HIV-positive people ",
@@ -18530,6 +19206,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -18640,6 +19320,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_137",
   "display": {
                "en": "Confirmed cases of MDR-TB",
@@ -18647,6 +19328,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -18757,6 +19442,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_138",
   "display": {
                "en": "Household ownership of insecticide treated net (ITN)",
@@ -18764,6 +19450,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -18874,6 +19564,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_139",
   "display": {
                "en": "Treatment-seeking behaviour for children with fever",
@@ -18881,6 +19572,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -18991,6 +19686,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_140",
   "display": {
                "en": "Access to insecticide treated net (ITN) in the household",
@@ -18998,6 +19694,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -19108,6 +19808,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_141",
   "display": {
                "en": "Appropriate treatment among children treated for malaria",
@@ -19115,6 +19816,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -19225,6 +19930,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_142",
   "display": {
                "en": "Annual blood examination rate",
@@ -19232,6 +19938,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -19342,6 +20052,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_143",
   "display": {
                "en": "Malaria diagnostic testing rate",
@@ -19349,6 +20060,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -19459,6 +20174,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_144",
   "display": {
                "en": "Malaria test positivity rate",
@@ -19466,6 +20182,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -19576,6 +20296,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_145",
   "display": {
                "en": "Coverage of case management for selected neglected tropical diseases",
@@ -19583,6 +20304,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -19693,6 +20418,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_146",
   "display": {
                "en": "Coverage of preventive chemotherapy for trachoma",
@@ -19700,6 +20426,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -19810,6 +20540,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_147",
   "display": {
                "en": "Coverage of preventive chemotherapy for foodborne trematode infections ",
@@ -19817,6 +20548,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -19927,6 +20662,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_148",
   "display": {
                "en": "Drug therapy and counselling to prevent heart attacks and stroke",
@@ -19934,6 +20670,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -20044,6 +20784,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_149",
   "display": {
                "en": "Cataract surgical rate and coverage",
@@ -20051,6 +20792,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -20161,6 +20906,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_150",
   "display": {
                "en": "Use of assistive devices among people with disabilities",
@@ -20168,6 +20914,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -20278,6 +21028,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_151",
   "display": {
                "en": "Cause-specific case fatality rates for major causes ",
@@ -20285,6 +21036,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -20395,6 +21150,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_152",
   "display": {
                "en": "Antenatal care: blood pressure measured ",
@@ -20402,6 +21158,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -20516,6 +21276,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_153",
   "display": {
                "en": "Antenatal care: tested for syphilis",
@@ -20523,6 +21284,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -20637,6 +21402,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_154",
   "display": {
                "en": "Antenatal care: treated for syphilis",
@@ -20644,6 +21410,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -20758,6 +21528,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_155",
   "display": {
                "en": "Antenatal corticosteroid use",
@@ -20765,6 +21536,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -20879,6 +21654,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_156",
   "display": {
                "en": "Prevention of postpartum haemorrhage in health facilities",
@@ -20886,6 +21662,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -21000,6 +21780,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_157",
   "display": {
                "en": "Severe systemic infection/sepsis in the postnatal period",
@@ -21007,6 +21788,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -21121,6 +21906,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_158",
   "display": {
                "en": "Newborns receiving essential newborn care ",
@@ -21128,6 +21914,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -21242,6 +22032,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_159",
   "display": {
                "en": "Neonatal sepsis ",
@@ -21249,6 +22040,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -21363,6 +22158,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_160",
   "display": {
                "en": "Feeding of children born to HIV-positive mothers",
@@ -21370,6 +22166,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -21480,6 +22280,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_161",
   "display": {
                "en": "Pneumonia treatment (children) ",
@@ -21487,6 +22288,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -21601,6 +22406,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_162",
   "display": {
                "en": "Male partner testing for HIV among women attending antenatal care",
@@ -21608,6 +22414,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -21718,6 +22528,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_163",
   "display": {
                "en": "Knowledge of HIV transmission among young women and men ",
@@ -21725,6 +22536,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -21835,6 +22650,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_164",
   "display": {
                "en": "Cancer survival rates ",
@@ -21842,6 +22658,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -21952,6 +22772,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_165",
   "display": {
                "en": "30-day hospital case fatality rate - acute myocardial infarction (stroke)",
@@ -21959,6 +22780,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -22069,6 +22894,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_166",
   "display": {
                "en": "Postoperative sepsis",
@@ -22076,6 +22902,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -22186,6 +23016,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_167",
   "display": {
                "en": "Postoperative pulmonary embolism/thrombosis rate",
@@ -22193,6 +23024,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -22303,6 +23138,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_168",
   "display": {
                "en": "Hospitals with systems for adverse event reporting and learning for patient safety ",
@@ -22310,6 +23146,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -22420,6 +23260,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_169",
   "display": {
                "en": "Hospital readmission rates",
@@ -22427,6 +23268,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -22537,6 +23382,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_170",
   "display": {
                "en": "Waiting time to elective surgery ",
@@ -22544,6 +23390,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -22654,6 +23504,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_171",
   "display": {
                "en": "Patient satisfaction",
@@ -22661,6 +23512,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -22771,6 +23626,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_172",
   "display": {
                "en": "Neonatal death reviews ",
@@ -22778,6 +23634,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -22888,6 +23748,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_173",
   "display": {
                "en": "General service readiness",
@@ -22895,6 +23756,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -23005,6 +23870,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_174",
   "display": {
                "en": "Hospital admission rates",
@@ -23012,6 +23878,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -23122,6 +23992,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_175",
   "display": {
                "en": "Bed occupancy rate",
@@ -23129,6 +24000,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -23239,6 +24114,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_176",
   "display": {
                "en": "Surgery rate",
@@ -23246,6 +24122,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -23356,6 +24236,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_177",
   "display": {
                "en": "Caesarean section rate",
@@ -23363,6 +24244,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -23473,6 +24358,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_178",
   "display": {
                "en": "Medical devices/essential technologies",
@@ -23480,6 +24366,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -23590,6 +24480,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_179",
   "display": {
                "en": "Access to palliative care ",
@@ -23597,6 +24488,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -23707,6 +24602,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_180",
   "display": {
                "en": "Opioid agonist pharmacotherapy used for the treatment of opioid dependence (maintenance)",
@@ -23714,6 +24610,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -23824,6 +24724,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_181",
   "display": {
                "en": "Turnover rate",
@@ -23831,6 +24732,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -23941,6 +24846,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_182",
   "display": {
                "en": "National human resources for health self-sufficiency",
@@ -23948,6 +24854,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"
@@ -24058,6 +24968,7 @@
             ]
 }
 {
+  "type": "indicator",
   "id": "CHI_183",
   "display": {
                "en": "Policy index ",
@@ -24065,6 +24976,10 @@
                "es": null
              },
   "property": [
+                  {
+                    "property_id": "collection",
+                    "concept_id": "CHI"
+                  },
                   {
                     "property_id": "type",
                     "concept_id": "13"

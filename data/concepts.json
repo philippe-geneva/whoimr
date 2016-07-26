@@ -1,4 +1,33 @@
 {
+  "id": "CHI",
+  "label": {
+    "en": "Core health indicators",
+    "fr": "Indicateurs de santé de base",
+    "es": "Indicadores básicos de salud"
+  },
+  "definition": {
+    "en": null,
+    "fr": null,
+    "es": null
+  }
+}
+
+{
+  "id": "RI_ANC",
+  "label": {
+    "en": "ANC Readiness Indicators",
+    "fr": null,
+    "es": null
+  },
+  "definition": {
+    "en": null,
+    "fr": null,
+    "es": null
+  }
+}
+  
+
+{
   "id": "1",
   "label": {
     "en": "Health status",
@@ -599,4 +628,47 @@
     "es": null
   }
 }
+
+{
+  "id": "44",
+  "label": {
+    "en": "General Service Availability",
+    "fr": null,
+    "es": null
+  },
+  "definition": {
+    "en": null,
+    "fr": null,
+    "es": null
+  }
+}
+  
+{
+  "id": "45",
+  "label": {
+    "en": "General Service Readiness",
+    "fr": null,
+    "es": null
+  },
+  "definition": {
+    "en": null,
+    "fr": null,
+    "es": null
+  }
+}
+  
+{
+  "id": "46",
+  "label": {
+    "en": "Service Specific Availability and Readiness",
+    "fr": null,
+    "es": null
+  },
+  "definition": {
+    "en": null,
+    "fr": null,
+    "es": null
+  }
+}
+  
 
