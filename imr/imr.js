@@ -237,7 +237,7 @@ function showObject(req,res,type) {
  
         // load the descriptions of the properties in the list so that we 
         // can retreive correct display labels
-      
+        
         db.collection('properties')
           .find({id:{$in:proplist}})
           .toArray(function(err,prop) {
@@ -251,83 +251,147 @@ function showObject(req,res,type) {
               conceptList.push(doc.property[n].concept_id);
             }
           }
-  
-          // Retrieve the concept descriptions and display labels
-         
-          db.collection('concepts')
-            .find({id:{$in:conceptList}})
-            .toArray(function(err,concept) {
-  
-            // Create an empty display version of the indicator
 
-            var myObject = { 
-              type: doc.type,
-              name: (doc.display[req.getLocale()] == null) ? 
-                    doc.display.en : doc.display[req.getLocale()], 
-              code: doc.id,
-              property: [],
-              note: []
-            };
+          // get the set of relationships associated with this object and make a set of
+          // unique related object IDs, stored in the variable ids.
   
-            // Populate it with the correct display labels and values for 
-            // each property.
-  
-            for (var p in doc.property) {
-              var propLabel = doc.property[p].property_id;
-              for (var q = 0; q < prop.length; q++) {
-                if (prop[q].id == propLabel) {
-                  propLabel = (prop[q].display[req.getLocale()] == null) ?
-                              prop[q].display.en : prop[q].display[req.getLocale()];
-                  break;
-                }
-              }
-  
-              // Resolve the value for the for property.  If it is a coded
-              // value, extract the appropriate display string to pass to the 
-              // template.
-  
-              var propValue = "";
-              var concept_id = null;
-              if ('concept_id' in doc.property[p]) {
-                propValue = doc.property[p].concept_id; 
-                concept_id = propValue;
-                for (var q = 0; q < concept.length; q++) {
-                  if (concept[q].id == propValue) {
-                    propValue = (concept[q].label[req.getLocale()] == null) ?
-                                concept[q].label.en : concept[q].label[req.getLocale()];
-                    break;
-                  }
-                }
+          db.collection('relationships')
+            .find({ $or: [ {"chld":req.params.indicator}, {"prnt":req.params.indicator}]})
+            .toArray(function(err,rel) {
+            assert.equal(null,err);
+            var ids = new Set();
+            for (var n in rel) {
+              if (rel[n].chld == req.params.indicator) {
+                ids.add(rel[n].prnt);
               } else {
-                propValue = (doc.property[p].display[req.getLocale()] == null) ?
-                            doc.property[p].display.en : doc.property[p].display[req.getLocale()];
+                ids.add(rel[n].chld);
               }
-             
-              myObject.property.push({
-                code: doc.property[p].property_id,
-                concept_id: concept_id,
-                label: propLabel,
-                value: propValue
+            }
+            var id_array = Array.from(ids);
+
+            // Get the object names, ids, and types for the items listed in the
+            // target object's relationsions
+          
+            db.collection('objects')
+              .find({"id":{$in:id_array}},{id:1,type:1,display:1}) 
+              .toArray(function(err,relobj) {
+              
+              // Retrieve the concept descriptions and display labels
+         
+              db.collection('concepts')
+                .find({id:{$in:conceptList}})
+                .toArray(function(err,concept) {
+      
+                // Create an empty display version of the indicator
+    
+                var myObject = { 
+                  type: doc.type,
+                  name: (doc.display[req.getLocale()] == null) ? 
+                        doc.display.en : doc.display[req.getLocale()], 
+                  code: doc.id,
+                  property: [],
+                  chld: [],
+                  prnt: [],
+                  note: []
+                };
+  
+                // Populate the relationships by resolving the names to the appropriate
+                // locale and splitting them into parent and child relationships
+    
+                for (var r in rel) {
+                  var relObjLabel = null;
+                  var relObjCode = null;
+                  var relObjType = null;
+                  var child = false;
+                  if (rel[r].chld == req.params.indicator) {
+                    relObjCode = rel[r].prnt; 
+                  } else {
+                    relObjCode = rel[r].chld; 
+                    child = true;
+                  }
+                  relObjLabel = relObjCode;
+                  for (var q = 0; q < relobj.length; q++) {
+                    if (relobj[q].id == relObjLabel) {
+                      relObjType = relobj[q].type;
+                      relObjLabel = (relobj[q].display[req.getLocale()] == null) ?
+                                    relobj[q].display.en : relobj[q].display[req.getLocale()];
+                      break;
+                    }
+                  }
+                  var relationship = {
+                    name: relObjLabel,
+                    code: relObjCode,
+                    type: relObjType,
+                  };
+  
+                  if (child) {
+                    myObject.chld.push(relationship);
+                  } else { 
+                    myObject.prnt.push(relationship);
+                  }
+                } 
+    
+                // Populate it with the correct display labels and values for 
+                // each property.
+    
+                for (var p in doc.property) {
+                  var propLabel = doc.property[p].property_id;
+                  for (var q = 0; q < prop.length; q++) {
+                    if (prop[q].id == propLabel) {
+                      propLabel = (prop[q].display[req.getLocale()] == null) ?
+                                  prop[q].display.en : prop[q].display[req.getLocale()];
+                      break;
+                    }
+                  }
+    
+                  // Resolve the value for the for property.  If it is a coded
+                  // value, extract the appropriate display string to pass to the 
+                  // template.
+    
+                  var propValue = "";
+                  var concept_id = null;
+                  if ('concept_id' in doc.property[p]) {
+                    propValue = doc.property[p].concept_id; 
+                    concept_id = propValue;
+                    for (var q = 0; q < concept.length; q++) {
+                      if (concept[q].id == propValue) {
+                        propValue = (concept[q].label[req.getLocale()] == null) ?
+                                    concept[q].label.en : concept[q].label[req.getLocale()];
+                        break;
+                      }
+                    }
+                  } else {
+                    propValue = (doc.property[p].display[req.getLocale()] == null) ?
+                                doc.property[p].display.en : doc.property[p].display[req.getLocale()];
+                  }
+                 
+                  myObject.property.push({
+                    code: doc.property[p].property_id,
+                    concept_id: concept_id,
+                    label: propLabel,
+                    value: propValue
+                  });
+                }
+        
+                // Add all the footnotes in the correct language.
+                
+                for (var n in doc.note) {
+                  var noteValue = (doc.note[n].display[req.getLocale()] == null) ?
+                                  doc.note[n].display.en : doc.note[n].display[req.getLocale()];
+                  myObject.note.push(noteValue);
+                }
+        
+                // Render the indicator using the indicator template.
+                res.render('object',{
+                  "object": myObject,
+                  "approot": __application_root,
+                  "locale": req.getLocale(),
+                  "user": req.user
+                });
+                db.close();
               });
-            }
-    
-            // Add all the footnotes in the correct language.
-            
-            for (var n in doc.note) {
-              var noteValue = (doc.note[n].display[req.getLocale()] == null) ?
-                              doc.note[n].display.en : doc.note[n].display[req.getLocale()];
-              myObject.note.push(noteValue);
-            }
-    
-            // Render the indicator using the indicator template.
-            res.render('object',{
-              "object": myObject,
-              "approot": __application_root,
-              "locale": req.getLocale(),
-              "user": req.user
-            });
-            db.close();
-          });
+            }); 
+          }); 
         }); 
       }
     }); 

@@ -25,6 +25,26 @@
     {{/value}}
     {{/object.property}}
     <tr>
+      <th>Sub objects</th>
+      <td>
+        <ol>
+          {{#object.chld}}
+          <li><a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">[{{type}}:{{code}}] {{name}}</a></li>
+          {{/object.chld}}
+        </ol>
+       </td>
+    </tr>
+    <tr>
+      <th>Parent objects</th>
+      <td>
+        <ol>
+          {{#object.prnt}}
+          <li><a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">[{{type}}:{{code}}] {{name}}</a></li>
+          {{/object.prnt}}
+        </ol>
+       </td>
+    </tr>
+    <tr>
       <th>{{#__}}strFootnotes{{/__}}</ht>
       <td>
         <ol>
