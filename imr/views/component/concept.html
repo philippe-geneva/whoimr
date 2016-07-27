@@ -19,11 +19,11 @@
       <th>{{#__}}strRelInd{{/__}}</th>
       <td>
         <ul>
-          {{#concept.indicator}}
+          {{#concept.rel_object}}
             <li>
-              <a href="{{approot}}/view/indicator/{{locale}}/{{code}}">{{name}}</a>
+              <a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">{{name}} ({{type}})</a>
             </li>
-          {{/concept.indicator}}
+          {{/concept.rel_object}}
         </ul>
       </td>
     </tr>

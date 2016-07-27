@@ -1,25 +1,305 @@
 {
-  "id": "QB_1",
+  "id": "QB_800",
   "type": "question",
   "display": {
-               "en": "Sample question text 0000",
-               "fr": "échantillon texte de la question 0000",
-               "es": "texto de la pregunta de la muestra 0000"
+    "en": "Does this facility offer antenatal care (ANC) services?",
+    "fr": null,
+    "es": null
   },
-  "display_sequence": 5,
-  "indicator_id": [ "CHI_1", "CHI_2" ],
-  "mandatory": true
+  "property": [
+    {
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80000"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
+}
+
+
+{
+  "id": "QB_801",
+  "type": "question",
+  "display": {
+    "en": "Do ANC providers provide any of the following services to pregnant women as part of routine ANC services?",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80100"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
 }
 
 {
-  "id": "QB_2",
+  "id": "QB_801_01",
   "type": "question",
   "display": {
-               "en": "Sample question text 1111",
-               "fr": "échantillon texte de la question 1111",
-               "es": "texto de la pregunta de la muestra 1111"
+    "en": "Iron supplementation",
+    "fr": null,
+    "es": null
   },
-  "display_sequence": 1,
-  "indicator_id": [ "CHI_2", "CHI_3" ],
-  "mandatory": true
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80101"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
+}
+
+{
+  "id": "QB_801_02",
+  "type": "question",
+  "display": {
+    "en": "Folic acid supplementation",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80102"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
+}
+{
+  "id": "QB_801_03",
+  "type": "question",
+  "display": {
+    "en": "Intermittent preventative treatment in pregnancy (IPTp) for malaria",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80103"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
+}
+{
+  "id": "QB_801_04",
+  "type": "question",
+  "display": {
+    "en": "Tetanus toxoid immunization",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80104"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
+}
+{
+  "id": "QB_801_05",
+  "type": "question",
+  "display": {
+    "en": "Monitoring for hypertensive disorder of pregnancy",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80105"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
+}
+
+{
+  "id": "QB_802",
+  "type": "question",
+  "display": {
+    "en": "Please tell me if the following documents are avialbale in the facility today:",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80200"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_2"
+    }
+  ]
+}
+
+{
+  "id": "QB_802_01",
+  "type": "question",
+  "display": {
+    "en": "National ANC guidelines",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80201"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_2"
+    }
+  ]
+} 
+
+{
+  "id": "QB_802_02",
+  "type": "question",
+  "display": {
+    "en": "Any ANC check-lists and/or job aids",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80202"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_2"
+    }
+  ]
+}
+
+{
+  "id": "QB_802_03",
+  "type": "question",
+  "display": {
+    "en": "IPTp guidelines, check-lists and/or job-aids (including all charts)",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80203"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_2"
+    }
+  ]
+}
+
+{
+  "id": "QB_803",
+  "type": "question",
+  "display": {
+    "en": "Have you or any provider(s) of ANC services:",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80300"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
+}
+
+{
+  "id": "QB_803_01",
+  "type": "question",
+  "display": {
+    "en": "Received any ANC training in the last two years?",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80301"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
+}
+
+{
+  "id": "QB_803_02",
+  "type": "question",
+  "display": {
+    "en": "Received any training in IPTp in the last two years?",
+    "fr": null,
+    "es": null
+  },
+  "property": [
+    { 
+      "property_id": "display_sequence",
+      "display": {
+         "en": "80302"
+      }
+    },
+    {
+      "property_id": "datatype",
+      "concept_id": "DT_1"
+    }
+  ]
 }

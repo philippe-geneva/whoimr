@@ -1,0 +1,29 @@
+{
+  "id": "DT_1",
+  "label": {
+    "en": "YES/NO",
+    "fr": "OUI/NON",
+    "es": null
+  },
+  "definition": {
+    "en": "This datatype allows a respondant to specify YES (numerical value 1) or NO (numerical value 2)",
+    "fr": null,
+    "es": null
+  }
+}
+
+{
+  "id": "DT_2",
+  "label": {
+    "en": "YES-OBSERVED/YES-RPT_NOT_SEEN/NO",
+    "fr": null,
+    "es": null
+  },
+  "definition": {
+    "en": "This datatype allows a respondant to specify YES OBSERVED (numerical value 1), YES REPORTED BUT NOT SEEN (numerical value 2) or NO (numerical value 3)",
+    "fr": null,
+    "es": null
+  }
+}
+  
+

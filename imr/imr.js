@@ -172,8 +172,8 @@ app.get(__application_root + '/view/concept/:lang/:concept',function(req,res) {
         // name and id of the indicators so that we can make navigation links to them
         
         db.collection('objects')
-          .find({"property.concept_id":req.params.concept},{id:1,display:1})
-          .toArray(function(err,indicator) {
+          .find({"property.concept_id":req.params.concept},{id:1,type:1,display:1})
+          .toArray(function(err,rel_object) {
    
           var displayConcept = {
                                  name: (concept.label[req.getLocale()] == null) ?
@@ -181,13 +181,14 @@ app.get(__application_root + '/view/concept/:lang/:concept',function(req,res) {
                                  code: concept.id,
                                  definition: (concept.definition[req.getLocale()] == null) ?
                                              concept.definition.en : concept.definition[req.getLocale()],
-                                 indicator: []
+                                 rel_object: []
                                };
-          for (var n in indicator) {
-            displayConcept.indicator.push({ 
-              code: indicator[n].id,
-              name: (indicator[n].display[req.getLocale()] == null) ?
-                    indicator[n].display.en : indicator[n].display[req.getLocale()]
+          for (var n in rel_object) {
+            displayConcept.rel_object.push({ 
+              code: rel_object[n].id,
+              type: rel_object[n].type,
+              name: (rel_object[n].display[req.getLocale()] == null) ?
+                    rel_object[n].display.en : rel_object[n].display[req.getLocale()]
             });
           }
    

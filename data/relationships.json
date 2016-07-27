@@ -1,0 +1,84 @@
+{
+  "id": "QB_801_01",
+  "is_a": "subquestion",
+  "of_id": "QB_801"
+}
+
+{
+  "id": "QB_801_02",
+  "is_a": "subquestion",
+  "of_id": "QB_801"
+}
+
+{
+  "id": "QB_801_03",
+  "is_a": "subquestion",
+  "of_id": "QB_801"
+}
+
+{
+  "id": "QB_801_04",
+  "is_a": "subquestion",
+  "of_id": "QB_801"
+}
+
+{
+  "id": "QB_801_05",
+  "is_a": "subquestion",
+  "of_id": "QB_801"
+}
+
+{
+  "id": "QB_802_01",
+  "is_a": "subquestion",
+  "of_id": "QB_802"
+}
+
+{
+  "id": "QB_802_02",
+  "is_a": "subquestion",
+  "of_id": "QB_802"
+}
+
+{
+  "id": "QB_802_03",
+  "is_a": "subquestion",
+  "of_id": "QB_802"
+}
+
+{
+  "id": "QB_803_01",
+  "is_a": "subquestion",
+  "of_id": "QB_803"
+}
+
+{
+  "id": "QB_803_02",
+  "is_a": "subquestion",
+  "of_id": "QB_803"
+}
+
+
+{
+  "id": "QB_801",
+  "is_a": "subquestion",
+  "of_id": "QB_800"
+}
+
+{
+  "id": "QB_802",
+  "is_a": "subquestion",
+  "of_id": "QB_800"
+}
+
+{
+  "id": "QB_803",
+  "is_a": "subquestion",
+  "of_id": "QB_800"
+}
+
+{
+  "id": "QB_800",
+  "is_a": "question",
+  "of_id": "RI_ANC_13"
+}

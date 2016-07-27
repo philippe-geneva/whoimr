@@ -165,3 +165,22 @@
     "es": "Método de cálculo"
   }
 }
+
+{
+  "id": "datatype",
+  "codes": ["DT_1","DT_2"],
+  "display": {
+    "en": "Data type",
+    "fr": "Type de données",
+    "es": "Tipo de datos"
+  }
+}
+
+{
+  "id": "display_sequence",
+  "display": {
+    "en": "Display sequence",
+    "fr": "Séquence d'affichage",
+    "es": "Secuencia de visualización"
+  }
+}
