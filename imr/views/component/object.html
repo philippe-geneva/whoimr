@@ -18,8 +18,8 @@
         <a href="{{approot}}/view/property/{{locale}}/{{code}}">{{label}}</a>
      </th>
       <td>
-        {{#concept_id}}<a href="{{approot}}/view/concept/{{locale}}/{{concept_id}}">{{value}}</a>{{/concept_id}}
-        {{^concept_id}}{{value}}{{/concept_id}}
+        {{#concept_id}}<a href="{{approot}}/view/concept/{{locale}}/{{concept_id}}">{{{value}}}</a>{{/concept_id}}
+        {{^concept_id}}{{{value}}}{{/concept_id}}
       </td>
     </tr>
     {{/value}}
