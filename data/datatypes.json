@@ -6,7 +6,7 @@
     "es": null
   },
   "definition": {
-    "en": "This datatype allows a respondant to specify YES (numerical value 1) or NO (numerical value 2)",
+    "en": "This datatype allows a respondant to specify one of the following:<br/><ul><li>YES<br/>(numerical value 1)</li><li>NO<br/>(numerical value 2)</li></ul>",
     "fr": null,
     "es": null
   }
@@ -20,7 +20,7 @@
     "es": null
   },
   "definition": {
-    "en": "This datatype allows a respondant to specify YES OBSERVED (numerical value 1), YES REPORTED BUT NOT SEEN (numerical value 2) or NO (numerical value 3)",
+    "en": "This datatype allows a respondant to specify one of the following:<br/><ul><li>YES OBSERVED<br/>(numerical value 1)</li><li>YES REPORTED BUT NOT SEEN<br/>(numerical value 2)</li><li>NO<br/>(numerical value 3)</li></ul>",
     "fr": null,
     "es": null
   }
