@@ -17,17 +17,19 @@
     {{/property.definition}}
     {{#property.concept.length}}
     <tr>
-      <th>{{#__}}strConcepts{{/__}}</th>
+      <th colspan="2">{{#__}}strConcepts{{/__}}</th>
+    </tr>
+
+    {{#property.concept}}
+    <tr>
       <td>
-        <ul>
-          {{#property.concept}}
-            <li>
-              <a href="{{approot}}/view/concept/{{locale}}/{{code}}">{{name}}</a>
-            </li>
-          {{/property.concept}}
-        </ul>
+        <a href="{{approot}}/view/concept/{{locale}}/{{code}}">[concept&nbsp;{{code}}]</a>
+      </td>
+      <td>
+        <a href="{{approot}}/view/concept/{{locale}}/{{code}}">{{name}}</a>
       </td>
     </tr>
+    {{/property.concept}}
     {{/property.concept.length}}
   </table>
 </div>

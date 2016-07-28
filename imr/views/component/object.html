@@ -24,41 +24,51 @@
     </tr>
     {{/value}}
     {{/object.property}}
+
     {{#object.chld.length}}
     <tr>
-      <th>Sub objects</th>
-      <td>
-        <ol>
-          {{#object.chld}}
-          <li><a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">[{{type}}:{{code}}] {{name}}</a></li>
-          {{/object.chld}}
-        </ol>
-       </td>
+      <th colspan="2">Child objects</th> 
     </tr>
-    {{/object.chld.length}}
-    {{#object.prnt.length}}
+    {{#object.chld}}
     <tr>
-      <th>Parent objects</th>
       <td>
-        <ol>
-          {{#object.prnt}}
-          <li><a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">[{{type}}:{{code}}] {{name}}</a></li>
-          {{/object.prnt}}
-        </ol>
-       </td>
-    </tr>
-    {{/object.prnt.length}}
-    {{#object.note.length}}
-    <tr>
-      <th>{{#__}}strFootnotes{{/__}}</ht>
+        <a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">[{{type}}&nbsp;{{code}}]</a>
+      </td>
       <td>
-        <ol>
-          {{#object.note}}
-          <li>{{.}}</li>
-          {{/object.note}}
-        </ol>
+        <a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">{{name}}</a>
       </td>
     </tr>
+    {{/object.chld}}
+    {{/object.chld.length}}
+
+    {{#object.prnt.length}}
+    <tr>
+      <th colspan="2">Parent objects</th>
+    </tr>
+    {{#object.prnt}}
+    <tr>
+      <td>
+        <a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">[{{type}}&nbsp;{{code}}]</a>
+       </td>
+      <td>
+        <a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">{{name}}</a>
+       </td>
+    </tr>
+    {{/object.prnt}}
+    {{/object.prnt.length}}
+
+    {{#object.note.length}}
+    <tr>
+      <th colspan="2">{{#__}}strFootnotes{{/__}}</ht>
+    </tr>
+    {{#object.note}}
+    <tr>
+      <td>&nbsp</td>
+      <td>
+          {{.}}
+      </td>
+    </tr>
+    {{/object.note}}
     {{/object.note.length}}
   </table>
 </div>

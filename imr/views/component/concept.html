@@ -12,22 +12,23 @@
     {{#concept.definition}}
     <tr>
       <th>{{#__}}strDef{{/__}}</th>
-      <td>{{concept.definition}}</td>
+      <td>{{{concept.definition}}}</td>
     </tr>
     {{/concept.definition}}
+
     {{#concept.rel_object.length}}
     <tr>
-      <th>{{#__}}strRelInd{{/__}}</th>
+      <th colspan="2">{{#__}}strRelInd{{/__}}</th>
+    </tr>
+    {{#concept.rel_object}}
       <td>
-        <ul>
-          {{#concept.rel_object}}
-            <li>
-              <a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">{{name}} ({{type}})</a>
-            </li>
-          {{/concept.rel_object}}
-        </ul>
+        <a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">[{{type}}&nbsp;{{code}}]</a>
+      </td>
+      <td>
+        <a href="{{approot}}/view/{{type}}/{{locale}}/{{code}}">{{name}}</a>
       </td>
     </tr>
+    {{/concept.rel_object}}
     {{/concept.rel_object.length}}
   </table>
 </div>
