@@ -15,6 +15,7 @@
       <td>{{concept.definition}}</td>
     </tr>
     {{/concept.definition}}
+    {{#concept.rel_object.length}}
     <tr>
       <th>{{#__}}strRelInd{{/__}}</th>
       <td>
@@ -27,6 +28,7 @@
         </ul>
       </td>
     </tr>
+    {{/concept.rel_object.length}}
   </table>
 </div>
 <!-- END (Common indicator component) -->

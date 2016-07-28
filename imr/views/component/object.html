@@ -24,6 +24,7 @@
     </tr>
     {{/value}}
     {{/object.property}}
+    {{#object.chld.length}}
     <tr>
       <th>Sub objects</th>
       <td>
@@ -34,6 +35,8 @@
         </ol>
        </td>
     </tr>
+    {{/object.chld.length}}
+    {{#object.prnt.length}}
     <tr>
       <th>Parent objects</th>
       <td>
@@ -44,6 +47,8 @@
         </ol>
        </td>
     </tr>
+    {{/object.prnt.length}}
+    {{#object.note.length}}
     <tr>
       <th>{{#__}}strFootnotes{{/__}}</ht>
       <td>
@@ -54,6 +59,7 @@
         </ol>
       </td>
     </tr>
+    {{/object.note.length}}
   </table>
 </div>
 <!-- END (Common indicator component) -->
