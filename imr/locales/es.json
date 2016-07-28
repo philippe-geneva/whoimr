@@ -5,7 +5,7 @@
   "strLogout": 		"Salir",
   "strConceptId":	"Concept ID",
   "strDef":		"Definición",
-  "strRelInd":		"indicadores relacionados",
+  "strRelInd":		"Objetos que utilizan este concepto",
   "strIndId":		"Identificación de indicador",
   "strPropId":		"Identificación de la propiedad",
   "strConcepts":	"Conceptos",

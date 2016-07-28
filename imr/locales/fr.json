@@ -5,7 +5,7 @@
   "strLogout": 		"Déconnecter",
   "strConceptId":	"Identificateur de concept",
   "strDef":		"Définition",
-  "strRelInd":		"Indicateur",
+  "strRelInd":		"Objets utilisant ce concept",
   "strIndId":		"Identificateur d'indicateur",
   "strPropId":		"Identificateur de propriété",
   "strConcepts":	"Concepts",
